@@ -72,6 +72,17 @@ class SiteTests(unittest.TestCase):
         second['summary']['scale_max'] = 3
         self.assertEqual(len(variability([first,second])), 2)
 
+    def test_native_distributions_keep_unknown_and_absent_distinct(self):
+        a = result(native_data={'assessments':[{'responses':{'S-01':{'score':3}, 'D-01':{'score':None}}}]})
+        b = result('r2', native_data={'assessments':[{'responses':{'S-01':{'score':0}}}]})
+        distribution = variability([a,b])[0]['criterion_distributions']
+        self.assertEqual(distribution['D-01']['counts'], {'unanswered':1,'absent':1})
+        self.assertEqual(distribution['S-01']['counts'], {'3':1,'0':1})
+        self.assertTrue(distribution['S-01']['disagreement'])
+        a['native_data'] = {'responses':{'must/001':{'status':'met'}}}
+        b['native_data'] = {'responses':{'must/001':{'status':'partial'}}}
+        self.assertEqual(variability([a,b])[0]['criterion_distributions']['must/001']['counts'], {'met':1,'partial':1})
+
     def test_unknown_provenance_and_different_weights_remain_separate(self):
         first, second = result(), result('r2')
         first.pop('model_observed')

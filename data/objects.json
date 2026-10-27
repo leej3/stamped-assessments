@@ -1,15 +1,13 @@
 {
   "version": "0.1.0",
-  "generated_at": "2026-10-27T23:53:28Z",
+  "generated_at": "2026-10-27T23:56:54Z",
   "discovery_page": {
     "url": "https://computational-science.mpsd.mpg.de/docs/reproducibility.html",
     "cache_path": ".cache/objects/discovery/mpsd-reproducibility.html",
-    "resolved_url": "https://computational-science.mpsd.mpg.de/docs/reproducibility.html",
-    "content_type": "text/html",
-    "status": "downloaded",
+    "status": "cached",
     "bytes": 42618,
     "sha256": "fbaca77cdb4393ca6056f11f5451b0770c52b75d55a9d7e895d23029db41fe08",
-    "retrieved_at": "2026-10-27T23:45:54Z"
+    "verified_at": "2026-10-27T23:56:51Z"
   },
   "objects": [
     {
@@ -86,18 +84,16 @@
         {
           "url": "https://codeload.github.com/psychoinformatics-de/paper-remodnav/tar.gz/34388d3ca78fbd483e022e4e2851be390b7eebf2",
           "cache_path": ".cache/objects/paper-remodnav/34388d3ca78fbd483e022e4e2851be390b7eebf2.tar.gz",
-          "resolved_url": "https://codeload.github.com/psychoinformatics-de/paper-remodnav/tar.gz/34388d3ca78fbd483e022e4e2851be390b7eebf2",
-          "content_type": "application/x-gzip",
-          "status": "downloaded",
+          "status": "cached",
           "bytes": 952234,
           "sha256": "df978770f968b8cae1e4d309cf964aebb4904f8a0e5e4bf32509dbb6db5ddee9",
-          "retrieved_at": "2026-10-27T23:45:56Z"
+          "verified_at": "2026-10-27T23:56:51Z"
         }
       ],
-      "prefetched_at": "2026-10-27T23:45:56Z",
+      "prefetched_at": "2026-10-27T23:56:51Z",
       "cache_status": "partial",
       "assessment_status": "not_assessed",
-      "cache_note": "Cache availability does not establish discoverability from the assessment entry point. No scientific code was executed. Unfetched annex payloads and submodules are explicit."
+      "cache_note": "Cache availability does not establish discoverability from the assessment entry point. No scientific code was executed. Unfetched annex payloads and submodules are explicit; other runtime URLs/dependencies have not been exhaustively downloaded."
     },
     {
       "id": "repronim-containers",
@@ -7499,18 +7495,16 @@
         {
           "url": "https://codeload.github.com/ReproNim/containers/tar.gz/d047e81ed8d08ade0e42e628c69b0afe3cd48ad0",
           "cache_path": ".cache/objects/repronim-containers/d047e81ed8d08ade0e42e628c69b0afe3cd48ad0.tar.gz",
-          "resolved_url": "https://codeload.github.com/ReproNim/containers/tar.gz/d047e81ed8d08ade0e42e628c69b0afe3cd48ad0",
-          "content_type": "application/x-gzip",
-          "status": "downloaded",
+          "status": "cached",
           "bytes": 446967,
           "sha256": "e61158d1674379269157311aced40722ab7853ec64b848d8965084637dfabff9",
-          "retrieved_at": "2026-10-27T23:45:58Z"
+          "verified_at": "2026-10-27T23:56:51Z"
         }
       ],
-      "prefetched_at": "2026-10-27T23:45:58Z",
+      "prefetched_at": "2026-10-27T23:56:51Z",
       "cache_status": "partial",
       "assessment_status": "not_assessed",
-      "cache_note": "Cache availability does not establish discoverability from the assessment entry point. No scientific code was executed. Unfetched annex payloads and submodules are explicit."
+      "cache_note": "Cache availability does not establish discoverability from the assessment entry point. No scientific code was executed. Unfetched annex payloads and submodules are explicit; other runtime URLs/dependencies have not been exhaustively downloaded."
     },
     {
       "id": "repronim-simple-workflow",
@@ -7531,18 +7525,16 @@
         {
           "url": "https://codeload.github.com/ReproNim/simple_workflow/tar.gz/225f1dc06fb734ad86afb1d074b5ae2692d8b9c3",
           "cache_path": ".cache/objects/repronim-simple-workflow/225f1dc06fb734ad86afb1d074b5ae2692d8b9c3.tar.gz",
-          "resolved_url": "https://codeload.github.com/ReproNim/simple_workflow/tar.gz/225f1dc06fb734ad86afb1d074b5ae2692d8b9c3",
-          "content_type": "application/x-gzip",
-          "status": "downloaded",
+          "status": "cached",
           "bytes": 2600013,
           "sha256": "f1abab3ff724037802260968c70402eb37b034b053310a63475d6a0587a070f6",
-          "retrieved_at": "2026-10-27T23:46:00Z"
+          "verified_at": "2026-10-27T23:56:51Z"
         }
       ],
-      "prefetched_at": "2026-10-27T23:46:00Z",
-      "cache_status": "downloaded_declared_sources",
+      "prefetched_at": "2026-10-27T23:56:51Z",
+      "cache_status": "selected_sources_downloaded",
       "assessment_status": "not_assessed",
-      "cache_note": "Cache availability does not establish discoverability from the assessment entry point. No scientific code was executed. Unfetched annex payloads and submodules are explicit."
+      "cache_note": "Cache availability does not establish discoverability from the assessment entry point. No scientific code was executed. Unfetched annex payloads and submodules are explicit; other runtime URLs/dependencies have not been exhaustively downloaded."
     },
     {
       "id": "kayanattil-2023",
@@ -7558,7 +7550,7 @@
       "dataset_file_count": 1030,
       "dataset_bytes": 1877399168,
       "dataset_inventory": ".cache/objects/kayanattil-2023/dataset-inventory.json",
-      "dataset_inventory_sha256": "3a00f49f54006ad01f21c42ea3b3dffd1440998159712a60297935d5c1f9e639",
+      "dataset_inventory_sha256": "7beab96db8982819df215b5c95204dd2bb4e7a841c7c4bad1b8c920cb6bc8381",
       "dataset_downloaded_files": 1030,
       "dataset_downloaded_bytes": 1877399168,
       "dataset_unavailable": [],
@@ -7566,32 +7558,26 @@
         {
           "url": "https://api.crossref.org/works/10.1073/pnas.2301956120",
           "cache_path": ".cache/objects/kayanattil-2023/crossref.json",
-          "resolved_url": "https://api.crossref.org/works/10.1073/pnas.2301956120",
-          "content_type": "application/json",
-          "status": "downloaded",
+          "status": "cached",
           "bytes": 14155,
           "sha256": "622764ca021f138bce009f22ca32e2e17344988095214f78f2e06abbe065ce21",
-          "retrieved_at": "2026-10-27T23:46:00Z"
+          "verified_at": "2026-10-27T23:56:51Z"
         },
         {
           "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1073/pnas.2301956120&format=json",
           "cache_path": ".cache/objects/kayanattil-2023/europe-pmc.json",
-          "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1073/pnas.2301956120&format=json",
-          "content_type": "application/json;charset=UTF-8",
-          "status": "downloaded",
+          "status": "cached",
           "bytes": 1029,
           "sha256": "27ce0aa6a978c00f55f08cbb008b8c54b8176de83198dcd4f124ad854b50e28e",
-          "retrieved_at": "2026-10-27T23:46:01Z"
+          "verified_at": "2026-10-27T23:56:51Z"
         },
         {
           "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10319024/fullTextXML",
           "cache_path": ".cache/objects/kayanattil-2023/publication.xml",
-          "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10319024/fullTextXML",
-          "content_type": "application/xml",
-          "status": "downloaded",
+          "status": "cached",
           "bytes": 180659,
           "sha256": "e74b3e75d4ac63ca02493c767811fcc16df7d9bbf5bc90509d954bb09736d4b8",
-          "retrieved_at": "2026-10-27T23:46:02Z"
+          "verified_at": "2026-10-27T23:56:51Z"
         },
         {
           "url": "https://pnas.org/doi/pdf/10.1073/pnas.2301956120",
@@ -7602,18 +7588,99 @@
         {
           "url": "https://edmond.mpg.de/api/datasets/:persistentId/versions/1.1?persistentId=doi:10.17617/3.BPNGXA",
           "cache_path": ".cache/objects/kayanattil-2023/edmond-version.json",
-          "resolved_url": "https://edmond.mpg.de/api/datasets/:persistentId/versions/1.1?persistentId=doi:10.17617/3.BPNGXA",
-          "content_type": "application/json;charset=UTF-8",
-          "status": "downloaded",
+          "status": "cached",
           "bytes": 835423,
           "sha256": "063d7219c987083054186f369a609dada4b870d5897a98dd6213d74037acda00",
-          "retrieved_at": "2026-10-27T23:46:10Z"
+          "verified_at": "2026-10-27T23:56:51Z"
         }
       ],
-      "prefetched_at": "2026-10-27T23:53:28Z",
+      "prefetched_at": "2026-10-27T23:56:52Z",
       "cache_status": "partial",
       "assessment_status": "not_assessed",
-      "cache_note": "Cache availability does not establish discoverability from the assessment entry point. No scientific code was executed. Unfetched annex payloads and submodules are explicit."
+      "cache_note": "Cache availability does not establish discoverability from the assessment entry point. No scientific code was executed. Unfetched annex payloads and submodules are explicit; other runtime URLs/dependencies have not been exhaustively downloaded."
+    },
+    {
+      "id": "lang-2023",
+      "title": "Bloch points in nanostrips",
+      "locator": "https://doi.org/10.1038/s41598-023-33998-z",
+      "doi": "10.1038/s41598-023-33998-z",
+      "dataset_doi": "10.5281/zenodo.6384937",
+      "dataset_record": "6384937",
+      "repository": "lang-m/2022-paper-multiple-bloch-points",
+      "git_ref": "v1.0",
+      "discovery_path": "https://computational-science.mpsd.mpg.de/docs/reproducibility.html#simulation-study-lang-et-al-2023 → publication reference 38 → Zenodo record → GitHub v1.0",
+      "scope": "The publication and the cited frozen Zenodo/GitHub v1.0 data/code release, not the current default branch.",
+      "revision": "15486db75d22f0a0a67a7ca6d673da7ebd7ea253",
+      "git_history_cache": ".cache/objects/lang-2023/repository.git",
+      "snapshot_path": ".cache/objects/lang-2023/snapshot",
+      "snapshot_inventory": ".cache/objects/lang-2023/snapshot-inventory.json",
+      "snapshot_inventory_sha256": "979ffd9bbebedb93f307bb271b5f683c60d089df58c2078883fbc233a995b384",
+      "source_files": 25,
+      "source_bytes": 298944730,
+      "absent_payloads": [],
+      "pmcid": "PMC10140021",
+      "artifacts": [
+        {
+          "url": "https://codeload.github.com/lang-m/2022-paper-multiple-bloch-points/tar.gz/15486db75d22f0a0a67a7ca6d673da7ebd7ea253",
+          "cache_path": ".cache/objects/lang-2023/15486db75d22f0a0a67a7ca6d673da7ebd7ea253.tar.gz",
+          "status": "cached",
+          "bytes": 277035338,
+          "sha256": "c5e1075eb6dde1a05f3807f7f1e00cba63c42311e0eb6d330df59aae1020f86a",
+          "verified_at": "2026-10-27T23:56:52Z"
+        },
+        {
+          "url": "https://api.crossref.org/works/10.1038/s41598-023-33998-z",
+          "cache_path": ".cache/objects/lang-2023/crossref.json",
+          "status": "cached",
+          "bytes": 20008,
+          "sha256": "9aa7176cb2c7f14e3eabfe189fffcb94a6befa9705b97654cf7c094286590f36",
+          "verified_at": "2026-10-27T23:56:54Z"
+        },
+        {
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1038/s41598-023-33998-z&format=json",
+          "cache_path": ".cache/objects/lang-2023/europe-pmc.json",
+          "status": "cached",
+          "bytes": 940,
+          "sha256": "a25ef8371e5b7e79b23e54260baf048c52c3bb045853dab84c77ae31fc149ad0",
+          "verified_at": "2026-10-27T23:56:54Z"
+        },
+        {
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10140021/fullTextXML",
+          "cache_path": ".cache/objects/lang-2023/publication.xml",
+          "status": "cached",
+          "bytes": 134470,
+          "sha256": "fc18d7a1e254ce212df7778ee36acb36c3ecb4921fb8e5f7c4dfaf6a83eadfd0",
+          "verified_at": "2026-10-27T23:56:54Z"
+        },
+        {
+          "url": "https://www.nature.com/articles/s41598-023-33998-z.pdf",
+          "cache_path": ".cache/objects/lang-2023/publication.pdf",
+          "status": "cached",
+          "bytes": 2091185,
+          "sha256": "9b25b8abce76c27f052874236ef337fd1bd84f0706f48ba32aae9aeb9dd6d40c",
+          "verified_at": "2026-10-27T23:56:54Z"
+        },
+        {
+          "url": "https://zenodo.org/api/records/6384937",
+          "cache_path": ".cache/objects/lang-2023/zenodo-record.json",
+          "status": "cached",
+          "bytes": 3881,
+          "sha256": "cb470f1168a7af89f61003da59c2d4dc56037d2a4e1ecac788f333eafe0e31ab",
+          "verified_at": "2026-10-27T23:56:54Z"
+        },
+        {
+          "url": "https://zenodo.org/api/records/6384937/files/lang-m/2022-paper-multiple-bloch-points-v1.0.zip/content",
+          "cache_path": ".cache/objects/lang-2023/zenodo/2022-paper-multiple-bloch-points-v1.0.zip",
+          "status": "cached",
+          "bytes": 277235082,
+          "sha256": "931f6a016c8452361db5b29b0c0a4f5dc08ea622af31ea8ba28ddc0dbbbbd0f8",
+          "verified_at": "2026-10-27T23:56:54Z"
+        }
+      ],
+      "prefetched_at": "2026-10-27T23:56:54Z",
+      "cache_status": "selected_sources_downloaded",
+      "assessment_status": "not_assessed",
+      "cache_note": "Cache availability does not establish discoverability from the assessment entry point. No scientific code was executed. Unfetched annex payloads and submodules are explicit; other runtime URLs/dependencies have not been exhaustively downloaded."
     }
   ]
 }

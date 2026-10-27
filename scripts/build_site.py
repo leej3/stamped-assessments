@@ -18,9 +18,9 @@ CATALOG_FIELDS = {
     'methods': ('id', 'title', 'repository', 'ref', 'revision', 'entrypoint', 'description', 'score_type', 'license', 'status', 'limitations', 'rubric_id', 'rubric_sha256'),
     'objects': ('id', 'title', 'locator', 'revision', 'scope', 'cache_status', 'description', 'license', 'status'),
 }
-STUDY_FIELDS = ('id', 'title', 'status', 'replicates_per_method', 'reviews_per_assessment', 'assessor_model', 'review_model', 'objects', 'methods', 'description', 'limitations', 'created_at', 'planned_assessments', 'planned_reviews', 'assessor_reasoning_effort', 'review_reasoning_effort', 'evidence_policy', 'score_policy')
-RESULT_FIELDS = ('id', 'study_id', 'object_id', 'object_revision', 'method_id', 'method_revision', 'rubric_id', 'rubric_sha256', 'model_requested', 'model_observed', 'reasoning_effort', 'replicate', 'status', 'independent', 'exploratory', 'created_at', 'native_output', 'summary', 'limitations', 'evidence_cohort', 'evidence_cohort_id')
-REVIEW_FIELDS = ('id', 'assessment_id', 'reviewer_id', 'model_requested', 'model_observed', 'reasoning_effort', 'status', 'findings', 'verdict', 'report', 'created_at', 'limitations')
+STUDY_FIELDS = ('id', 'title', 'status', 'replicates_per_method', 'reviews_per_assessment', 'assessor_model', 'review_model', 'objects', 'methods', 'description', 'limitations', 'created_at', 'planned_assessments', 'planned_reviews', 'assessor_reasoning_effort', 'review_reasoning_effort', 'evidence_policy', 'score_policy', 'evidence_cohort', 'evidence_sha256', 'updated_at', 'progress')
+RESULT_FIELDS = ('id', 'study_id', 'object_id', 'object_revision', 'method_id', 'method_revision', 'rubric_id', 'rubric_sha256', 'model_requested', 'model_observed', 'reasoning_effort', 'replicate', 'status', 'independent', 'exploratory', 'created_at', 'native_output', 'report', 'summary', 'limitations', 'evidence_cohort', 'evidence_cohort_id')
+REVIEW_FIELDS = ('id', 'assessment_id', 'reviewer_id', 'model_requested', 'model_observed', 'reasoning_effort', 'status', 'findings', 'verdict', 'report', 'created_at', 'limitations', 'checked_criteria')
 
 
 def project(record, fields):
@@ -92,6 +92,24 @@ def group_key(record):
     return key + (json.dumps(weights, sort_keys=True), unknown)
 
 
+def response_distributions(records):
+    """Count native responses, retaining null and absent responses separately."""
+    responses = []
+    for record in records:
+        native = record.get('native_data') or {}
+        assessments = native.get('assessments', [])
+        responses.append(assessments[0].get('responses', {}) if len(assessments) == 1 else native.get('responses', {}))
+    distributions = {}
+    for criterion in sorted(set().union(*(set(r) for r in responses))):
+        counts = {}
+        for response in responses:
+            item = response.get(criterion)
+            label = 'absent' if item is None else (str(item['score']) if item.get('score') is not None else 'unanswered') if 'score' in item else item.get('status', 'unanswered')
+            counts[label] = counts.get(label, 0) + 1
+        distributions[criterion] = {'counts': counts, 'disagreement': len(counts) > 1}
+    return distributions
+
+
 def variability(records):
     eligible = [r for r in records if r.get('status') == 'complete' and r.get('independent') is True and not r.get('exploratory', False)]
     buckets = {}
@@ -107,6 +125,7 @@ def variability(records):
                       if isinstance(r.get('summary', {}).get('overall_score'), (int, float))
                       and not isinstance(r['summary']['overall_score'], bool)]
             groups.append({'key': list(key), 'assessment_ids': [r['id'] for r in same_scale],
+                           'criterion_distributions': response_distributions(same_scale),
                            'runs': len(same_scale), 'scored_runs': len(values), 'scale_max': maximum,
                            'mean': statistics.mean(values) if values else None,
                            'minimum': min(values) if values else None,
@@ -147,6 +166,10 @@ def build(root=ROOT, destination=None):
                 source, native = linked_output(root, reference)
                 files[reference] = source
                 record['native_data' if kind == 'results' else 'report_content'] = native
+            if kind == 'results' and record.get('report'):
+                source, report = linked_output(root, record['report'])
+                files[record['report']] = source
+                record['report_content'] = report
             target.append(record)
     for records in (results, reviews):
         if len({r['id'] for r in records}) != len(records):
