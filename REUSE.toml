@@ -1,0 +1,7 @@
+version = 1
+
+[[annotations]]
+path = "**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 STAMPED assessment contributors"
+SPDX-License-Identifier = "CC-BY-4.0"

@@ -1,0 +1,473 @@
+{
+  "schema_version": "1.0.0",
+  "inspected_on": "2026-10-27",
+  "inspection_only": true,
+  "methods": [
+    {
+      "id": "rubric",
+      "title": "STAMPED research-object rubric",
+      "repository": "https://github.com/leej3/stamped-rubric-schema",
+      "ref": "main (published source)",
+      "revision": "e8d94d00d904058b8f87c8331cbe32e225a9490f",
+      "entrypoint": "docs/assessment-protocol.md",
+      "description": "Fixed manuscript-derived 36-criterion rubric with normalized dimension scores, configurable dimension weights, and independent reviewer contributions.",
+      "score_type": "normalized_criterion_and_dimension_scores",
+      "license": "CC-BY-4.0",
+      "instrument_type": "rubric_and_protocol",
+      "ready_for_assessment": true,
+      "source_versions": {
+        "rubric": "0.1.0",
+        "manuscript_revision": "5bbb3ed471a5e9bf8c8e91cdef6b96686c4c53ea",
+        "manuscript_status": "provisional",
+        "principle_count": 20,
+        "criterion_count": 36
+      },
+      "scales": {
+        "criterion": "0–3 or binary 0–1, using criterion-specific anchors",
+        "dimension": "0–100; equal normalized criterion contributions",
+        "overall": "Weighted mean of seven dimensions; equal weights by default",
+        "missing": "null remains unanswered and contributes zero to provisional score; no discretionary denominator exclusion"
+      },
+      "evidence_policy": "Start at the declared object and follow explicit references. Preserve discovery paths and distinguish observed, absent, not_findable, inaccessible and not_assessed. Evidence ratings and confidence are optional and do not change scores.",
+      "native_outputs": [
+        "assessment-bundle JSON",
+        "seven dimension scores and weighted total",
+        "reviewer-specific profiles and responses"
+      ],
+      "review_model": "Separate assessment contributions with reviewer identity and review_of link; no automatic consensus.",
+      "required_resources": [
+        {
+          "path": "docs/assessment-protocol.md",
+          "sha256": "39e410c172fde3e523365a68957e25a6fd82afa9f482af403008c89df08a30e6"
+        },
+        {
+          "path": "docs/rubric-method.md",
+          "sha256": "d9a02e3721eb5a3344151df76f45bfaccc63a35054479346631954604160d9ea"
+        },
+        {
+          "path": "rubric.json",
+          "sha256": "05d96a057d8cfe79927f587f6994cf386e12bca83d55b3e7deee8e37ab7bcbb4"
+        },
+        {
+          "path": "schemas/assessment-bundle.schema.json",
+          "sha256": "cf03dd203fa544c0df10402b75640c02072017db755886185d5f6762ce8e60f7"
+        },
+        {
+          "path": "scripts/validate.py",
+          "sha256": "51b87804a1d5dfd2d1d42069c4ba968ba2d7f8658c70d18929a74b9f1f909560"
+        }
+      ],
+      "runtime_requirements": [
+        "Python >=3.11",
+        "jsonschema >=4.23,<5 (see project lock)",
+        "Git optional for object identity"
+      ],
+      "caveats": [
+        "A numeric total summarizes the declared rubric and weights, not general scientific quality.",
+        "No native assessor SKILL.md; use the assessment protocol plus exact rubric."
+      ],
+      "study_role": "assessment_arm"
+    },
+    {
+      "id": "stamped-skills-assessment",
+      "title": "STAMPED use-case assessment framework",
+      "repository": "https://github.com/stamped-principles/stamped-skills-assessment",
+      "ref": "codex/assessment-foundation (default branch)",
+      "revision": "c4c0428e6962a631d910d0becb00b7bb1c3c903c",
+      "entrypoint": "docs/contributing-assessments.md",
+      "description": "Versioned use-case rubrics, activity-based evidence records, categorical judgments, and digest-bound reviews. The repository is infrastructure, not an assessor skill or universal rubric.",
+      "score_type": "categorical_judgments_and_activity_coverage",
+      "license": "MIT (code); CC-BY-4.0 (schemas, documentation, records and vendored references)",
+      "instrument_type": "assessment_record_framework",
+      "ready_for_assessment": false,
+      "source_versions": {
+        "schema": "0.1.0",
+        "reference_bundle": "stamped-2026-09-25",
+        "checklist": "0.3.1",
+        "principles": "0.2.0"
+      },
+      "scales": {
+        "criterion": [
+          "demonstrated",
+          "partial",
+          "not_demonstrated",
+          "unknown",
+          "not_applicable"
+        ],
+        "principle_priority": [
+          "essential",
+          "important",
+          "supporting",
+          "out_of_scope"
+        ],
+        "direction": [
+          "maximize",
+          "balance",
+          "preserve"
+        ],
+        "overall": null,
+        "activities": [
+          "inspect",
+          "resolve",
+          "retrieve",
+          "construct",
+          "execute",
+          "compare",
+          "independent_reproduce"
+        ]
+      },
+      "evidence_policy": "A positive judgment requires every criterion-required activity to have evidence. Activity completion, successful reproduction, finalization and scope completion are separate. Access barriers require an observed barrier, not an unattempted action.",
+      "native_outputs": [
+        "use_case YAML",
+        "object YAML",
+        "rubric YAML",
+        "assessment YAML",
+        "review YAML",
+        "per-principle counts and activity completion"
+      ],
+      "review_model": "Independent review records reference the semantic SHA-256 of an assessment; dispositions agree, disagree or needs_evidence; optional suggested categorical status.",
+      "required_resources": [
+        {
+          "path": "README.md",
+          "sha256": "7582ed449d15a85b3ac736ac7f4d4a85777eefdbde74ccee302340810a5d8093"
+        },
+        {
+          "path": "docs/design.md",
+          "sha256": "f69ff3fb19d9ad5d2d852a8e6b6eb2a5ed9160b2209e8996907527b55abef0cd"
+        },
+        {
+          "path": "docs/contributing-assessments.md",
+          "sha256": "14c6e9c246be2acaeaaa64b559ab30fb8a18cae6e5fc2a9eddc0ca2d0222f73e"
+        },
+        {
+          "path": "docs/automation-evidence.md",
+          "sha256": "5700304f076b64805f2cf1936c29d041894343bd3b948c8b5867a109c258fc51"
+        },
+        {
+          "path": "src/stamped_assessment/data/schemas/assessment.yaml",
+          "sha256": "b44b9055a6784facd45e16856d9dcf8999c8cad04b0e9a30ab8d177e15d3e5cb"
+        },
+        {
+          "path": "src/stamped_assessment/data/upstream/lock.json",
+          "sha256": "3b976001fbc0f53e99a69bb7579c03b3adab20f86d7952c96df262ac57ffc530"
+        },
+        {
+          "path": "records/rubric/paper-handoff-v0.1.0.yaml",
+          "sha256": "682a24bb35a5ad5f77695cecfecb826348bf05a499b8900cee83d9e4d67c60fe"
+        }
+      ],
+      "runtime_requirements": [
+        "Python >=3.11",
+        "PyYAML >=6,<7",
+        "jsonschema >=4.23,<5"
+      ],
+      "proposed_assessor": {
+        "repository": "https://github.com/leej3/stamped-agent-skills",
+        "ref": "codex/assessment-foundation",
+        "revision": "cda6aa85d5c41b63176032240e5da8a1d3934d7f",
+        "entrypoint": "skills/stamped-assess/SKILL.md",
+        "license": "CC-BY-4.0",
+        "runtime_repository": "https://github.com/stamped-principles/stamped-skills-assessment",
+        "runtime_revision": "e367080f40e5f99e9cad31e885c9549d37e21b42",
+        "runtime_difference": "Requested framework HEAD adds only README link and docs/automation-evidence.md; executable code, schema and bundled pilot are unchanged.",
+        "required_resources": [
+          {
+            "path": "skills/stamped-assess/SKILL.md",
+            "sha256": "07a8057a9316fa302ec1f7c23bda4dd7253217520e5788a9a0587b8959a73e32"
+          },
+          {
+            "path": "skills/stamped-assess/references/rubrics.md",
+            "sha256": "8fe5357593fbce9d8344168d00f14fa48d5040d76f494a11ee957048e839b709"
+          },
+          {
+            "path": "skills/stamped-assess/references/record-guide.md",
+            "sha256": "296371e9488a96642ca1dd28bae101014f4f2f81724855d695c578b6812fa96b"
+          },
+          {
+            "path": "skills/stamped-assess/references/review.md",
+            "sha256": "2931f3f2c0358a6c0dc7a654933acf7ae648834d2042f04a8eace959b2c3e6c2"
+          },
+          {
+            "path": "skills/stamped-assess/requirements.txt",
+            "sha256": "3f7a1f4376e32e7267d7076d72a5bec98323b9029963ba1d16fe20f9cbe96947"
+          }
+        ],
+        "selection_status": "Documented background candidate only; not selected for this experiment."
+      },
+      "caveats": [
+        "Bundled paper-handoff rubric has seven narrow manuscript criteria; it is not a general research-object assessment.",
+        "The intended upstream skill repository default branch only contains an earlier intervention-oriented draft. The concrete assessor is on an explicitly identified fork.",
+        "Use-case rubric creation and selected priorities are an instrument-design factor, not assessor-independent constants."
+      ],
+      "study_role": "background_only",
+      "selection_status": "Excluded from this experiment by user decision; retained as background comparison only."
+    },
+    {
+      "id": "con-stamped-impl",
+      "title": "CON checklist assessor: implementation branch",
+      "repository": "https://github.com/con/skills",
+      "ref": "stamped-skills-impl",
+      "revision": "4fe5d7be82ed6c297747e8b838031aec88e75903",
+      "entrypoint": "skills/assess-alignment-with-stamped-principles/SKILL.md",
+      "description": "Probe-assisted assessment of committed project state against all 31 pinned checklist items, with five verdict states and actionable findings.",
+      "score_type": "checklist_verdict_counts",
+      "license": "MIT (scripts); unspecified/TBD (repository skill prose); upstream CC-BY-4.0 (vendored checklist)",
+      "instrument_type": "assessor_skill_with_probes",
+      "ready_for_assessment": true,
+      "source_versions": {
+        "skill": "0.1.0",
+        "conventions": "0.1.0",
+        "checklist": "0.3.1",
+        "principles": "0.2.0",
+        "checklist_revision": "af259bad237fa57b856417db8dba45a1b283a527",
+        "checklist_sha256": "da2eb88ed49dff64f098ad92200dec81c1b4404cc2d3ba1e1e1404d0e10e7bba",
+        "item_counts": {
+          "must": 17,
+          "should": 9,
+          "may": 5
+        }
+      },
+      "scales": {
+        "criterion": [
+          "met",
+          "partial",
+          "unmet",
+          "not-checked",
+          "not-applicable"
+        ],
+        "overall": null,
+        "summary": "Counts by MUST/SHOULD/MAY with denominators; partial never satisfies MUST; unknowns and N/A remain visible",
+        "app_mapping": {
+          "met": "yes",
+          "partial": "no",
+          "unmet": "no",
+          "not-checked": null,
+          "not-applicable": null
+        }
+      },
+      "evidence_policy": "Run applicable probes, inspect their evidence, judge remaining items, and preserve overrides or questioned mappings. met requires a citation; unmet requires evidence of absence. Reasons are limited to 250 characters; richer argument lives in evidence entries.",
+      "native_outputs": [
+        "dated assessment Markdown",
+        "response JSON",
+        "unaltered probe JSON",
+        "checklist URL text",
+        "optional fresh-rerun JSON"
+      ],
+      "review_model": "Instructions call for framework records for evaluation/review but supply no native response-to-framework exporter; any study adapter must be explicit and validated.",
+      "required_resources": [
+        {
+          "path": "skills/assess-alignment-with-stamped-principles/SKILL.md",
+          "sha256": "513b9b94fed55699ed4dc08d32c86f41dfb72a5888b2fa6ae1b45812524b267c"
+        },
+        {
+          "path": "skills/stamped-conventions/SKILL.md",
+          "sha256": "ff7701665ee1eb27d72295c956e17a7a8c1c38411512bd9a28dc4870ea4ac882"
+        },
+        {
+          "path": "skills/stamped-conventions/references/verdicts.md",
+          "sha256": "1a5895f9e947472a8a3e4ceff72a6b5e70c619900e28c60541922452d516642b"
+        },
+        {
+          "path": "skills/stamped-conventions/references/response-format.md",
+          "sha256": "833363e5074545d116061baf86ee08febddcd0cb2ed0c18eab6c966864c7f0ba"
+        },
+        {
+          "path": "skills/stamped-conventions/references/project-kinds.md",
+          "sha256": "f87736407abf57761213fb9b631d1876345bcf13cd52998e206d9da5df4ecf3d"
+        },
+        {
+          "path": "skills/stamped-conventions/references/principles-card.md",
+          "sha256": "7b7d090a8b3167b1bc1090adaf76e694a17a19dd57bfcbe16fb48949ea5ded61"
+        },
+        {
+          "path": "skills/stamped-conventions/references/stacks/datalad.md",
+          "sha256": "e6456fc5ec23637af232abec8c15020563ab1497c5c5a631f26af36fc5117818"
+        },
+        {
+          "path": "skills/stamped-conventions/checklist/lock.json",
+          "sha256": "4c353484adcb2210b8041f21366c7de04c4eaace7f8f52e7a30f6a279110a2ad"
+        },
+        {
+          "path": "skills/stamped-conventions/checklist/stamped-checklist-0.3.1.json",
+          "sha256": "da2eb88ed49dff64f098ad92200dec81c1b4404cc2d3ba1e1e1404d0e10e7bba"
+        }
+      ],
+      "runtime_requirements": [
+        "Python 3",
+        "Git",
+        "stamped-conventions sibling at identical revision",
+        "DataLad/git-annex when required by object"
+      ],
+      "caveats": [
+        "No overall score is native or permitted by the report instructions.",
+        "Both branches retain skill version 0.1.0; full commit pins are essential.",
+        "Checklist omits licensing items and T.4; these are extras, and must/014 duplicates should/008.",
+        "App URLs omit richer status, evidence and reviewer metadata; preserve original response JSON.",
+        "Fresh workflow definitions can be accepted as equivalent freshness evidence in instructions; later branch requires completed-run evidence.",
+        "Environment probe conflates dependency pinning with completeness and can over-credit a responding remote or annex location log.",
+        "Inspect-only boundary conflicts with fallback instruction to edit .gitignore when external output is unavailable; study must provide external output."
+      ],
+      "boundary_policy": "Only committed state counts; dirty working tree is reported but excluded from assessed state.",
+      "study_role": "assessment_arm"
+    },
+    {
+      "id": "con-narps-guidance",
+      "title": "CON checklist assessor: research-guidance branch",
+      "repository": "https://github.com/con/skills",
+      "ref": "codex/narps-round3-research-guidance",
+      "revision": "326606610af6c261876c92032ca1f89f6d3ad1f1",
+      "entrypoint": "skills/assess-alignment-with-stamped-principles/SKILL.md",
+      "description": "Probe-assisted 31-item checklist assessment with delivered-state capture, explicit equivalent evidence, stronger retrieval and completed-execution checks, and more conservative probe interpretations.",
+      "score_type": "checklist_verdict_counts",
+      "license": "MIT (scripts); unspecified/TBD (repository skill prose); upstream CC-BY-4.0 (vendored checklist)",
+      "instrument_type": "assessor_skill_with_probes",
+      "ready_for_assessment": true,
+      "source_versions": {
+        "skill": "0.1.0",
+        "conventions": "0.1.0",
+        "checklist": "0.3.1",
+        "principles": "0.2.0",
+        "checklist_revision": "af259bad237fa57b856417db8dba45a1b283a527",
+        "checklist_sha256": "da2eb88ed49dff64f098ad92200dec81c1b4404cc2d3ba1e1e1404d0e10e7bba",
+        "item_counts": {
+          "must": 17,
+          "should": 9,
+          "may": 5
+        }
+      },
+      "scales": {
+        "criterion": [
+          "met",
+          "partial",
+          "unmet",
+          "not-checked",
+          "not-applicable"
+        ],
+        "overall": null,
+        "summary": "Counts by MUST/SHOULD/MAY with denominators; partial never satisfies MUST; unknowns and N/A remain visible",
+        "app_mapping": {
+          "met": "yes",
+          "partial": "no",
+          "unmet": "no",
+          "not-checked": null,
+          "not-applicable": null
+        }
+      },
+      "evidence_policy": "Run applicable probes, inspect their evidence, judge remaining items, and preserve overrides or questioned mappings. met requires a citation; unmet requires evidence of absence. Reasons are limited to 250 characters; richer argument lives in evidence entries.",
+      "native_outputs": [
+        "dated assessment Markdown",
+        "response JSON",
+        "unaltered probe JSON",
+        "checklist URL text",
+        "optional fresh-rerun JSON"
+      ],
+      "review_model": "Probe-versus-judgment differences retained through flags; response JSON is canonical. Keep external review records separate in the comparison study.",
+      "required_resources": [
+        {
+          "path": "skills/assess-alignment-with-stamped-principles/SKILL.md",
+          "sha256": "d7d13f1356a5dee7cd4398323568caece2d318de08d364c54618bff54ca51f4d"
+        },
+        {
+          "path": "skills/stamped-conventions/SKILL.md",
+          "sha256": "e4938e35bc1cf3a0d0e0d712de4fe97aa22e80c48199ac76907e71fe623830b6"
+        },
+        {
+          "path": "skills/stamped-conventions/references/verdicts.md",
+          "sha256": "b64851d746335966bf58f7585731a2586651edbe40b5efe4416515dc9b6cdd03"
+        },
+        {
+          "path": "skills/stamped-conventions/references/response-format.md",
+          "sha256": "1254b9107e822c4f3327241097e5454052cac2c4afd497c9818dc47d7002bf28"
+        },
+        {
+          "path": "skills/stamped-conventions/references/project-kinds.md",
+          "sha256": "9298f37272bd814c73d6628f172edc03e4612343b47beaf9f75f4f8e3213f41b"
+        },
+        {
+          "path": "skills/stamped-conventions/references/principles-card.md",
+          "sha256": "7b7d090a8b3167b1bc1090adaf76e694a17a19dd57bfcbe16fb48949ea5ded61"
+        },
+        {
+          "path": "skills/stamped-conventions/references/stacks/datalad.md",
+          "sha256": "7c733e4e6cde63cdf78cf35c2890e5f3b2b8f9dd31e2576e31a3678657c6f0cc"
+        },
+        {
+          "path": "skills/stamped-conventions/checklist/lock.json",
+          "sha256": "4c353484adcb2210b8041f21366c7de04c4eaace7f8f52e7a30f6a279110a2ad"
+        },
+        {
+          "path": "skills/stamped-conventions/checklist/stamped-checklist-0.3.1.json",
+          "sha256": "da2eb88ed49dff64f098ad92200dec81c1b4404cc2d3ba1e1e1404d0e10e7bba"
+        },
+        {
+          "path": "skills/stamped-conventions/references/response-schema.json",
+          "sha256": "56a5339cac45d4a142eccf81f5b902cf2f3c4d85ddff3af949598bb7a9e8f0a4"
+        }
+      ],
+      "runtime_requirements": [
+        "Python 3",
+        "Git",
+        "stamped-conventions sibling at identical revision",
+        "DataLad/git-annex when required by object",
+        "jsonschema with format checking"
+      ],
+      "caveats": [
+        "No overall score is native or permitted by the report instructions.",
+        "Both branches retain skill version 0.1.0; full commit pins are essential.",
+        "Checklist omits licensing items and T.4; these are extras, and must/014 duplicates should/008.",
+        "App URLs omit richer status, evidence and reviewer metadata; preserve original response JSON.",
+        "Declared instructions differ from underlying Git-path probes; assessor must inspect evidence outside probe representations.",
+        "Retrieval claims require exact-version payload access evidence; lower met counts can reflect a stricter evidence threshold rather than a worse object.",
+        "Framework export only required when calling harness provides pinned export schemas."
+      ],
+      "boundary_policy": "Assess declared delivered bytes, including uncommitted/ignored artifacts and capture omissions; distinguish worker state from later coordinator preservation. URL capture still only establishes the named public revision.",
+      "study_role": "assessment_arm"
+    }
+  ],
+  "active_method_ids": [
+    "rubric",
+    "con-stamped-impl",
+    "con-narps-guidance"
+  ],
+  "planned_assessments": 30,
+  "planned_reviews": 90,
+  "background_sources": [
+    {
+      "id": "stamped-in-practice",
+      "title": "STAMPED in Practice",
+      "repository": "https://github.com/leej3/stamped-in-practice",
+      "ref": "main",
+      "revision": "e1550f6d836c3b5a5ee988a4fe6616f914c3e5e4",
+      "study_role": "background_only",
+      "description": "Prior adaptive NARPS research-guidance experiment; informs study design, not an additional assessment arm.",
+      "reported_operational_assessor_revision": "9852d8360f9519d21d11099b45f5deb8ba80cb28",
+      "reported_round_three_research_guidance_revision": "326606610af6c261876c92032ca1f89f6d3ad1f1",
+      "reviewed_resources": [
+        {
+          "path": "README.md",
+          "sha256": "7a416ee05a1164528dde493b15ce07cbfca1c0cccee6c103418ed510ad59c36f"
+        },
+        {
+          "path": "LESSONS.md",
+          "sha256": "31a800da75e603b9b7a1248df7814f40688f486a1a85c7d40beedf2ab04101d2"
+        },
+        {
+          "path": "docs/skills.md",
+          "sha256": "27a3300ab57dbd08a6ab3c715bb5da961de11575e6e391fe664cbbe1dfc27f4d"
+        },
+        {
+          "path": "docs/results.md",
+          "sha256": "68b97fc61e92c4185265f2ea9063c657a81bfa9d4bf3ea82388034d7f5443536"
+        },
+        {
+          "path": "assessment-version.json",
+          "sha256": "27d75f55b892856b2e5b025515c07c37632a377b3e4314c894fdb0d7ae13c6c4"
+        },
+        {
+          "path": "source-version.json",
+          "sha256": "83849c07f5afc942bfb73ef87545c72ca41af08270bf5ef01dd015d5e4f2ac8f"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "remodnav-method-comparison-01",
+  "title": "REMoDNaV: independent STAMPED assessment comparison",
+  "status": "running",
+  "replicates_per_method": 10,
+  "reviews_per_assessment": 3,
+  "planned_assessments": 30,
+  "planned_reviews": 90,
+  "assessor_model": "gpt-6.1-sol",
+  "assessor_reasoning_effort": "medium",
+  "review_model": "gpt-6-astra",
+  "review_reasoning_effort": "high",
+  "objects": [
+    "paper-remodnav"
+  ],
+  "methods": [
+    "rubric",
+    "con-stamped-impl",
+    "con-narps-guidance"
+  ],
+  "framework_arm_status": "excluded by study design; background only",
+  "evidence_policy": "Frozen source evidence, with unperformed retrieval/execution explicitly distinguished. No earlier assessments or peer reviews in worker context.",
+  "score_policy": "Native outputs retained; no cross-method numeric total or ranking.",
+  "created_at": "2026-10-27T23:48:56.858019+00:00",
+  "evidence_cohort": "remodnav-e3c6253bced7",
+  "evidence_sha256": "e3c6253bced7d959cd59873c3d49d166bf5793906bcdf65e49e265076d215499",
+  "updated_at": "2026-10-27T23:55:08.408201+00:00",
+  "progress": {
+    "assessments_complete": 0,
+    "assessments_failed": 0,
+    "reviews_complete": 0,
+    "reviews_failed": 0
+  }
+}
