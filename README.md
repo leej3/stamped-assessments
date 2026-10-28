@@ -37,6 +37,8 @@ The workflow publishes existing records; it does not run assessments or reviews.
 - `reviews/*.json` contains review metadata and optional report links.
 - `docs/protocol.md` defines how the study is executed and reviewed.
 - `docs/method-comparison.md` and `docs/corpus.md` describe the instruments and candidate research objects.
+- [Pilot findings](docs/pilot-findings.md) interprets the observed variation and links proposed rubric refinements to review records.
+- [Descriptive results](docs/study-results.md) reports the recorded study counts and native summaries.
 
 The dashboard exposes original responses, evidence, limitations, and review findings through expandable records.
 Native JSON, Markdown, and text outputs can be downloaded without translating their scales.
