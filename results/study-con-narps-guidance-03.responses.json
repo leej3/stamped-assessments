@@ -1,0 +1,781 @@
+{
+  "checklist_version": "0.3.1",
+  "responses": {
+    "stamped-checklist:must/001": {
+      "status": "partial",
+      "reason": "Core inputs, code and image share one root, but a nested raw-source module still points outside it to a lab filesystem.",
+      "source": "judgement",
+      "evidence": [
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.gitmodules",
+          "description": "Root discovery route: three public Git submodule URLs, pinned by root gitlinks; linked data and software inspected from their declared revisions.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/studyforrest-data-phase2/blob/a6623bff95ae3676ef0ecad262b5c44ded7cb4a1/.gitmodules",
+          "description": "Discovery: root .gitmodules:data/raw_eyegaze -> phase2 .gitmodules:src/lab-eyetracking; nested source URL is /home/data/psyinf/forrest_gump/collection/fg_eyegaze_raw. A host path is structurally nonportable; no network failure is claimed. Published gaze files used by root do not require regenerating this source.",
+          "sha256": null
+        }
+      ]
+    },
+    "stamped-checklist:must/002": {
+      "status": "partial",
+      "reason": "Root datasets have pinned public links; phase2/src/lab-eyetracking has a lab-only absolute URL. Remote payload access was not checked.",
+      "source": "probe:subdatasets-resolvable+judgement",
+      "evidence": [
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.gitmodules",
+          "description": "Root discovery route: three public Git submodule URLs, pinned by root gitlinks; linked data and software inspected from their declared revisions.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/studyforrest-data-phase2/blob/a6623bff95ae3676ef0ecad262b5c44ded7cb4a1/.gitmodules",
+          "description": "Discovery: root .gitmodules:data/raw_eyegaze -> phase2 .gitmodules:src/lab-eyetracking; nested source URL is /home/data/psyinf/forrest_gump/collection/fg_eyegaze_raw. A host path is structurally nonportable; no network failure is claimed. Published gaze files used by root do not require regenerating this source.",
+          "sha256": null
+        }
+      ],
+      "flags": [
+        "probe-overridden"
+      ]
+    },
+    "stamped-checklist:must/003": {
+      "status": "met",
+      "reason": "REMoDNaV is a pinned module; analysis, plotting and manuscript tools are declared by the archived container recipe.",
+      "source": "judgement",
+      "evidence": [
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.gitmodules",
+          "description": "Root discovery route: three public Git submodule URLs, pinned by root gitlinks; linked data and software inspected from their declared revisions.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/container/Dockerfile",
+          "description": "Debian bookworm recipe supplies make, Python/pip, SciPy, sklearn, statsmodels, pyparsing, PIL, selected NumPy/pandas/seaborn/matplotlib pins, Inkscape, latexmk and TeX; apt/base resolution is not frozen, but the resulting image is archived.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/remodnav/blob/d28911838f91f33af0db57332f55ccc442d24f66/setup.py",
+          "description": "Root remodnav gitlink -> setup.py: install_requires numpy, scipy, statsmodels and matplotlib; pip installs the linked source in Docker-Makefile.",
+          "sha256": null
+        }
+      ]
+    },
+    "stamped-checklist:must/004": {
+      "status": "met",
+      "reason": "Git tracks source, prose, configuration and component revisions. Probe deletions reflect deliberately omitted capture payloads.",
+      "source": "probe:tree-clean+judgement",
+      "evidence": [
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/main.tex",
+          "description": "Manuscript is tracked at the inspected immutable root revision.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.gitmodules",
+          "description": "Root discovery route: three public Git submodule URLs, pinned by root gitlinks; linked data and software inspected from their declared revisions.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/commit/34388d3ca78fbd483e022e4e2851be390b7eebf2",
+          "description": "Root history and source inventory identify tracked code, README, Dockerfile and manuscript. The logistical checkout omits 35 tracked payload/style/figure files by design; that is not an original uncommitted delivery.",
+          "sha256": null
+        }
+      ],
+      "flags": [
+        "probe-overridden",
+        "mapping-questioned"
+      ]
+    },
+    "stamped-checklist:must/005": {
+      "status": "met",
+      "reason": "Git-annex content keys track the large container layers and gaze data, separate from Git source history.",
+      "source": "probe:large-in-annex+judgement",
+      "evidence": [
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/container/image/manifest.json",
+          "description": "Archived image config f881bd4db45ac9775f5a5377485a7c939fea4685d7482eed4809cb83fc3b51a3 and layer digests d310e774... and e2728fc6... identify content. RepoTags remodnav:latest is metadata on the saved image, not the execution selector.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/studyforrest-data-phase2/blob/a6623bff95ae3676ef0ecad262b5c44ded7cb4a1/README.rst",
+          "description": "Root raw_eyegaze link -> retrieval instructions explain Git metadata and separately stored git-annex payloads.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/container/image/blobs/sha256/e2728fc6d2c404f7b41e0fa4f889117090f4476eefab2bca48d7164dcbf7a0cb",
+          "description": "Tracked annex pointer MD5E-s1750877184--7999b6f62ecdddb6cdabe380bd4a106f freezes the 1.75GB layer; bytes intentionally absent from evidence.",
+          "sha256": null
+        }
+      ]
+    },
+    "stamped-checklist:must/006": {
+      "status": "partial",
+      "reason": "The 2023 results run links an archived image and explicit outputs; upstream event-label generation records actions but no exact environment.",
+      "source": "probe:derived-have-records+probe:run-env-linked+judgement",
+      "evidence": [
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/commit/57d2565ab70b9d7b41c28aaa253ccc7096900f8d",
+          "description": "Completed 2023 DataLad run: exit 0; explicit gaze/label/Anderson inputs; container/image extra_input; img and results_def.tex outputs. Links the actual action to the parent tree image, not a live registry tag.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/commit/3dd49e368d5cfe9ed8ae861d21475ca3fe6b5b9c",
+          "description": "Completed image build/save: Dockerfile input, container/image output, exit 0; archived image bytes tracked by Git/git-annex.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/studyforrest-data-eyemovementlabels/commit/bdcde2ff31889501dbcbe2ca4bcfe15ce9d246a6",
+          "description": "Discovery: root data/studyforrest-data-eyemovementlabels -> its history. Completed bash code/compute_all.sh records raw inputs and sub-* outputs, but no exact environment; script uses PYTHONPATH code/remodnav and host python.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/code/mk_figuresnstats.py",
+          "description": "Root numerical results/figures consume pinned upstream event-label TSVs; mk_event_duration_histograms reads data/studyforrest-data-eyemovementlabels/sub*/*.tsv. Probe missed directory-wide img outputs and counted hand-authored diagrams as generated files.",
+          "sha256": null
+        }
+      ],
+      "flags": [
+        "mapping-questioned"
+      ]
+    },
+    "stamped-checklist:must/007": {
+      "status": "met",
+      "reason": "README supplies installation and reproduction commands; its discussion of making changes is prose, not a make target.",
+      "source": "probe:entry-point+judgement",
+      "evidence": [
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/README.md",
+          "description": "Updated route explicitly names DataLad v0.19, Containers v1.2.3, Docker format/version compatibility, Debian/macOS/Windows, data/image sizes, datalad clone, rerun results-containerized, and containers-run main.pdf. Original route and known Figure 4 difference are explicitly disclosed.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/Makefile",
+          "description": "Legacy make and make clean targets are defined. Probe inferred a nonexistent make changes command from prose; updated documented route is datalad rerun.",
+          "sha256": null
+        }
+      ],
+      "flags": [
+        "probe-overridden"
+      ]
+    },
+    "stamped-checklist:must/008": {
+      "status": "met",
+      "reason": "The documented starting points are datalad rerun results-containerized and containers-run docker-make main.pdf.",
+      "source": "probe:entry-point+judgement",
+      "evidence": [
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/README.md",
+          "description": "Updated route explicitly names DataLad v0.19, Containers v1.2.3, Docker format/version compatibility, Debian/macOS/Windows, data/image sizes, datalad clone, rerun results-containerized, and containers-run main.pdf. Original route and known Figure 4 difference are explicitly disclosed.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/commit/57d2565ab70b9d7b41c28aaa253ccc7096900f8d",
+          "description": "Completed 2023 DataLad run: exit 0; explicit gaze/label/Anderson inputs; container/image extra_input; img and results_def.tex outputs. Links the actual action to the parent tree image, not a live registry tag.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/Docker-Makefile",
+          "description": "Explicit results_def.tex target invokes mk_figuresnstats.py with -s -f -r -m; main.pdf delegates manuscript rendering to Makefile.",
+          "sha256": null
+        }
+      ]
+    },
+    "stamped-checklist:must/009": {
+      "status": "partial",
+      "reason": "Current analysis uses relative inputs; linked legacy Condor scripts and phase2 source URL retain host-specific paths.",
+      "source": "probe:no-abs-paths+judgement",
+      "evidence": [
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/code/mk_figuresnstats.py",
+          "description": "Paths for gaze, annotation MAT files, upstream label TSVs and img outputs are constructed relative to the root.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/container/Dockerfile",
+          "description": "Debian bookworm recipe supplies make, Python/pip, SciPy, sklearn, statsmodels, pyparsing, PIL, selected NumPy/pandas/seaborn/matplotlib pins, Inkscape, latexmk and TeX; apt/base resolution is not frozen, but the resulting image is archived.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/studyforrest-data-eyemovementlabels/blob/92279db3850ee4282d97001a3f650fc55cb64b4e/code/preprocess_submit.sh",
+          "description": "Root labels module -> code/preprocess_submit.sh and detect_events_submit.sh embed /home/asimio/fg_eyegaze_preproc/ and /usr/bin/python2.7. Dockerfile /root cleanup is container-internal, not a host dependency.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/studyforrest-data-phase2/blob/a6623bff95ae3676ef0ecad262b5c44ded7cb4a1/.gitmodules",
+          "description": "Discovery: root .gitmodules:data/raw_eyegaze -> phase2 .gitmodules:src/lab-eyetracking; nested source URL is /home/data/psyinf/forrest_gump/collection/fg_eyegaze_raw. A host path is structurally nonportable; no network failure is claimed. Published gaze files used by root do not require regenerating this source.",
+          "sha256": null
+        }
+      ],
+      "flags": [
+        "probe-overridden",
+        "mapping-questioned"
+      ]
+    },
+    "stamped-checklist:must/010": {
+      "status": "met",
+      "reason": "Current numerical/figure/PDF imports and commands are covered by Dockerfile, linked package declarations and documented host tools.",
+      "source": "probe:env-spec-tracked+judgement",
+      "evidence": [
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/container/Dockerfile",
+          "description": "Debian bookworm recipe supplies make, Python/pip, SciPy, sklearn, statsmodels, pyparsing, PIL, selected NumPy/pandas/seaborn/matplotlib pins, Inkscape, latexmk and TeX; apt/base resolution is not frozen, but the resulting image is archived.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/README.md",
+          "description": "Updated route explicitly names DataLad v0.19, Containers v1.2.3, Docker format/version compatibility, Debian/macOS/Windows, data/image sizes, datalad clone, rerun results-containerized, and containers-run main.pdf. Original route and known Figure 4 difference are explicitly disclosed.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/code/mk_figuresnstats.py",
+          "description": "Reviewed matplotlib, NumPy, pandas, SciPy, seaborn and sklearn imports against recipe; DataLad import is optional inside container because recorded inputs are provisioned first.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/remodnav/blob/d28911838f91f33af0db57332f55ccc442d24f66/setup.py",
+          "description": "Package declarations cover numpy/scipy/statsmodels/matplotlib; local remodnav and tests.utils are included in linked source. sklearn import corresponds to scikit-learn/python3-sklearn, not an omitted separate package.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/img/Makefile",
+          "description": "Figure rendering invokes Inkscape and standard shell utilities inside Debian image; manuscript uses latexmk. chronic is explicitly optional.",
+          "sha256": null
+        }
+      ],
+      "flags": [
+        "probe-overridden"
+      ]
+    },
+    "stamped-checklist:must/011": {
+      "status": "partial",
+      "reason": "Core Docker versions, platforms and mounts are described, but the adapter assumes usable non-root Docker and linked legacy scripts assume a lab host.",
+      "source": "probe:platform-assumptions+judgement",
+      "evidence": [
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/README.md",
+          "description": "Updated route explicitly names DataLad v0.19, Containers v1.2.3, Docker format/version compatibility, Debian/macOS/Windows, data/image sizes, datalad clone, rerun results-containerized, and containers-run main.pdf. Original route and known Figure 4 difference are explicitly disclosed.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.datalad/config",
+          "description": "Documents cwd mount at /tmp, temporary HOME and python substitution; no GPU, scheduler or licensed service on current root execution route.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/datalad/datalad-container/blob/1.2.3/datalad_container/adapters/docker.py",
+          "description": "Adapter explicitly flags assumption that docker is on PATH and manageable by a non-root user; README says install Docker without spelling out daemon/permission setup.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/studyforrest-data-eyemovementlabels/blob/92279db3850ee4282d97001a3f650fc55cb64b4e/code/detect_events_submit.sh",
+          "description": "Legacy linked script assumes a particular home directory, Python 2.7 and Condor submission environment.",
+          "sha256": null
+        }
+      ],
+      "flags": [
+        "probe-overridden"
+      ]
+    },
+    "stamped-checklist:must/012": {
+      "status": "met",
+      "reason": "README lists host tools and verified versions/platforms; Dockerfile lists the analysis and rendering dependencies.",
+      "source": "probe:platform-assumptions+judgement",
+      "evidence": [
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/README.md",
+          "description": "Updated route explicitly names DataLad v0.19, Containers v1.2.3, Docker format/version compatibility, Debian/macOS/Windows, data/image sizes, datalad clone, rerun results-containerized, and containers-run main.pdf. Original route and known Figure 4 difference are explicitly disclosed.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/container/Dockerfile",
+          "description": "Debian bookworm recipe supplies make, Python/pip, SciPy, sklearn, statsmodels, pyparsing, PIL, selected NumPy/pandas/seaborn/matplotlib pins, Inkscape, latexmk and TeX; apt/base resolution is not frozen, but the resulting image is archived.",
+          "sha256": null
+        }
+      ],
+      "flags": [
+        "probe-overridden"
+      ]
+    },
+    "stamped-checklist:must/013": {
+      "status": "met",
+      "reason": "Container recipe, registration and linked REMoDNaV package specification are version controlled with the study.",
+      "source": "probe:env-spec-tracked+judgement",
+      "evidence": [
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/container/Dockerfile",
+          "description": "Debian bookworm recipe supplies make, Python/pip, SciPy, sklearn, statsmodels, pyparsing, PIL, selected NumPy/pandas/seaborn/matplotlib pins, Inkscape, latexmk and TeX; apt/base resolution is not frozen, but the resulting image is archived.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.datalad/config",
+          "description": "Tracked docker-make registration points to container/image and a Docker adapter command.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/remodnav/blob/d28911838f91f33af0db57332f55ccc442d24f66/setup.py",
+          "description": "Independent code specification is reachable at the root-pinned software revision.",
+          "sha256": null
+        }
+      ]
+    },
+    "stamped-checklist:must/014": {
+      "status": "partial",
+      "reason": "History supplies a runnable image rebuild command and tracked recipe edits, but no later dependency-update instance is demonstrated.",
+      "source": "judgement",
+      "evidence": [
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/commit/3dd49e368d5cfe9ed8ae861d21475ca3fe6b5b9c",
+          "description": "Completed image build/save: Dockerfile input, container/image output, exit 0; archived image bytes tracked by Git/git-annex.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/commit/bdac0e1c1d1009292a0a5c84daab3ff703add02b",
+          "description": "Introduces Docker recipe and documents docker build command; refinements precede initial archived build. Initial introduction is not an instance of updating dependencies.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/commit/c531a59c082d45a435be9bd5474efb850d9039a3",
+          "description": "Completed exit-0 load/save conversion to OCI using Docker v26; archived original image input and OCI image output. This is conversion, not a fresh scientific rerun.",
+          "sha256": null
+        }
+      ],
+      "flags": [
+        "upstream-duplicate"
+      ]
+    },
+    "stamped-checklist:must/015": {
+      "status": "met",
+      "reason": "The saved image is content identified by Git/annex and config/layer digests; the adapter executes its hash despite latest metadata.",
+      "source": "probe:run-env-linked+judgement",
+      "evidence": [
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/container/image/manifest.json",
+          "description": "Archived image config f881bd4db45ac9775f5a5377485a7c939fea4685d7482eed4809cb83fc3b51a3 and layer digests d310e774... and e2728fc6... identify content. RepoTags remodnav:latest is metadata on the saved image, not the execution selector.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/datalad/datalad-container/blob/1.2.3/datalad_container/adapters/docker.py",
+          "description": "Discovery: README DataLad Containers version -> .datalad/config adapter -> versioned adapter source. get_image hashes saved config; load returns image ID; cli_run executes that ID with docker run --rm, cwd bind-mounted to /tmp. No pull/latest lookup occurs on this route.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/commit/3dd49e368d5cfe9ed8ae861d21475ca3fe6b5b9c",
+          "description": "Completed image build/save: Dockerfile input, container/image output, exit 0; archived image bytes tracked by Git/git-annex.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/commit/c531a59c082d45a435be9bd5474efb850d9039a3",
+          "description": "Completed exit-0 load/save conversion to OCI using Docker v26; archived original image input and OCI image output. This is conversion, not a fresh scientific rerun.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/container/image/index.json",
+          "description": "OCI manifest digest sha256:96148c274796ac7b9ac3a99f53709ba07b682b27532aacd81e153e947709059c. Frozen image identity is distinct from a rebuild of mutable Debian/apt recipe.",
+          "sha256": null
+        }
+      ],
+      "flags": [
+        "probe-overridden"
+      ]
+    },
+    "stamped-checklist:must/016": {
+      "status": "not-checked",
+      "reason": "Public source URLs and annex locations are supplied, but independent retrieval of the exact revision and image payloads is outside this cohort.",
+      "source": "probe:env-spec-tracked+judgement",
+      "evidence": [
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/README.md",
+          "description": "Updated route explicitly names DataLad v0.19, Containers v1.2.3, Docker format/version compatibility, Debian/macOS/Windows, data/image sizes, datalad clone, rerun results-containerized, and containers-run main.pdf. Original route and known Figure 4 difference are explicitly disclosed.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/container/image/manifest.json",
+          "description": "Archived image config f881bd4db45ac9775f5a5377485a7c939fea4685d7482eed4809cb83fc3b51a3 and layer digests d310e774... and e2728fc6... identify content. RepoTags remodnav:latest is metadata on the saved image, not the execution selector.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/commit/c531a59c082d45a435be9bd5474efb850d9039a3",
+          "description": "Completed exit-0 load/save conversion to OCI using Docker v26; archived original image input and OCI image output. This is conversion, not a fresh scientific rerun.",
+          "sha256": null
+        }
+      ],
+      "flags": [
+        "probe-overridden",
+        "unverified-claim"
+      ]
+    },
+    "stamped-checklist:must/017": {
+      "status": "met",
+      "reason": "README tells users how to clone, retrieve/replay the recorded container computation and build the manuscript.",
+      "source": "judgement",
+      "evidence": [
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/README.md",
+          "description": "Updated route explicitly names DataLad v0.19, Containers v1.2.3, Docker format/version compatibility, Debian/macOS/Windows, data/image sizes, datalad clone, rerun results-containerized, and containers-run main.pdf. Original route and known Figure 4 difference are explicitly disclosed.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.datalad/config",
+          "description": "Named docker-make environment exists and invokes the archived image; Docker-Makefile supplies the documented manuscript/results targets.",
+          "sha256": null
+        }
+      ]
+    },
+    "stamped-checklist:should/001": {
+      "status": "met",
+      "reason": "Root and linked code/data components use Git with DataLad/git-annex for payloads and pinned Git links.",
+      "source": "judgement",
+      "evidence": [
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.gitmodules",
+          "description": "Root discovery route: three public Git submodule URLs, pinned by root gitlinks; linked data and software inspected from their declared revisions.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/studyforrest-data-phase2/blob/a6623bff95ae3676ef0ecad262b5c44ded7cb4a1/README.rst",
+          "description": "Root raw data module documents Git plus git-annex retrieval.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/studyforrest-data-eyemovementlabels/commit/bdcde2ff31889501dbcbe2ca4bcfe15ce9d246a6",
+          "description": "Discovery: root data/studyforrest-data-eyemovementlabels -> its history. Completed bash code/compute_all.sh records raw inputs and sub-* outputs, but no exact environment; script uses PYTHONPATH code/remodnav and host python.",
+          "sha256": null
+        }
+      ]
+    },
+    "stamped-checklist:should/002": {
+      "status": "not-checked",
+      "reason": "Historical reruns and software CI exist, but regular testing of the current study instructions is not established by frozen evidence.",
+      "source": "probe:ci-present+judgement",
+      "evidence": [
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/commit/57d2565ab70b9d7b41c28aaa253ccc7096900f8d",
+          "description": "Completed 2023 DataLad run: exit 0; explicit gaze/label/Anderson inputs; container/image extra_input; img and results_def.tex outputs. Links the actual action to the parent tree image, not a live registry tag.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/commit/c531a59c082d45a435be9bd5474efb850d9039a3",
+          "description": "Completed exit-0 load/save conversion to OCI using Docker v26; archived original image input and OCI image output. This is conversion, not a fresh scientific rerun.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/remodnav/blob/d28911838f91f33af0db57332f55ccc442d24f66/.travis.yml",
+          "description": "Root remodnav link -> Travis runs package build/install and pytest. It does not exercise root manuscript/reproduction instructions; configuration alone is not a successful repeated run.",
+          "sha256": null
+        }
+      ]
+    },
+    "stamped-checklist:should/003": {
+      "status": "met",
+      "reason": "Raw gaze, event-label derivatives, software, study analysis, manuscript and environment occupy distinct component paths.",
+      "source": "probe:modules-separated+judgement",
+      "evidence": [
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.gitmodules",
+          "description": "Root discovery route: three public Git submodule URLs, pinned by root gitlinks; linked data and software inspected from their declared revisions.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/code/mk_figuresnstats.py",
+          "description": "Study analysis code is separate from raw/processed data modules; numerical macros and figures are emitted at results_def.tex and img.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/container/Dockerfile",
+          "description": "Debian bookworm recipe supplies make, Python/pip, SciPy, sklearn, statsmodels, pyparsing, PIL, selected NumPy/pandas/seaborn/matplotlib pins, Inkscape, latexmk and TeX; apt/base resolution is not frozen, but the resulting image is archived.",
+          "sha256": null
+        }
+      ]
+    },
+    "stamped-checklist:should/009": {
+      "status": "not-applicable",
+      "reason": "N/A: no explicitly access-restricted computational data or software component is identified in the declared study route.",
+      "source": "judgement",
+      "evidence": [
+        {
+          "uri": "https://github.com/psychoinformatics-de/studyforrest-data-phase2/blob/a6623bff95ae3676ef0ecad262b5c44ded7cb4a1/README.rst",
+          "description": "Public dataset explicitly advertises unrestricted access without registration/authentication. Public code/image and annotation links are separate; a stale lab source path is not evidence of an access policy.",
+          "sha256": null
+        }
+      ]
+    },
+    "stamped-checklist:should/004": {
+      "status": "met",
+      "reason": "A completed 2023 run used the archived Docker image in a new disposable container; this assessment performed no replay.",
+      "source": "judgement",
+      "evidence": [
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/commit/57d2565ab70b9d7b41c28aaa253ccc7096900f8d",
+          "description": "Completed 2023 DataLad run: exit 0; explicit gaze/label/Anderson inputs; container/image extra_input; img and results_def.tex outputs. Links the actual action to the parent tree image, not a live registry tag.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/datalad/datalad-container/blob/1.2.3/datalad_container/adapters/docker.py",
+          "description": "Discovery: README DataLad Containers version -> .datalad/config adapter -> versioned adapter source. get_image hashes saved config; load returns image ID; cli_run executes that ID with docker run --rm, cwd bind-mounted to /tmp. No pull/latest lookup occurs on this route.",
+          "sha256": null
+        }
+      ]
+    },
+    "stamped-checklist:should/005": {
+      "status": "met",
+      "reason": "The registered route creates a Docker container per execution with --rm and a temporary HOME removed after success.",
+      "source": "judgement",
+      "evidence": [
+        {
+          "uri": "https://github.com/datalad/datalad-container/blob/1.2.3/datalad_container/adapters/docker.py",
+          "description": "Discovery: README DataLad Containers version -> .datalad/config adapter -> versioned adapter source. get_image hashes saved config; load returns image ID; cli_run executes that ID with docker run --rm, cwd bind-mounted to /tmp. No pull/latest lookup occurs on this route.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.datalad/config",
+          "description": "docker-make creates /tmp/dockertmp, supplies HOME there, then removes it. Root is a persistent output mount, not the environment.",
+          "sha256": null
+        }
+      ]
+    },
+    "stamped-checklist:should/006": {
+      "status": "not-checked",
+      "reason": "Build and OCI conversion records show specific successes, but regular reconstruction testing of the results image is not demonstrated.",
+      "source": "probe:ci-present+judgement",
+      "evidence": [
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/commit/3dd49e368d5cfe9ed8ae861d21475ca3fe6b5b9c",
+          "description": "Completed image build/save: Dockerfile input, container/image output, exit 0; archived image bytes tracked by Git/git-annex.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/commit/57d2565ab70b9d7b41c28aaa253ccc7096900f8d",
+          "description": "Completed 2023 DataLad run: exit 0; explicit gaze/label/Anderson inputs; container/image extra_input; img and results_def.tex outputs. Links the actual action to the parent tree image, not a live registry tag.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/commit/c531a59c082d45a435be9bd5474efb850d9039a3",
+          "description": "Completed exit-0 load/save conversion to OCI using Docker v26; archived original image input and OCI image output. This is conversion, not a fresh scientific rerun.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/remodnav/blob/d28911838f91f33af0db57332f55ccc442d24f66/.travis.yml",
+          "description": "Software-only Travis definition neither reconstitutes root archived image nor demonstrates periodic tests of its exact environment.",
+          "sha256": null
+        }
+      ]
+    },
+    "stamped-checklist:should/007": {
+      "status": "met",
+      "reason": "The object archives the executable container as versioned image metadata and content-addressed annex layers.",
+      "source": "judgement",
+      "evidence": [
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/container/image/manifest.json",
+          "description": "Archived image config f881bd4db45ac9775f5a5377485a7c939fea4685d7482eed4809cb83fc3b51a3 and layer digests d310e774... and e2728fc6... identify content. RepoTags remodnav:latest is metadata on the saved image, not the execution selector.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/commit/3dd49e368d5cfe9ed8ae861d21475ca3fe6b5b9c",
+          "description": "Completed image build/save: Dockerfile input, container/image output, exit 0; archived image bytes tracked by Git/git-annex.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/commit/c531a59c082d45a435be9bd5474efb850d9039a3",
+          "description": "Completed exit-0 load/save conversion to OCI using Docker v26; archived original image input and OCI image output. This is conversion, not a fresh scientific rerun.",
+          "sha256": null
+        }
+      ]
+    },
+    "stamped-checklist:should/008": {
+      "status": "partial",
+      "reason": "History supplies a runnable image rebuild command and tracked recipe edits, but no later dependency-update instance is demonstrated.",
+      "source": "judgement",
+      "evidence": [
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/commit/3dd49e368d5cfe9ed8ae861d21475ca3fe6b5b9c",
+          "description": "Completed image build/save: Dockerfile input, container/image output, exit 0; archived image bytes tracked by Git/git-annex.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/commit/bdac0e1c1d1009292a0a5c84daab3ff703add02b",
+          "description": "Documented build process; initial recipe introduction and pre-build refinements are not a subsequent dependency-update instance.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/commit/c531a59c082d45a435be9bd5474efb850d9039a3",
+          "description": "Completed exit-0 load/save conversion to OCI using Docker v26; archived original image input and OCI image output. This is conversion, not a fresh scientific rerun.",
+          "sha256": null
+        }
+      ],
+      "flags": [
+        "upstream-duplicate"
+      ]
+    },
+    "stamped-checklist:may/001": {
+      "status": "partial",
+      "reason": "Independently maintained datasets/software are pinned submodules; a nested raw-source component has a lab-only URL.",
+      "source": "probe:subdatasets-resolvable+judgement",
+      "evidence": [
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.gitmodules",
+          "description": "Root discovery route: three public Git submodule URLs, pinned by root gitlinks; linked data and software inspected from their declared revisions.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/studyforrest-data-phase2/blob/a6623bff95ae3676ef0ecad262b5c44ded7cb4a1/.gitmodules",
+          "description": "Discovery: root .gitmodules:data/raw_eyegaze -> phase2 .gitmodules:src/lab-eyetracking; nested source URL is /home/data/psyinf/forrest_gump/collection/fg_eyegaze_raw. A host path is structurally nonportable; no network failure is claimed. Published gaze files used by root do not require regenerating this source.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/remodnav/blob/d28911838f91f33af0db57332f55ccc442d24f66/.gitmodules",
+          "description": "Root software -> nested Anderson evaluation and studyforrest data use public Git URLs, at independently pinned commits.",
+          "sha256": null
+        }
+      ],
+      "flags": [
+        "probe-overridden"
+      ]
+    },
+    "stamped-checklist:may/002": {
+      "status": "partial",
+      "reason": "Root explains high-level contents and replay, but lacks a component map; the linked labels README still describes an older Condor route.",
+      "source": "judgement",
+      "evidence": [
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/README.md",
+          "description": "Updated route explicitly names DataLad v0.19, Containers v1.2.3, Docker format/version compatibility, Debian/macOS/Windows, data/image sizes, datalad clone, rerun results-containerized, and containers-run main.pdf. Original route and known Figure 4 difference are explicitly disclosed.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.gitmodules",
+          "description": "Root discovery route: three public Git submodule URLs, pinned by root gitlinks; linked data and software inspected from their declared revisions.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/studyforrest-data-eyemovementlabels/blob/92279db3850ee4282d97001a3f650fc55cb64b4e/README",
+          "description": "Root labels module -> README describes preprocessing/detection Condor submission; code/compute_all.sh and native generation record instead run linked remodnav directly. No clear current module relationship guide is supplied.",
+          "sha256": null
+        }
+      ]
+    },
+    "stamped-checklist:may/003": {
+      "status": "met",
+      "reason": "Independent code and data repositories have pinned revisions, allowing deliberate component updates while the composed snapshot stays fixed.",
+      "source": "judgement",
+      "evidence": [
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.gitmodules",
+          "description": "Root discovery route: three public Git submodule URLs, pinned by root gitlinks; linked data and software inspected from their declared revisions.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/studyforrest-data-eyemovementlabels/blob/92279db3850ee4282d97001a3f650fc55cb64b4e/.gitmodules",
+          "description": "Root labels module pins its own remodnav and raw-eyegaze modules, independently from the root software version; scientific compatibility of arbitrary updates is not claimed.",
+          "sha256": null
+        }
+      ]
+    },
+    "stamped-checklist:may/004": {
+      "status": "met",
+      "reason": "Git submodule composition and DataLad run inputs connect independently versioned modules with the archived execution environment.",
+      "source": "judgement",
+      "evidence": [
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.gitmodules",
+          "description": "Root discovery route: three public Git submodule URLs, pinned by root gitlinks; linked data and software inspected from their declared revisions.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/commit/57d2565ab70b9d7b41c28aaa253ccc7096900f8d",
+          "description": "Completed 2023 DataLad run: exit 0; explicit gaze/label/Anderson inputs; container/image extra_input; img and results_def.tex outputs. Links the actual action to the parent tree image, not a live registry tag.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.datalad/config",
+          "description": "Named container environment composes archived image and Docker-Makefile within root execution.",
+          "sha256": null
+        }
+      ]
+    },
+    "stamped-checklist:may/005": {
+      "status": "met",
+      "reason": "DataLad clone/rerun instructions, .gitmodules and recorded input paths provide tools for navigating the component structure.",
+      "source": "judgement",
+      "evidence": [
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/README.md",
+          "description": "Updated route explicitly names DataLad v0.19, Containers v1.2.3, Docker format/version compatibility, Debian/macOS/Windows, data/image sizes, datalad clone, rerun results-containerized, and containers-run main.pdf. Original route and known Figure 4 difference are explicitly disclosed.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.gitmodules",
+          "description": "Root discovery route: three public Git submodule URLs, pinned by root gitlinks; linked data and software inspected from their declared revisions.",
+          "sha256": null
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/commit/57d2565ab70b9d7b41c28aaa253ccc7096900f8d",
+          "description": "Completed 2023 DataLad run: exit 0; explicit gaze/label/Anderson inputs; container/image extra_input; img and results_def.tex outputs. Links the actual action to the parent tree image, not a live registry tag.",
+          "sha256": null
+        }
+      ]
+    }
+  },
+  "schema_version": "0.2.0",
+  "principles_version": "0.2.0",
+  "checklist_source": {
+    "repo": "https://github.com/stamped-principles/stamped-checklist-schema",
+    "tag": "v0.3.1",
+    "commit": "af259bad237fa57b856417db8dba45a1b283a527"
+  },
+  "extra_items": [
+    {
+      "key": "license-declared",
+      "status": "met",
+      "reason": "Root COPYING declares CC BY 4.0; linked software is MIT and phase2 metadata advertises PDDL. Licensing is outside the 31-item checklist; payload-specific terms were not exhaustively audited.",
+      "evidence": [
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/COPYING",
+          "description": "Root license declaration."
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/remodnav/blob/d28911838f91f33af0db57332f55ccc442d24f66/LICENSE",
+          "description": "Pinned software MIT license."
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/studyforrest-data-phase2/blob/a6623bff95ae3676ef0ecad262b5c44ded7cb4a1/README.rst",
+          "description": "Dataset PDDL declaration and unrestricted access badge."
+        }
+      ]
+    },
+    {
+      "key": "programmatic-provenance",
+      "status": "partial",
+      "reason": "Native DataLad records capture root results and upstream label generation, but only the root modern run names an archived exact environment. Schema T.4 has no dedicated checklist item.",
+      "evidence": [
+        {
+          "uri": "https://github.com/psychoinformatics-de/paper-remodnav/commit/57d2565ab70b9d7b41c28aaa253ccc7096900f8d",
+          "description": "Completed 2023 DataLad run: exit 0; explicit gaze/label/Anderson inputs; container/image extra_input; img and results_def.tex outputs. Links the actual action to the parent tree image, not a live registry tag."
+        },
+        {
+          "uri": "https://github.com/psychoinformatics-de/studyforrest-data-eyemovementlabels/commit/bdcde2ff31889501dbcbe2ca4bcfe15ce9d246a6",
+          "description": "Discovery: root data/studyforrest-data-eyemovementlabels -> its history. Completed bash code/compute_all.sh records raw inputs and sub-* outputs, but no exact environment; script uses PYTHONPATH code/remodnav and host python."
+        }
+      ]
+    }
+  ],
+  "object": {
+    "url": "https://github.com/psychoinformatics-de/paper-remodnav",
+    "commit": "34388d3ca78fbd483e022e4e2851be390b7eebf2",
+    "captured_at": "2026-10-27T23:51:57.138855+00:00",
+    "kind": "study"
+  },
+  "assessor": {
+    "skill": "assess-alignment-with-stamped-principles",
+    "version": "0.1.0",
+    "harness": "isolated-study-worker",
+    "model": "unavailable",
+    "date": "2026-10-28",
+    "drafted_by": "scripts/run_probes.py",
+    "note": "Runtime model identity withheld/unknown; unavailable is not a model guess. Native response retained; optional framework export unavailable because no exporter/schema was supplied.",
+    "dependencies": [
+      "stamped-conventions@0.1.0"
+    ]
+  },
+  "scope": "Inspection-only assessment of paper-remodnav at 34388d3ca78fbd483e022e4e2851be390b7eebf2: numerical results, figures and manuscript, plus computational components discovered through root explicit links. Frozen evidence manifest SHA256 e3c6253bced7d959cd59873c3d49d166bf5793906bcdf65e49e265076d215499; all 260 supplied source files verified against manifest hashes. Original Git history/source assessed, not logistical checkout deletion state. Linked module histories inspected from manifest, not installed. Binary/annex payloads and container layers intentionally absent; no acquisition or retrieval failure observed. Read-only probes only; no --check-remote, network, issue tracker access, scientific replay or build. Existing completed run records are historical evidence, not assessor execution or independent current reproducibility verification. Root README disclosed original/modern route difference. Goals and study kind assumed from documentation, not human-confirmed. Native JSON retained; optional framework export unavailable."
+}

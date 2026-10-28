@@ -1,8 +1,8 @@
 {
   "study_id": "remodnav-method-comparison-01",
-  "updated_at": "2026-10-28T00:50:04.085754+00:00",
+  "updated_at": "2026-10-28T00:57:10.170645+00:00",
   "assessment_status_counts": {
-    "complete": 6
+    "complete": 9
   },
   "review_status_counts": {
     "complete": 18
@@ -12,8 +12,8 @@
   "methods": [
     {
       "method_id": "rubric",
-      "assessment_count": 2,
-      "complete": 2,
+      "assessment_count": 3,
+      "complete": 3,
       "failed": 0,
       "review_count": 6,
       "review_verdict_counts": {
@@ -21,174 +21,177 @@
       },
       "criteria": {
         "A-01": {
-          "3": 2
+          "3": 3
         },
         "A-02": {
           "3": 1,
+          "2": 1,
           "unanswered": 1
         },
         "A-03": {
           "3": 1,
-          "1": 1
+          "1": 2
         },
         "A-04": {
-          "3": 2
+          "3": 3
         },
         "A-05": {
           "3": 1,
-          "2": 1
+          "2": 2
         },
         "A-06": {
-          "2": 2
+          "2": 3
         },
         "D-01": {
-          "unanswered": 2
+          "unanswered": 3
         },
         "D-02": {
-          "1": 2
+          "1": 3
         },
         "D-03": {
-          "1": 2
+          "1": 3
         },
         "D-04": {
-          "2": 2
+          "2": 3
         },
         "D-05": {
-          "3": 2
+          "3": 3
         },
         "D-06": {
-          "0": 2
+          "0": 3
         },
         "E-01": {
-          "3": 2
+          "3": 3
         },
         "E-02": {
-          "3": 2
+          "3": 3
         },
         "E-03": {
-          "2": 2
+          "2": 2,
+          "1": 1
         },
         "M-01": {
-          "3": 2
+          "3": 3
         },
         "M-02": {
-          "1": 2
+          "1": 3
         },
         "M-03": {
-          "2": 2
+          "2": 3
         },
         "M-04": {
-          "1": 2
+          "1": 3
         },
         "M-05": {
-          "unanswered": 2
+          "unanswered": 3
         },
         "M-06": {
-          "3": 2
+          "3": 3
         },
         "P-01": {
-          "2": 2
+          "2": 3
         },
         "P-02": {
           "3": 1,
-          "2": 1
+          "2": 2
         },
         "P-03": {
-          "3": 2
+          "3": 3
         },
         "P-04": {
-          "1": 2
+          "1": 3
         },
         "P-05": {
-          "3": 2
+          "3": 3
         },
         "S-01": {
-          "3": 2
+          "3": 3
         },
         "S-02": {
-          "3": 2
+          "3": 3
         },
         "S-03": {
-          "3": 2
+          "3": 3
         },
         "S-04": {
-          "2": 2
+          "2": 3
         },
         "T-01": {
-          "3": 2
+          "3": 3
         },
         "T-02": {
-          "3": 2
+          "3": 3
         },
         "T-03": {
-          "3": 2
+          "3": 3
         },
         "T-04": {
-          "2": 2
+          "2": 3
         },
         "T-05": {
-          "2": 2
+          "2": 3
         },
         "T-06": {
-          "0": 2
+          "0": 3
         }
       },
       "replicates": [
         "study-rubric-01",
+        "study-rubric-03",
         "study-rubric-02"
       ],
       "overall_scores": {
-        "n": 2,
-        "mean": 73.57142857142857,
-        "sample_sd": 4.040610178208849,
+        "n": 3,
+        "mean": 72.61904761904762,
+        "sample_sd": 3.2991443953692947,
         "minimum": 70.71428571428571,
         "maximum": 76.42857142857143
       },
       "dimensions": {
         "S": {
-          "n": 2,
+          "n": 3,
           "mean": 91.66666666666666,
           "sample_sd": 0.0,
           "minimum": 91.66666666666666,
           "maximum": 91.66666666666666
         },
         "T": {
-          "n": 2,
+          "n": 3,
           "mean": 72.22222222222221,
           "sample_sd": 0.0,
           "minimum": 72.22222222222221,
           "maximum": 72.22222222222221
         },
         "A": {
-          "n": 2,
-          "mean": 77.77777777777779,
-          "sample_sd": 23.570226039551596,
+          "n": 3,
+          "mean": 75.92592592592592,
+          "sample_sd": 16.97250257391053,
           "minimum": 61.11111111111111,
           "maximum": 94.44444444444446
         },
         "M": {
-          "n": 2,
+          "n": 3,
           "mean": 55.555555555555564,
           "sample_sd": 0.0,
           "minimum": 55.555555555555564,
           "maximum": 55.555555555555564
         },
         "P": {
-          "n": 2,
-          "mean": 90.0,
-          "sample_sd": 4.714045207910321,
+          "n": 3,
+          "mean": 88.88888888888889,
+          "sample_sd": 3.8490017945975077,
           "minimum": 86.66666666666666,
           "maximum": 93.33333333333333
         },
         "E": {
-          "n": 2,
-          "mean": 88.88888888888887,
-          "sample_sd": 0.0,
-          "minimum": 88.88888888888887,
+          "n": 3,
+          "mean": 85.18518518518518,
+          "sample_sd": 6.415002990995827,
+          "minimum": 77.77777777777779,
           "maximum": 88.88888888888887
         },
         "D": {
-          "n": 2,
+          "n": 3,
           "mean": 38.888888888888886,
           "sample_sd": 0.0,
           "minimum": 38.888888888888886,
@@ -196,9 +199,9 @@
         }
       },
       "answered_counts": {
-        "n": 2,
-        "mean": 33.5,
-        "sample_sd": 0.7071067811865476,
+        "n": 3,
+        "mean": 33.666666666666664,
+        "sample_sd": 0.5773502691896257,
         "minimum": 33,
         "maximum": 34
       },
@@ -247,8 +250,8 @@
     },
     {
       "method_id": "con-stamped-impl",
-      "assessment_count": 2,
-      "complete": 2,
+      "assessment_count": 3,
+      "complete": 3,
       "failed": 0,
       "review_count": 6,
       "review_verdict_counts": {
@@ -256,140 +259,142 @@
       },
       "criteria": {
         "stamped-checklist:may/001": {
-          "met": 2
+          "met": 3
         },
         "stamped-checklist:may/002": {
-          "partial": 2
+          "partial": 3
         },
         "stamped-checklist:may/003": {
-          "partial": 2
+          "partial": 3
         },
         "stamped-checklist:may/004": {
-          "met": 2
+          "met": 3
         },
         "stamped-checklist:may/005": {
-          "partial": 2
+          "partial": 3
         },
         "stamped-checklist:must/001": {
-          "partial": 1,
+          "partial": 2,
           "met": 1
         },
         "stamped-checklist:must/002": {
-          "partial": 2
+          "partial": 3
         },
         "stamped-checklist:must/003": {
-          "partial": 2
+          "partial": 3
         },
         "stamped-checklist:must/004": {
-          "met": 2
+          "met": 3
         },
         "stamped-checklist:must/005": {
-          "met": 2
+          "met": 3
         },
         "stamped-checklist:must/006": {
-          "partial": 2
+          "partial": 3
         },
         "stamped-checklist:must/007": {
-          "met": 2
+          "met": 3
         },
         "stamped-checklist:must/008": {
-          "met": 1,
+          "met": 2,
           "partial": 1
         },
         "stamped-checklist:must/009": {
-          "partial": 2
+          "partial": 3
         },
         "stamped-checklist:must/010": {
-          "partial": 2
+          "partial": 3
         },
         "stamped-checklist:must/011": {
-          "partial": 2
+          "partial": 3
         },
         "stamped-checklist:must/012": {
-          "partial": 2
+          "partial": 2,
+          "met": 1
         },
         "stamped-checklist:must/013": {
-          "met": 2
+          "met": 3
         },
         "stamped-checklist:must/014": {
-          "met": 2
+          "met": 3
         },
         "stamped-checklist:must/015": {
-          "met": 2
+          "met": 3
         },
         "stamped-checklist:must/016": {
           "met": 1,
-          "not-checked": 1
+          "not-checked": 2
         },
         "stamped-checklist:must/017": {
           "partial": 1,
-          "met": 1
+          "met": 2
         },
         "stamped-checklist:should/001": {
-          "met": 2
+          "met": 3
         },
         "stamped-checklist:should/002": {
-          "partial": 2
+          "partial": 3
         },
         "stamped-checklist:should/003": {
-          "met": 2
+          "met": 3
         },
         "stamped-checklist:should/004": {
-          "met": 2
+          "met": 3
         },
         "stamped-checklist:should/005": {
-          "partial": 2
+          "partial": 3
         },
         "stamped-checklist:should/006": {
-          "partial": 2
+          "partial": 3
         },
         "stamped-checklist:should/007": {
-          "met": 2
+          "met": 3
         },
         "stamped-checklist:should/008": {
-          "met": 2
+          "met": 3
         },
         "stamped-checklist:should/009": {
           "not-checked": 1,
-          "not-applicable": 1
+          "not-applicable": 2
         }
       },
       "replicates": [
         "study-con-stamped-impl-01",
-        "study-con-stamped-impl-02"
+        "study-con-stamped-impl-02",
+        "study-con-stamped-impl-03"
       ],
       "native_level_counts": {
         "must": {
           "met": {
-            "n": 2,
-            "mean": 8,
-            "sample_sd": 0.0,
-            "minimum": 8,
-            "maximum": 8
-          },
-          "partial": {
-            "n": 2,
-            "mean": 8.5,
-            "sample_sd": 0.7071067811865476,
+            "n": 3,
+            "mean": 8.333333333333334,
+            "sample_sd": 0.5773502691896257,
             "minimum": 8,
             "maximum": 9
           },
+          "partial": {
+            "n": 3,
+            "mean": 8,
+            "sample_sd": 1.0,
+            "minimum": 7,
+            "maximum": 9
+          },
           "unmet": {
-            "n": 2,
+            "n": 3,
             "mean": 0,
             "sample_sd": 0.0,
             "minimum": 0,
             "maximum": 0
           },
           "not-checked": {
-            "n": 2,
-            "mean": 0.5,
-            "sample_sd": 0.7071067811865476,
+            "n": 3,
+            "mean": 0.6666666666666666,
+            "sample_sd": 0.5773502691896257,
             "minimum": 0,
             "maximum": 1
           },
           "not-applicable": {
-            "n": 2,
+            "n": 3,
             "mean": 0,
             "sample_sd": 0.0,
             "minimum": 0,
@@ -398,72 +403,72 @@
         },
         "should": {
           "met": {
-            "n": 2,
+            "n": 3,
             "mean": 5,
             "sample_sd": 0.0,
             "minimum": 5,
             "maximum": 5
           },
           "partial": {
-            "n": 2,
+            "n": 3,
             "mean": 3,
             "sample_sd": 0.0,
             "minimum": 3,
             "maximum": 3
           },
           "unmet": {
-            "n": 2,
+            "n": 3,
             "mean": 0,
             "sample_sd": 0.0,
             "minimum": 0,
             "maximum": 0
           },
           "not-checked": {
-            "n": 2,
-            "mean": 0.5,
-            "sample_sd": 0.7071067811865476,
+            "n": 3,
+            "mean": 0.3333333333333333,
+            "sample_sd": 0.5773502691896257,
             "minimum": 0,
             "maximum": 1
           },
           "not-applicable": {
-            "n": 2,
-            "mean": 0.5,
-            "sample_sd": 0.7071067811865476,
+            "n": 3,
+            "mean": 0.6666666666666666,
+            "sample_sd": 0.5773502691896257,
             "minimum": 0,
             "maximum": 1
           }
         },
         "may": {
           "met": {
-            "n": 2,
+            "n": 3,
             "mean": 2,
             "sample_sd": 0.0,
             "minimum": 2,
             "maximum": 2
           },
           "partial": {
-            "n": 2,
+            "n": 3,
             "mean": 3,
             "sample_sd": 0.0,
             "minimum": 3,
             "maximum": 3
           },
           "unmet": {
-            "n": 2,
+            "n": 3,
             "mean": 0,
             "sample_sd": 0.0,
             "minimum": 0,
             "maximum": 0
           },
           "not-checked": {
-            "n": 2,
+            "n": 3,
             "mean": 0,
             "sample_sd": 0.0,
             "minimum": 0,
             "maximum": 0
           },
           "not-applicable": {
-            "n": 2,
+            "n": 3,
             "mean": 0,
             "sample_sd": 0.0,
             "minimum": 0,
@@ -516,8 +521,8 @@
     },
     {
       "method_id": "con-narps-guidance",
-      "assessment_count": 2,
-      "complete": 2,
+      "assessment_count": 3,
+      "complete": 3,
       "failed": 0,
       "review_count": 6,
       "review_verdict_counts": {
@@ -526,139 +531,143 @@
       },
       "criteria": {
         "stamped-checklist:may/001": {
-          "partial": 2
+          "partial": 3
         },
         "stamped-checklist:may/002": {
-          "partial": 2
+          "partial": 3
         },
         "stamped-checklist:may/003": {
-          "met": 2
+          "met": 3
         },
         "stamped-checklist:may/004": {
-          "met": 2
+          "met": 3
         },
         "stamped-checklist:may/005": {
-          "partial": 1,
-          "met": 1
+          "met": 2,
+          "partial": 1
         },
         "stamped-checklist:must/001": {
+          "partial": 1,
           "met": 2
         },
         "stamped-checklist:must/002": {
-          "partial": 2
+          "partial": 3
         },
         "stamped-checklist:must/003": {
-          "met": 2
+          "met": 3
         },
         "stamped-checklist:must/004": {
-          "met": 2
+          "met": 3
         },
         "stamped-checklist:must/005": {
-          "met": 2
+          "met": 3
         },
         "stamped-checklist:must/006": {
-          "partial": 2
+          "partial": 3
         },
         "stamped-checklist:must/007": {
-          "met": 2
+          "met": 3
         },
         "stamped-checklist:must/008": {
-          "met": 2
+          "met": 3
         },
         "stamped-checklist:must/009": {
-          "partial": 2
+          "partial": 3
         },
         "stamped-checklist:must/010": {
-          "met": 1,
+          "met": 2,
           "partial": 1
         },
         "stamped-checklist:must/011": {
-          "partial": 2
+          "partial": 3
         },
         "stamped-checklist:must/012": {
-          "met": 2
+          "met": 3
         },
         "stamped-checklist:must/013": {
-          "met": 2
+          "met": 3
         },
         "stamped-checklist:must/014": {
+          "partial": 1,
           "met": 2
         },
         "stamped-checklist:must/015": {
-          "met": 2
+          "met": 3
         },
         "stamped-checklist:must/016": {
-          "not-checked": 2
+          "not-checked": 3
         },
         "stamped-checklist:must/017": {
-          "met": 2
+          "met": 3
         },
         "stamped-checklist:should/001": {
-          "met": 2
+          "met": 3
         },
         "stamped-checklist:should/002": {
-          "partial": 1,
-          "not-checked": 1
+          "not-checked": 2,
+          "partial": 1
         },
         "stamped-checklist:should/003": {
-          "met": 2
+          "met": 3
         },
         "stamped-checklist:should/004": {
-          "met": 2
+          "met": 3
         },
         "stamped-checklist:should/005": {
-          "met": 2
+          "met": 3
         },
         "stamped-checklist:should/006": {
-          "partial": 1,
-          "not-checked": 1
+          "not-checked": 2,
+          "partial": 1
         },
         "stamped-checklist:should/007": {
-          "met": 2
+          "met": 3
         },
         "stamped-checklist:should/008": {
+          "partial": 1,
           "met": 2
         },
         "stamped-checklist:should/009": {
-          "not-applicable": 2
+          "not-applicable": 3
         }
       },
       "replicates": [
+        "study-con-narps-guidance-03",
         "study-con-narps-guidance-02",
         "study-con-narps-guidance-01"
       ],
       "native_level_counts": {
         "must": {
           "met": {
-            "n": 2,
-            "mean": 11.5,
-            "sample_sd": 0.7071067811865476,
-            "minimum": 11,
+            "n": 3,
+            "mean": 11,
+            "sample_sd": 1.0,
+            "minimum": 10,
             "maximum": 12
           },
           "partial": {
-            "n": 2,
-            "mean": 4.5,
-            "sample_sd": 0.7071067811865476,
+            "n": 3,
+            "mean": 5,
+            "sample_sd": 1.0,
             "minimum": 4,
-            "maximum": 5
+            "maximum": 6
           },
           "unmet": {
-            "n": 2,
+            "n": 3,
             "mean": 0,
             "sample_sd": 0.0,
             "minimum": 0,
             "maximum": 0
           },
           "not-checked": {
-            "n": 2,
+            "n": 3,
             "mean": 1,
             "sample_sd": 0.0,
             "minimum": 1,
             "maximum": 1
           },
           "not-applicable": {
-            "n": 2,
+            "n": 3,
             "mean": 0,
             "sample_sd": 0.0,
             "minimum": 0,
@@ -667,35 +676,35 @@
         },
         "should": {
           "met": {
-            "n": 2,
-            "mean": 6,
-            "sample_sd": 0.0,
-            "minimum": 6,
+            "n": 3,
+            "mean": 5.666666666666667,
+            "sample_sd": 0.5773502691896257,
+            "minimum": 5,
             "maximum": 6
           },
           "partial": {
-            "n": 2,
+            "n": 3,
             "mean": 1,
-            "sample_sd": 1.4142135623730951,
+            "sample_sd": 1.0,
             "minimum": 0,
             "maximum": 2
           },
           "unmet": {
-            "n": 2,
+            "n": 3,
             "mean": 0,
             "sample_sd": 0.0,
             "minimum": 0,
             "maximum": 0
           },
           "not-checked": {
-            "n": 2,
-            "mean": 1,
-            "sample_sd": 1.4142135623730951,
+            "n": 3,
+            "mean": 1.3333333333333333,
+            "sample_sd": 1.1547005383792515,
             "minimum": 0,
             "maximum": 2
           },
           "not-applicable": {
-            "n": 2,
+            "n": 3,
             "mean": 1,
             "sample_sd": 0.0,
             "minimum": 1,
@@ -704,35 +713,35 @@
         },
         "may": {
           "met": {
-            "n": 2,
-            "mean": 2.5,
-            "sample_sd": 0.7071067811865476,
+            "n": 3,
+            "mean": 2.6666666666666665,
+            "sample_sd": 0.5773502691896257,
             "minimum": 2,
             "maximum": 3
           },
           "partial": {
-            "n": 2,
-            "mean": 2.5,
-            "sample_sd": 0.7071067811865476,
+            "n": 3,
+            "mean": 2.3333333333333335,
+            "sample_sd": 0.5773502691896257,
             "minimum": 2,
             "maximum": 3
           },
           "unmet": {
-            "n": 2,
+            "n": 3,
             "mean": 0,
             "sample_sd": 0.0,
             "minimum": 0,
             "maximum": 0
           },
           "not-checked": {
-            "n": 2,
+            "n": 3,
             "mean": 0,
             "sample_sd": 0.0,
             "minimum": 0,
             "maximum": 0
           },
           "not-applicable": {
-            "n": 2,
+            "n": 3,
             "mean": 0,
             "sample_sd": 0.0,
             "minimum": 0,

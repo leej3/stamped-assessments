@@ -94,6 +94,15 @@ class SiteTests(unittest.TestCase):
         b['native_data'] = {'responses':{'must/001':{'status':'partial'}}}
         self.assertEqual(variability([a,b])[0]['criterion_distributions']['must/001']['counts'], {'met':1,'partial':1})
 
+    def test_equal_totals_retain_different_dimension_profiles(self):
+        a=result(summary={'overall_score':50,'scale_max':100,'dimension_scores':{'S':100,'T':0}})
+        b=result('r2',summary={'overall_score':50,'scale_max':100,'dimension_scores':{'S':0,'T':100}})
+        group=variability([a,b])[0]
+        self.assertEqual(group['sample_sd'],0)
+        self.assertEqual(group['dimension_statistics']['S']['mean'],50)
+        self.assertEqual(group['dimension_statistics']['S']['minimum'],0)
+        self.assertEqual(group['dimension_statistics']['S']['maximum'],100)
+
     def test_unknown_provenance_and_different_weights_remain_separate(self):
         first, second = result(), result('r2')
         first.pop('model_observed')

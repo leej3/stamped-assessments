@@ -15,6 +15,14 @@ def dump(path,value):
 def load(p):return json.loads(p.read_text())
 def verify():
  assert hashlib.sha256((ROOT/'data/remodnav-evidence.json').read_bytes()).hexdigest()==EVIDENCE_SHA,'Evidence cohort changed'
+ def verify_files(value):
+  if isinstance(value,dict):
+   if value.get('cache_path') and value.get('sha256'):
+    assert hashlib.sha256((ROOT/value['cache_path']).read_bytes()).hexdigest()==value['sha256'],value['cache_path']
+   for child in value.values():verify_files(child)
+  elif isinstance(value,list):
+   for child in value:verify_files(child)
+ verify_files(load(ROOT/'data/remodnav-evidence.json'))
  for mid in ('rubric','con-stamped-impl','con-narps-guidance'):
   base=ROOT/'.cache/methods'/mid
   assert subprocess.check_output(['git','-C',str(base),'rev-parse','HEAD'],text=True).strip()==METHODS[mid]['revision']

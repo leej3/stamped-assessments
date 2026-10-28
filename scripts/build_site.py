@@ -118,6 +118,20 @@ def response_distributions(records):
     return distributions
 
 
+def dimension_statistics(records):
+    dimensions = sorted({d for r in records for d in r.get('summary', {}).get('dimension_scores', {})})
+    dimensions = [d for d in 'STAMPED' if d in dimensions] + [d for d in dimensions if d not in 'STAMPED']
+    result = {}
+    for dimension in dimensions:
+        values = [r.get('summary', {}).get('dimension_scores', {}).get(dimension) for r in records]
+        values = [v for v in values if isinstance(v, (int, float)) and not isinstance(v, bool)]
+        if values:
+            result[dimension] = {'n': len(values), 'mean': statistics.mean(values),
+                                 'minimum': min(values), 'maximum': max(values),
+                                 'sample_sd': statistics.stdev(values) if len(values) > 1 else None}
+    return result
+
+
 def variability(records):
     eligible = [r for r in records if r.get('status') == 'complete' and r.get('independent') is True and not r.get('exploratory', False)]
     buckets = {}
@@ -134,6 +148,7 @@ def variability(records):
                       and not isinstance(r['summary']['overall_score'], bool)]
             groups.append({'key': list(key), 'assessment_ids': [r['id'] for r in same_scale],
                            'criterion_distributions': response_distributions(same_scale),
+                           'dimension_statistics': dimension_statistics(same_scale),
                            'runs': len(same_scale), 'scored_runs': len(values), 'scale_max': maximum,
                            'mean': statistics.mean(values) if values else None,
                            'minimum': min(values) if values else None,
