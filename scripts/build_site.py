@@ -2,6 +2,8 @@
 from __future__ import annotations
 
 import argparse
+import base64
+import gzip
 from datetime import datetime, timezone
 import json
 import math
@@ -30,7 +32,12 @@ def project(record, fields):
 def public_safe(value):
     """Fail closed rather than publish user paths hidden in free-text output."""
     if isinstance(value, str):
-        if re.search(r'(?:/Users/|/home/|file://|[A-Za-z]:\\Users\\)', value):
+        # These literal paths are published upstream evidence, not local user data.
+        # Frozen .gitmodules and labels/code/*_submit.sh establish their provenance.
+        checked = value
+        for source_path in ('/home/data/psyinf/forrest_gump/collection/fg_eyegaze_raw', '/home/asimio/fg_eyegaze_preproc/', '/home/data/...'):
+            checked = checked.replace(source_path, '[public-source-path]')
+        if re.search(r'(?:/Users/|/home/|file://|[A-Za-z]:\\Users\\)', checked):
             raise ValueError('Public data contains an absolute personal or file URL path')
     elif isinstance(value, dict):
         for key, item in value.items():
@@ -166,6 +173,12 @@ def build(root=ROOT, destination=None):
                 source, native = linked_output(root, reference)
                 files[reference] = source
                 record['native_data' if kind == 'results' else 'report_content'] = native
+                if kind == 'results' and record.get('method_id') == 'rubric' and isinstance(native, dict) and 'assessments' in native:
+                    raw = json.dumps(native, separators=(',', ':'), ensure_ascii=False).encode()
+                    encoded = base64.urlsafe_b64encode(gzip.compress(raw, mtime=0)).decode().rstrip('=')
+                    share = 'https://leej3.github.io/stamped-rubric/#assessment=v1.' + encoded
+                    if len(raw) <= 2_000_000 and len(share) <= 8_000:
+                        record['rubric_url'] = share
             if kind == 'results' and record.get('report'):
                 source, report = linked_output(root, record['report'])
                 files[record['report']] = source

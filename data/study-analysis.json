@@ -1,0 +1,562 @@
+{
+  "study_id": "remodnav-method-comparison-01",
+  "updated_at": "2026-10-28T00:01:15.841950+00:00",
+  "assessment_status_counts": {
+    "complete": 2
+  },
+  "review_status_counts": {},
+  "planned_assessments": 30,
+  "planned_reviews": 90,
+  "methods": [
+    {
+      "method_id": "rubric",
+      "assessment_count": 1,
+      "complete": 1,
+      "failed": 0,
+      "review_count": 0,
+      "review_verdict_counts": {},
+      "criteria": {
+        "A-01": {
+          "3": 1
+        },
+        "A-02": {
+          "3": 1
+        },
+        "A-03": {
+          "3": 1
+        },
+        "A-04": {
+          "3": 1
+        },
+        "A-05": {
+          "3": 1
+        },
+        "A-06": {
+          "2": 1
+        },
+        "D-01": {
+          "unanswered": 1
+        },
+        "D-02": {
+          "1": 1
+        },
+        "D-03": {
+          "1": 1
+        },
+        "D-04": {
+          "2": 1
+        },
+        "D-05": {
+          "3": 1
+        },
+        "D-06": {
+          "0": 1
+        },
+        "E-01": {
+          "3": 1
+        },
+        "E-02": {
+          "3": 1
+        },
+        "E-03": {
+          "2": 1
+        },
+        "M-01": {
+          "3": 1
+        },
+        "M-02": {
+          "1": 1
+        },
+        "M-03": {
+          "2": 1
+        },
+        "M-04": {
+          "1": 1
+        },
+        "M-05": {
+          "unanswered": 1
+        },
+        "M-06": {
+          "3": 1
+        },
+        "P-01": {
+          "2": 1
+        },
+        "P-02": {
+          "3": 1
+        },
+        "P-03": {
+          "3": 1
+        },
+        "P-04": {
+          "1": 1
+        },
+        "P-05": {
+          "3": 1
+        },
+        "S-01": {
+          "3": 1
+        },
+        "S-02": {
+          "3": 1
+        },
+        "S-03": {
+          "3": 1
+        },
+        "S-04": {
+          "2": 1
+        },
+        "T-01": {
+          "3": 1
+        },
+        "T-02": {
+          "3": 1
+        },
+        "T-03": {
+          "3": 1
+        },
+        "T-04": {
+          "2": 1
+        },
+        "T-05": {
+          "2": 1
+        },
+        "T-06": {
+          "0": 1
+        }
+      },
+      "replicates": [
+        "study-rubric-01"
+      ],
+      "overall_scores": {
+        "n": 1,
+        "mean": 76.42857142857143,
+        "sample_sd": null,
+        "minimum": 76.42857142857143,
+        "maximum": 76.42857142857143
+      },
+      "dimensions": {
+        "S": {
+          "n": 1,
+          "mean": 91.66666666666666,
+          "sample_sd": null,
+          "minimum": 91.66666666666666,
+          "maximum": 91.66666666666666
+        },
+        "T": {
+          "n": 1,
+          "mean": 72.22222222222221,
+          "sample_sd": null,
+          "minimum": 72.22222222222221,
+          "maximum": 72.22222222222221
+        },
+        "A": {
+          "n": 1,
+          "mean": 94.44444444444446,
+          "sample_sd": null,
+          "minimum": 94.44444444444446,
+          "maximum": 94.44444444444446
+        },
+        "M": {
+          "n": 1,
+          "mean": 55.555555555555564,
+          "sample_sd": null,
+          "minimum": 55.555555555555564,
+          "maximum": 55.555555555555564
+        },
+        "P": {
+          "n": 1,
+          "mean": 93.33333333333333,
+          "sample_sd": null,
+          "minimum": 93.33333333333333,
+          "maximum": 93.33333333333333
+        },
+        "E": {
+          "n": 1,
+          "mean": 88.88888888888887,
+          "sample_sd": null,
+          "minimum": 88.88888888888887,
+          "maximum": 88.88888888888887
+        },
+        "D": {
+          "n": 1,
+          "mean": 38.888888888888886,
+          "sample_sd": null,
+          "minimum": 38.888888888888886,
+          "maximum": 38.888888888888886
+        }
+      },
+      "answered_counts": {
+        "n": 1,
+        "mean": 34,
+        "sample_sd": null,
+        "minimum": 34,
+        "maximum": 34
+      },
+      "three_review_sets": {
+        "complete_sets": 0,
+        "matching_overall_verdict_sets": 0,
+        "interpretation": "Matching review verdicts do not establish factual correctness or human agreement."
+      },
+      "review_dispositions": {},
+      "review_coverage": []
+    },
+    {
+      "method_id": "con-stamped-impl",
+      "assessment_count": 1,
+      "complete": 1,
+      "failed": 0,
+      "review_count": 0,
+      "review_verdict_counts": {},
+      "criteria": {
+        "stamped-checklist:may/001": {
+          "met": 1
+        },
+        "stamped-checklist:may/002": {
+          "partial": 1
+        },
+        "stamped-checklist:may/003": {
+          "partial": 1
+        },
+        "stamped-checklist:may/004": {
+          "met": 1
+        },
+        "stamped-checklist:may/005": {
+          "partial": 1
+        },
+        "stamped-checklist:must/001": {
+          "partial": 1
+        },
+        "stamped-checklist:must/002": {
+          "partial": 1
+        },
+        "stamped-checklist:must/003": {
+          "partial": 1
+        },
+        "stamped-checklist:must/004": {
+          "met": 1
+        },
+        "stamped-checklist:must/005": {
+          "met": 1
+        },
+        "stamped-checklist:must/006": {
+          "partial": 1
+        },
+        "stamped-checklist:must/007": {
+          "met": 1
+        },
+        "stamped-checklist:must/008": {
+          "met": 1
+        },
+        "stamped-checklist:must/009": {
+          "partial": 1
+        },
+        "stamped-checklist:must/010": {
+          "partial": 1
+        },
+        "stamped-checklist:must/011": {
+          "partial": 1
+        },
+        "stamped-checklist:must/012": {
+          "partial": 1
+        },
+        "stamped-checklist:must/013": {
+          "met": 1
+        },
+        "stamped-checklist:must/014": {
+          "met": 1
+        },
+        "stamped-checklist:must/015": {
+          "met": 1
+        },
+        "stamped-checklist:must/016": {
+          "met": 1
+        },
+        "stamped-checklist:must/017": {
+          "partial": 1
+        },
+        "stamped-checklist:should/001": {
+          "met": 1
+        },
+        "stamped-checklist:should/002": {
+          "partial": 1
+        },
+        "stamped-checklist:should/003": {
+          "met": 1
+        },
+        "stamped-checklist:should/004": {
+          "met": 1
+        },
+        "stamped-checklist:should/005": {
+          "partial": 1
+        },
+        "stamped-checklist:should/006": {
+          "partial": 1
+        },
+        "stamped-checklist:should/007": {
+          "met": 1
+        },
+        "stamped-checklist:should/008": {
+          "met": 1
+        },
+        "stamped-checklist:should/009": {
+          "not-checked": 1
+        }
+      },
+      "replicates": [
+        "study-con-stamped-impl-01"
+      ],
+      "native_level_counts": {
+        "must": {
+          "met": {
+            "n": 1,
+            "mean": 8,
+            "sample_sd": null,
+            "minimum": 8,
+            "maximum": 8
+          },
+          "partial": {
+            "n": 1,
+            "mean": 9,
+            "sample_sd": null,
+            "minimum": 9,
+            "maximum": 9
+          },
+          "unmet": {
+            "n": 1,
+            "mean": 0,
+            "sample_sd": null,
+            "minimum": 0,
+            "maximum": 0
+          },
+          "not-checked": {
+            "n": 1,
+            "mean": 0,
+            "sample_sd": null,
+            "minimum": 0,
+            "maximum": 0
+          },
+          "not-applicable": {
+            "n": 1,
+            "mean": 0,
+            "sample_sd": null,
+            "minimum": 0,
+            "maximum": 0
+          }
+        },
+        "should": {
+          "met": {
+            "n": 1,
+            "mean": 5,
+            "sample_sd": null,
+            "minimum": 5,
+            "maximum": 5
+          },
+          "partial": {
+            "n": 1,
+            "mean": 3,
+            "sample_sd": null,
+            "minimum": 3,
+            "maximum": 3
+          },
+          "unmet": {
+            "n": 1,
+            "mean": 0,
+            "sample_sd": null,
+            "minimum": 0,
+            "maximum": 0
+          },
+          "not-checked": {
+            "n": 1,
+            "mean": 1,
+            "sample_sd": null,
+            "minimum": 1,
+            "maximum": 1
+          },
+          "not-applicable": {
+            "n": 1,
+            "mean": 0,
+            "sample_sd": null,
+            "minimum": 0,
+            "maximum": 0
+          }
+        },
+        "may": {
+          "met": {
+            "n": 1,
+            "mean": 2,
+            "sample_sd": null,
+            "minimum": 2,
+            "maximum": 2
+          },
+          "partial": {
+            "n": 1,
+            "mean": 3,
+            "sample_sd": null,
+            "minimum": 3,
+            "maximum": 3
+          },
+          "unmet": {
+            "n": 1,
+            "mean": 0,
+            "sample_sd": null,
+            "minimum": 0,
+            "maximum": 0
+          },
+          "not-checked": {
+            "n": 1,
+            "mean": 0,
+            "sample_sd": null,
+            "minimum": 0,
+            "maximum": 0
+          },
+          "not-applicable": {
+            "n": 1,
+            "mean": 0,
+            "sample_sd": null,
+            "minimum": 0,
+            "maximum": 0
+          }
+        }
+      },
+      "three_review_sets": {
+        "complete_sets": 0,
+        "matching_overall_verdict_sets": 0,
+        "interpretation": "Matching review verdicts do not establish factual correctness or human agreement."
+      },
+      "review_dispositions": {},
+      "review_coverage": []
+    },
+    {
+      "method_id": "con-narps-guidance",
+      "assessment_count": 0,
+      "complete": 0,
+      "failed": 0,
+      "review_count": 0,
+      "review_verdict_counts": {},
+      "criteria": {},
+      "replicates": [],
+      "native_level_counts": {
+        "must": {
+          "met": {
+            "n": 0,
+            "mean": null,
+            "sample_sd": null,
+            "minimum": null,
+            "maximum": null
+          },
+          "partial": {
+            "n": 0,
+            "mean": null,
+            "sample_sd": null,
+            "minimum": null,
+            "maximum": null
+          },
+          "unmet": {
+            "n": 0,
+            "mean": null,
+            "sample_sd": null,
+            "minimum": null,
+            "maximum": null
+          },
+          "not-checked": {
+            "n": 0,
+            "mean": null,
+            "sample_sd": null,
+            "minimum": null,
+            "maximum": null
+          },
+          "not-applicable": {
+            "n": 0,
+            "mean": null,
+            "sample_sd": null,
+            "minimum": null,
+            "maximum": null
+          }
+        },
+        "should": {
+          "met": {
+            "n": 0,
+            "mean": null,
+            "sample_sd": null,
+            "minimum": null,
+            "maximum": null
+          },
+          "partial": {
+            "n": 0,
+            "mean": null,
+            "sample_sd": null,
+            "minimum": null,
+            "maximum": null
+          },
+          "unmet": {
+            "n": 0,
+            "mean": null,
+            "sample_sd": null,
+            "minimum": null,
+            "maximum": null
+          },
+          "not-checked": {
+            "n": 0,
+            "mean": null,
+            "sample_sd": null,
+            "minimum": null,
+            "maximum": null
+          },
+          "not-applicable": {
+            "n": 0,
+            "mean": null,
+            "sample_sd": null,
+            "minimum": null,
+            "maximum": null
+          }
+        },
+        "may": {
+          "met": {
+            "n": 0,
+            "mean": null,
+            "sample_sd": null,
+            "minimum": null,
+            "maximum": null
+          },
+          "partial": {
+            "n": 0,
+            "mean": null,
+            "sample_sd": null,
+            "minimum": null,
+            "maximum": null
+          },
+          "unmet": {
+            "n": 0,
+            "mean": null,
+            "sample_sd": null,
+            "minimum": null,
+            "maximum": null
+          },
+          "not-checked": {
+            "n": 0,
+            "mean": null,
+            "sample_sd": null,
+            "minimum": null,
+            "maximum": null
+          },
+          "not-applicable": {
+            "n": 0,
+            "mean": null,
+            "sample_sd": null,
+            "minimum": null,
+            "maximum": null
+          }
+        }
+      },
+      "three_review_sets": {
+        "complete_sets": 0,
+        "matching_overall_verdict_sets": 0,
+        "interpretation": "Matching review verdicts do not establish factual correctness or human agreement."
+      },
+      "review_dispositions": {},
+      "review_coverage": []
+    }
+  ],
+  "interpretation": "Descriptive single-object pilot; requested models retained, actual underlying versions unverified. Review agreement is not a correctness reference. Native scales are not pooled."
+}

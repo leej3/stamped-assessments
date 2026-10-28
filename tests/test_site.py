@@ -1,4 +1,6 @@
 import copy
+import base64
+import gzip
 import json
 from pathlib import Path
 import tempfile
@@ -72,6 +74,15 @@ class SiteTests(unittest.TestCase):
         second['summary']['scale_max'] = 3
         self.assertEqual(len(variability([first,second])), 2)
 
+    def test_rubric_link_round_trips_original_bundle(self):
+        native = {'format_version':'1.0.0','assessments':[{'responses':{'S-01':{'score':3}}}]}
+        self.write('results/run.json', result(native_output='results/native.json'))
+        self.write('results/native.json', native)
+        record = build(self.root)['results'][0]
+        encoded = record['rubric_url'].split('v1.')[1]
+        decoded = json.loads(gzip.decompress(base64.urlsafe_b64decode(encoded + '=' * (-len(encoded) % 4))))
+        self.assertEqual(decoded, native)
+
     def test_native_distributions_keep_unknown_and_absent_distinct(self):
         a = result(native_data={'assessments':[{'responses':{'S-01':{'score':3}, 'D-01':{'score':None}}}]})
         b = result('r2', native_data={'assessments':[{'responses':{'S-01':{'score':0}}}]})
@@ -117,6 +128,12 @@ class SiteTests(unittest.TestCase):
         self.assertTrue((self.root / 'dist/keep.txt').exists())
         with self.assertRaises(ValueError):
             public_safe({'text':'file:///private/file'})
+
+    def test_published_source_paths_are_preserved_as_evidence(self):
+        public_safe({'evidence':'/home/data/psyinf/forrest_gump/collection/fg_eyegaze_raw'})
+        public_safe({'evidence':'initialdir=/home/asimio/fg_eyegaze_preproc/'})
+        with self.assertRaises(ValueError):
+            public_safe({'evidence':'/home/unverified/private'})
 
     def test_unknown_review_assessment_rejected(self):
         self.write('reviews/review.json', {'id':'review','assessment_id':'missing','status':'complete'})
