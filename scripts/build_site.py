@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import base64
 import gzip
+import hashlib
 from datetime import datetime, timezone
 import json
 import math
@@ -21,7 +22,7 @@ CATALOG_FIELDS = {
     'objects': ('id', 'title', 'locator', 'revision', 'scope', 'cache_status', 'description', 'license', 'status'),
 }
 STUDY_FIELDS = ('id', 'title', 'status', 'replicates_per_method', 'reviews_per_assessment', 'assessor_model', 'review_model', 'objects', 'methods', 'description', 'limitations', 'created_at', 'planned_assessments', 'planned_reviews', 'assessor_reasoning_effort', 'review_reasoning_effort', 'evidence_policy', 'score_policy', 'evidence_cohort', 'evidence_sha256', 'updated_at', 'progress')
-RESULT_FIELDS = ('id', 'study_id', 'object_id', 'object_revision', 'method_id', 'method_revision', 'rubric_id', 'rubric_sha256', 'model_requested', 'model_observed', 'reasoning_effort', 'replicate', 'status', 'independent', 'exploratory', 'created_at', 'native_output', 'report', 'summary', 'limitations', 'evidence_cohort', 'evidence_cohort_id')
+RESULT_FIELDS = ('id', 'study_id', 'object_id', 'object_revision', 'method_id', 'method_revision', 'rubric_id', 'rubric_sha256', 'model_requested', 'model_observed', 'reasoning_effort', 'replicate', 'status', 'independent', 'exploratory', 'created_at', 'native_output', 'report', 'summary', 'limitations', 'evidence_cohort', 'evidence_cohort_id', 'probe_artifact')
 REVIEW_FIELDS = ('id', 'assessment_id', 'reviewer_id', 'model_requested', 'model_observed', 'reasoning_effort', 'status', 'findings', 'verdict', 'report', 'created_at', 'limitations', 'checked_criteria')
 
 
@@ -35,7 +36,7 @@ def public_safe(value):
         # These literal paths are published upstream evidence, not local user data.
         # Frozen .gitmodules and labels/code/*_submit.sh establish their provenance.
         checked = value
-        for source_path in ('/home/data/psyinf/forrest_gump/collection/fg_eyegaze_raw', '/home/asimio/fg_eyegaze_preproc/', '/home/data/...'):
+        for source_path in ('/home/data/psyinf/forrest_gump/collection/fg_eyegaze_raw', '/home/asimio/fg_eyegaze_preproc/', '/home/data/...', '/home/data', '/home/asimio', r'C:\Users\mih'):
             checked = checked.replace(source_path, '[public-source-path]')
         if re.search(r'(?:/Users/|/home/|file://|[A-Za-z]:\\Users\\)', checked):
             raise ValueError('Public data contains an absolute personal or file URL path')
@@ -183,6 +184,12 @@ def build(root=ROOT, destination=None):
                 source, report = linked_output(root, record['report'])
                 files[record['report']] = source
                 record['report_content'] = report
+            if kind == 'results' and record.get('probe_artifact'):
+                artifact = record['probe_artifact']
+                source, _ = linked_output(root, artifact['path'])
+                if hashlib.sha256(source.read_bytes()).hexdigest() != artifact['public_sha256']:
+                    raise ValueError('Public probe derivative digest mismatch')
+                files[artifact['path']] = source
             target.append(record)
     for records in (results, reviews):
         if len({r['id'] for r in records}) != len(records):

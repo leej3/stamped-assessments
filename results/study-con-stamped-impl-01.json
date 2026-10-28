@@ -47,5 +47,11 @@
     "Inspection cohort; no scientific workflow execution or independent payload retrieval by this assessor.",
     "Actual model version not independently exposed; requested model and reasoning are recorded."
   ],
-  "report": "results/study-con-stamped-impl-01.md"
+  "report": "results/study-con-stamped-impl-01.md",
+  "probe_artifact": {
+    "path": "results/study-con-stamped-impl-01.probes.json",
+    "original_sha256": "b317c4418d4470ea690f2d5422c27c0dcb7ec1813ee5cb62d1fe8b2cce6b3823",
+    "public_sha256": "0e20f0eca5e3adebb5b2b5eb864cdfb1f4eed2a645f761fcb7e9678ff218bb58",
+    "redaction": "Only the local logistical checkout prefix was replaced. The original raw probe output is retained unchanged in the ignored study cache."
+  }
 }
