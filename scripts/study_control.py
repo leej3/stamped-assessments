@@ -142,6 +142,7 @@ def finalize(rid):
  (ROOT/'.cache/study/receipts'/f'{rid}.validation.txt').write_text(validation)
  receipt.update(status=status,finished_at=now());dump(ROOT/'.cache/study/receipts'/f'{rid}.json',receipt);progress();print(json.dumps({'id':rid,'status':status,'summary':summary,'limitations':limits}))
 def review_prompt(rid,n):
+ verify()
  rec=load(ROOT/'results'/f'{rid}.json');mid=rec['method_id'];revid=f'{rid}-review-{n}'
  if rec['status']!='complete':raise ValueError('Cannot review absent/invalid native report; retain blocked review separately')
  task=ROOT/'.cache/study/prompts'/f'{revid}.md'
@@ -150,6 +151,7 @@ Write your review ONLY to {ROOT/'reviews'/f'{revid}.json'}. JSON fields: id='{re
 Finish with file path, verdict, number of checked criteria, and key limitations.\n'''
  task.write_text(text);dump(ROOT/'.cache/study/receipts'/f'{revid}.json',{'id':revid,'assessment_id':rid,'created_at':now(),'status':'prepared','prompt_sha256':hashlib.sha256(text.encode()).hexdigest()});print(task)
 def finalize_review(revid):
+ verify()
  path=ROOT/'reviews'/f'{revid}.json'
  rec=load(path)
  assert rec['id']==revid and rec['model_requested']=='gpt-6-astra' and rec['reasoning_effort']=='high'
