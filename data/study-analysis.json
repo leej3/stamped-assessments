@@ -1,11 +1,11 @@
 {
   "study_id": "remodnav-method-comparison-01",
-  "updated_at": "2026-10-28T02:25:23.953133+00:00",
+  "updated_at": "2026-10-28T02:34:13.632365+00:00",
   "assessment_status_counts": {
     "complete": 18
   },
   "review_status_counts": {
-    "complete": 45
+    "complete": 48
   },
   "planned_assessments": 30,
   "planned_reviews": 90,
@@ -15,9 +15,9 @@
       "assessment_count": 6,
       "complete": 6,
       "failed": 0,
-      "review_count": 15,
+      "review_count": 16,
       "review_verdict_counts": {
-        "needs_revision": 15
+        "needs_revision": 16
       },
       "criteria": {
         "A-01": {
@@ -218,16 +218,16 @@
         "interpretation": "Matching review verdicts do not establish factual correctness or human agreement."
       },
       "review_dispositions": {
-        "agree": 477,
-        "disagree": 29,
-        "needs_evidence": 34
+        "agree": 510,
+        "disagree": 31,
+        "needs_evidence": 35
       },
       "criterion_reviews": {
         "A-01": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -235,21 +235,21 @@
           "checked_without_finding_review_ids": []
         },
         "A-02": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
             "agree": 6,
             "disagree": 3,
-            "needs_evidence": 6
+            "needs_evidence": 7
           },
           "multiple_finding_review_ids": [],
           "checked_without_finding_review_ids": []
         },
         "A-03": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 9,
+            "agree": 10,
             "disagree": 3,
             "needs_evidence": 3
           },
@@ -257,10 +257,10 @@
           "checked_without_finding_review_ids": []
         },
         "A-04": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -268,10 +268,10 @@
           "checked_without_finding_review_ids": []
         },
         "A-05": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 11,
+            "agree": 12,
             "disagree": 0,
             "needs_evidence": 4
           },
@@ -279,10 +279,10 @@
           "checked_without_finding_review_ids": []
         },
         "A-06": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 10,
+            "agree": 11,
             "disagree": 4,
             "needs_evidence": 1
           },
@@ -290,10 +290,10 @@
           "checked_without_finding_review_ids": []
         },
         "D-01": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 13,
+            "agree": 14,
             "disagree": 0,
             "needs_evidence": 2
           },
@@ -301,10 +301,10 @@
           "checked_without_finding_review_ids": []
         },
         "D-02": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 9,
+            "agree": 10,
             "disagree": 3,
             "needs_evidence": 3
           },
@@ -312,10 +312,10 @@
           "checked_without_finding_review_ids": []
         },
         "D-03": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -323,10 +323,10 @@
           "checked_without_finding_review_ids": []
         },
         "D-04": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -334,10 +334,10 @@
           "checked_without_finding_review_ids": []
         },
         "D-05": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -345,10 +345,10 @@
           "checked_without_finding_review_ids": []
         },
         "D-06": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -356,21 +356,21 @@
           "checked_without_finding_review_ids": []
         },
         "E-01": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
             "agree": 11,
-            "disagree": 0,
+            "disagree": 1,
             "needs_evidence": 4
           },
           "multiple_finding_review_ids": [],
           "checked_without_finding_review_ids": []
         },
         "E-02": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 14,
+            "agree": 15,
             "disagree": 0,
             "needs_evidence": 1
           },
@@ -378,10 +378,10 @@
           "checked_without_finding_review_ids": []
         },
         "E-03": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -389,10 +389,10 @@
           "checked_without_finding_review_ids": []
         },
         "M-01": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -400,10 +400,10 @@
           "checked_without_finding_review_ids": []
         },
         "M-02": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -411,10 +411,10 @@
           "checked_without_finding_review_ids": []
         },
         "M-03": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -422,10 +422,10 @@
           "checked_without_finding_review_ids": []
         },
         "M-04": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -433,21 +433,21 @@
           "checked_without_finding_review_ids": []
         },
         "M-05": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
             "agree": 7,
-            "disagree": 8,
+            "disagree": 9,
             "needs_evidence": 0
           },
           "multiple_finding_review_ids": [],
           "checked_without_finding_review_ids": []
         },
         "M-06": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -455,10 +455,10 @@
           "checked_without_finding_review_ids": []
         },
         "P-01": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 13,
+            "agree": 14,
             "disagree": 0,
             "needs_evidence": 2
           },
@@ -466,10 +466,10 @@
           "checked_without_finding_review_ids": []
         },
         "P-02": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 9,
+            "agree": 10,
             "disagree": 2,
             "needs_evidence": 4
           },
@@ -477,10 +477,10 @@
           "checked_without_finding_review_ids": []
         },
         "P-03": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -488,10 +488,10 @@
           "checked_without_finding_review_ids": []
         },
         "P-04": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -499,10 +499,10 @@
           "checked_without_finding_review_ids": []
         },
         "P-05": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 6,
+            "agree": 7,
             "disagree": 5,
             "needs_evidence": 4
           },
@@ -510,10 +510,10 @@
           "checked_without_finding_review_ids": []
         },
         "S-01": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -521,10 +521,10 @@
           "checked_without_finding_review_ids": []
         },
         "S-02": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -532,10 +532,10 @@
           "checked_without_finding_review_ids": []
         },
         "S-03": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -543,10 +543,10 @@
           "checked_without_finding_review_ids": []
         },
         "S-04": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -554,10 +554,10 @@
           "checked_without_finding_review_ids": []
         },
         "T-01": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -565,10 +565,10 @@
           "checked_without_finding_review_ids": []
         },
         "T-02": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -576,10 +576,10 @@
           "checked_without_finding_review_ids": []
         },
         "T-03": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -587,10 +587,10 @@
           "checked_without_finding_review_ids": []
         },
         "T-04": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -598,10 +598,10 @@
           "checked_without_finding_review_ids": []
         },
         "T-05": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 14,
+            "agree": 15,
             "disagree": 1,
             "needs_evidence": 0
           },
@@ -609,10 +609,10 @@
           "checked_without_finding_review_ids": []
         },
         "T-06": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -673,6 +673,11 @@
           "total": 36
         },
         {
+          "review_id": "study-rubric-06-review-1",
+          "checked": 36,
+          "total": 36
+        },
+        {
           "review_id": "study-rubric-02-review-1",
           "checked": 36,
           "total": 36
@@ -704,9 +709,9 @@
       "assessment_count": 6,
       "complete": 6,
       "failed": 0,
-      "review_count": 15,
+      "review_count": 16,
       "review_verdict_counts": {
-        "needs_revision": 15
+        "needs_revision": 16
       },
       "criteria": {
         "stamped-checklist:may/001": {
@@ -943,16 +948,16 @@
         "interpretation": "Matching review verdicts do not establish factual correctness or human agreement."
       },
       "review_dispositions": {
-        "agree": 397,
-        "disagree": 51,
-        "needs_evidence": 17
+        "agree": 422,
+        "disagree": 55,
+        "needs_evidence": 19
       },
       "criterion_reviews": {
         "stamped-checklist:may/001": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -960,10 +965,10 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:may/002": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -971,21 +976,21 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:may/003": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
             "agree": 3,
             "disagree": 3,
-            "needs_evidence": 9
+            "needs_evidence": 10
           },
           "multiple_finding_review_ids": [],
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:may/004": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -993,10 +998,10 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:may/005": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 14,
+            "agree": 15,
             "disagree": 1,
             "needs_evidence": 0
           },
@@ -1004,10 +1009,10 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:must/001": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -1015,10 +1020,10 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:must/002": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -1026,10 +1031,10 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:must/003": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 13,
+            "agree": 14,
             "disagree": 0,
             "needs_evidence": 2
           },
@@ -1037,10 +1042,10 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:must/004": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -1048,10 +1053,10 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:must/005": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 14,
+            "agree": 15,
             "disagree": 0,
             "needs_evidence": 1
           },
@@ -1059,10 +1064,10 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:must/006": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 12,
+            "agree": 13,
             "disagree": 3,
             "needs_evidence": 0
           },
@@ -1070,10 +1075,10 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:must/007": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 3,
+            "agree": 4,
             "disagree": 12,
             "needs_evidence": 0
           },
@@ -1081,10 +1086,10 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:must/008": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 6,
+            "agree": 7,
             "disagree": 9,
             "needs_evidence": 0
           },
@@ -1092,10 +1097,10 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:must/009": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -1103,10 +1108,10 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:must/010": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -1114,10 +1119,10 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:must/011": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -1125,21 +1130,21 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:must/012": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
             "agree": 14,
-            "disagree": 1,
+            "disagree": 2,
             "needs_evidence": 0
           },
           "multiple_finding_review_ids": [],
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:must/013": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -1147,10 +1152,10 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:must/014": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -1158,43 +1163,43 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:must/015": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
             "agree": 3,
-            "disagree": 11,
+            "disagree": 12,
             "needs_evidence": 1
           },
           "multiple_finding_review_ids": [],
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:must/016": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
             "agree": 15,
-            "disagree": 0,
+            "disagree": 1,
             "needs_evidence": 0
           },
           "multiple_finding_review_ids": [],
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:must/017": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
             "agree": 6,
-            "disagree": 8,
+            "disagree": 9,
             "needs_evidence": 1
           },
           "multiple_finding_review_ids": [],
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:should/001": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -1202,10 +1207,10 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:should/002": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -1213,10 +1218,10 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:should/003": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -1224,21 +1229,21 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:should/004": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
             "agree": 12,
             "disagree": 1,
-            "needs_evidence": 2
+            "needs_evidence": 3
           },
           "multiple_finding_review_ids": [],
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:should/005": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 12,
+            "agree": 13,
             "disagree": 2,
             "needs_evidence": 1
           },
@@ -1246,10 +1251,10 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:should/006": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -1257,10 +1262,10 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:should/007": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -1268,10 +1273,10 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:should/008": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -1279,10 +1284,10 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:should/009": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -1358,6 +1363,11 @@
           "total": 31
         },
         {
+          "review_id": "study-con-stamped-impl-06-review-1",
+          "checked": 31,
+          "total": 31
+        },
+        {
           "review_id": "study-con-stamped-impl-04-review-3",
           "checked": 31,
           "total": 31
@@ -1374,9 +1384,9 @@
       "assessment_count": 6,
       "complete": 6,
       "failed": 0,
-      "review_count": 15,
+      "review_count": 16,
       "review_verdict_counts": {
-        "needs_revision": 14,
+        "needs_revision": 15,
         "supported": 1
       },
       "criteria": {
@@ -1614,16 +1624,16 @@
         "interpretation": "Matching review verdicts do not establish factual correctness or human agreement."
       },
       "review_dispositions": {
-        "agree": 417,
-        "disagree": 32,
-        "needs_evidence": 16
+        "agree": 445,
+        "disagree": 33,
+        "needs_evidence": 18
       },
       "criterion_reviews": {
         "stamped-checklist:may/001": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -1631,10 +1641,10 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:may/002": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -1642,10 +1652,10 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:may/003": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 12,
+            "agree": 13,
             "disagree": 0,
             "needs_evidence": 3
           },
@@ -1653,10 +1663,10 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:may/004": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -1664,10 +1674,10 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:may/005": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -1675,10 +1685,10 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:must/001": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 11,
+            "agree": 12,
             "disagree": 4,
             "needs_evidence": 0
           },
@@ -1686,10 +1696,10 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:must/002": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -1697,10 +1707,10 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:must/003": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -1708,10 +1718,10 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:must/004": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -1719,10 +1729,10 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:must/005": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -1730,10 +1740,10 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:must/006": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -1741,10 +1751,10 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:must/007": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 9,
+            "agree": 10,
             "disagree": 5,
             "needs_evidence": 1
           },
@@ -1752,10 +1762,10 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:must/008": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 10,
+            "agree": 11,
             "disagree": 3,
             "needs_evidence": 2
           },
@@ -1763,21 +1773,21 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:must/009": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
             "agree": 15,
-            "disagree": 0,
+            "disagree": 1,
             "needs_evidence": 0
           },
           "multiple_finding_review_ids": [],
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:must/010": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 10,
+            "agree": 11,
             "disagree": 2,
             "needs_evidence": 3
           },
@@ -1785,10 +1795,10 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:must/011": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -1796,10 +1806,10 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:must/012": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 13,
+            "agree": 14,
             "disagree": 0,
             "needs_evidence": 2
           },
@@ -1807,10 +1817,10 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:must/013": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -1818,21 +1828,21 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:must/014": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
             "agree": 12,
             "disagree": 1,
-            "needs_evidence": 2
+            "needs_evidence": 3
           },
           "multiple_finding_review_ids": [],
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:must/015": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 12,
+            "agree": 13,
             "disagree": 3,
             "needs_evidence": 0
           },
@@ -1840,10 +1850,10 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:must/016": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -1851,10 +1861,10 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:must/017": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 12,
+            "agree": 13,
             "disagree": 3,
             "needs_evidence": 0
           },
@@ -1862,10 +1872,10 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:should/001": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -1873,10 +1883,10 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:should/002": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -1884,10 +1894,10 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:should/003": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -1895,10 +1905,10 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:should/004": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 14,
+            "agree": 15,
             "disagree": 0,
             "needs_evidence": 1
           },
@@ -1906,10 +1916,10 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:should/005": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 6,
+            "agree": 7,
             "disagree": 9,
             "needs_evidence": 0
           },
@@ -1917,10 +1927,10 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:should/006": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 14,
+            "agree": 15,
             "disagree": 1,
             "needs_evidence": 0
           },
@@ -1928,10 +1938,10 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:should/007": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -1939,21 +1949,21 @@
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:should/008": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
             "agree": 12,
             "disagree": 1,
-            "needs_evidence": 2
+            "needs_evidence": 3
           },
           "multiple_finding_review_ids": [],
           "checked_without_finding_review_ids": []
         },
         "stamped-checklist:should/009": {
-          "completed_review_denominator": 15,
-          "checked_review_denominator": 15,
+          "completed_review_denominator": 16,
+          "checked_review_denominator": 16,
           "distinct_review_dispositions": {
-            "agree": 15,
+            "agree": 16,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -1963,6 +1973,11 @@
       },
       "criterion_review_counting": "Each review counted once per disposition for each criterion. A review with conflicting multiple findings can contribute to more than one disposition; flagged IDs preserve that distinction. Denominators are completed reviews and reviews reporting the criterion checked; not correctness or consensus.",
       "review_coverage": [
+        {
+          "review_id": "study-con-narps-guidance-06-review-1",
+          "checked": 31,
+          "total": 31
+        },
         {
           "review_id": "study-con-narps-guidance-02-review-1",
           "checked": 31,

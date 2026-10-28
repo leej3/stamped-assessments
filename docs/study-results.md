@@ -1,7 +1,7 @@
 # REMoDNaV assessment-method pilot: descriptive results
 
-Updated 2026-10-28T02:25:23.953133+00:00.
-18/30 assessments and 45/90 reviews are complete.
+Updated 2026-10-28T02:34:13.632365+00:00.
+18/30 assessments and 48/90 reviews are complete.
 Failed attempts remain in the ledger.
 
 This is one research object at one fixed source revision, planned for ten independent assessments per method with fresh contexts.
@@ -16,9 +16,9 @@ These findings have not been adjudicated by human experts.
 
 | Method | Completed assessments | Failed assessments | Reviews | Review verdicts |
 | --- | ---: | ---: | ---: | --- |
-| rubric | 6 | 0 | 15 | needs_revision: 15 |
-| con-stamped-impl | 6 | 0 | 15 | needs_revision: 15 |
-| con-narps-guidance | 6 | 0 | 15 | needs_revision: 14, supported: 1 |
+| rubric | 6 | 0 | 16 | needs_revision: 16 |
+| con-stamped-impl | 6 | 0 | 16 | needs_revision: 16 |
+| con-narps-guidance | 6 | 0 | 16 | needs_revision: 15, supported: 1 |
 
 ## Native results
 
