@@ -1,146 +1,148 @@
 {
   "study_id": "remodnav-method-comparison-01",
-  "updated_at": "2026-10-28T02:47:05.879031+00:00",
+  "updated_at": "2026-10-28T02:56:02.246133+00:00",
   "assessment_status_counts": {
-    "complete": 18
+    "complete": 21
   },
   "review_status_counts": {
-    "complete": 54
+    "complete": 55
   },
   "planned_assessments": 30,
   "planned_reviews": 90,
   "methods": [
     {
       "method_id": "rubric",
-      "assessment_count": 6,
-      "complete": 6,
+      "assessment_count": 7,
+      "complete": 7,
       "failed": 0,
-      "review_count": 18,
+      "review_count": 19,
       "review_verdict_counts": {
-        "needs_revision": 18
+        "needs_revision": 19
       },
       "criteria": {
         "A-01": {
-          "3": 6
+          "3": 7
         },
         "A-02": {
-          "3": 4,
+          "3": 5,
           "2": 1,
           "unanswered": 1
         },
         "A-03": {
-          "3": 1,
+          "3": 2,
           "2": 1,
           "1": 4
         },
         "A-04": {
-          "3": 6
+          "3": 7
         },
         "A-05": {
-          "3": 1,
+          "3": 2,
           "2": 5
         },
         "A-06": {
-          "2": 6
+          "2": 7
         },
         "D-01": {
-          "unanswered": 5,
+          "unanswered": 6,
           "3": 1
         },
         "D-02": {
-          "1": 6
+          "1": 7
         },
         "D-03": {
-          "1": 6
+          "1": 7
         },
         "D-04": {
-          "2": 6
+          "2": 7
         },
         "D-05": {
-          "3": 6
+          "3": 7
         },
         "D-06": {
-          "0": 6
+          "0": 7
         },
         "E-01": {
-          "3": 6
+          "3": 7
         },
         "E-02": {
-          "3": 6
+          "3": 7
         },
         "E-03": {
           "2": 5,
+          "3": 1,
           "1": 1
         },
         "M-01": {
-          "3": 6
+          "3": 7
         },
         "M-02": {
-          "1": 6
+          "1": 7
         },
         "M-03": {
-          "2": 6
+          "2": 7
         },
         "M-04": {
-          "1": 6
+          "1": 7
         },
         "M-05": {
-          "unanswered": 4,
+          "unanswered": 5,
           "0": 1,
           "3": 1
         },
         "M-06": {
-          "3": 6
+          "3": 7
         },
         "P-01": {
-          "2": 6
+          "2": 7
         },
         "P-02": {
-          "3": 4,
+          "3": 5,
           "2": 2
         },
         "P-03": {
-          "3": 6
+          "3": 7
         },
         "P-04": {
-          "1": 6
+          "1": 7
         },
         "P-05": {
-          "3": 6
+          "3": 7
         },
         "S-01": {
-          "3": 6
+          "3": 7
         },
         "S-02": {
-          "3": 6
+          "3": 7
         },
         "S-03": {
-          "3": 6
+          "3": 7
         },
         "S-04": {
-          "2": 6
+          "2": 7
         },
         "T-01": {
-          "3": 6
+          "3": 7
         },
         "T-02": {
-          "3": 6
+          "3": 7
         },
         "T-03": {
-          "3": 6
+          "3": 7
         },
         "T-04": {
-          "2": 6
+          "2": 7
         },
         "T-05": {
-          "2": 6
+          "2": 7
         },
         "T-06": {
-          "0": 6
+          "0": 7
         }
       },
       "replicates": [
         "study-rubric-01",
+        "study-rubric-07",
         "study-rubric-06",
         "study-rubric-05",
         "study-rubric-04",
@@ -148,67 +150,67 @@
         "study-rubric-02"
       ],
       "overall_scores": {
-        "n": 6,
-        "mean": 74.25925925925925,
-        "sample_sd": 3.1914894808286687,
+        "n": 7,
+        "mean": 74.79591836734693,
+        "sample_sd": 3.240991398207389,
         "minimum": 70.71428571428571,
         "maximum": 78.80952380952381
       },
       "dimensions": {
         "S": {
-          "n": 6,
+          "n": 7,
           "mean": 91.66666666666666,
           "sample_sd": 0.0,
           "minimum": 91.66666666666666,
           "maximum": 91.66666666666666
         },
         "T": {
-          "n": 6,
+          "n": 7,
           "mean": 72.22222222222221,
           "sample_sd": 0.0,
           "minimum": 72.22222222222221,
           "maximum": 72.22222222222221
         },
         "A": {
-          "n": 6,
-          "mean": 77.77777777777779,
-          "sample_sd": 11.111111111111116,
+          "n": 7,
+          "mean": 80.15873015873017,
+          "sample_sd": 11.939983170790226,
           "minimum": 61.11111111111111,
           "maximum": 94.44444444444446
         },
         "M": {
-          "n": 6,
-          "mean": 58.33333333333334,
-          "sample_sd": 6.804138174397716,
+          "n": 7,
+          "mean": 57.936507936507944,
+          "sample_sd": 6.299407883487119,
           "minimum": 55.555555555555564,
           "maximum": 72.22222222222223
         },
         "P": {
-          "n": 6,
-          "mean": 91.1111111111111,
-          "sample_sd": 3.442651863295484,
+          "n": 7,
+          "mean": 91.42857142857142,
+          "sample_sd": 3.2530002431617797,
           "minimum": 86.66666666666666,
           "maximum": 93.33333333333333
         },
         "E": {
-          "n": 6,
-          "mean": 87.03703703703702,
-          "sample_sd": 4.536092116265134,
+          "n": 7,
+          "mean": 88.88888888888887,
+          "sample_sd": 6.4150029909958395,
           "minimum": 77.77777777777779,
-          "maximum": 88.88888888888887
+          "maximum": 100.0
         },
         "D": {
-          "n": 6,
-          "mean": 41.666666666666664,
-          "sample_sd": 6.804138174397716,
+          "n": 7,
+          "mean": 41.269841269841265,
+          "sample_sd": 6.299407883487119,
           "minimum": 38.888888888888886,
           "maximum": 55.55555555555555
         }
       },
       "answered_counts": {
-        "n": 6,
-        "mean": 34.333333333333336,
-        "sample_sd": 1.0327955589886446,
+        "n": 7,
+        "mean": 34.285714285714285,
+        "sample_sd": 0.9511897312113419,
         "minimum": 33,
         "maximum": 36
       },
@@ -218,16 +220,16 @@
         "interpretation": "Matching review verdicts do not establish factual correctness or human agreement."
       },
       "review_dispositions": {
-        "agree": 575,
-        "disagree": 34,
-        "needs_evidence": 39
+        "agree": 605,
+        "disagree": 38,
+        "needs_evidence": 41
       },
       "criterion_reviews": {
         "A-01": {
-          "completed_review_denominator": 18,
-          "checked_review_denominator": 18,
+          "completed_review_denominator": 19,
+          "checked_review_denominator": 19,
           "distinct_review_dispositions": {
-            "agree": 18,
+            "agree": 19,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -235,32 +237,32 @@
           "checked_without_finding_review_ids": []
         },
         "A-02": {
-          "completed_review_denominator": 18,
-          "checked_review_denominator": 18,
+          "completed_review_denominator": 19,
+          "checked_review_denominator": 19,
           "distinct_review_dispositions": {
             "agree": 6,
             "disagree": 3,
-            "needs_evidence": 9
+            "needs_evidence": 10
           },
           "multiple_finding_review_ids": [],
           "checked_without_finding_review_ids": []
         },
         "A-03": {
-          "completed_review_denominator": 18,
-          "checked_review_denominator": 18,
+          "completed_review_denominator": 19,
+          "checked_review_denominator": 19,
           "distinct_review_dispositions": {
             "agree": 12,
-            "disagree": 3,
+            "disagree": 4,
             "needs_evidence": 3
           },
           "multiple_finding_review_ids": [],
           "checked_without_finding_review_ids": []
         },
         "A-04": {
-          "completed_review_denominator": 18,
-          "checked_review_denominator": 18,
+          "completed_review_denominator": 19,
+          "checked_review_denominator": 19,
           "distinct_review_dispositions": {
-            "agree": 18,
+            "agree": 19,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -268,10 +270,10 @@
           "checked_without_finding_review_ids": []
         },
         "A-05": {
-          "completed_review_denominator": 18,
-          "checked_review_denominator": 18,
+          "completed_review_denominator": 19,
+          "checked_review_denominator": 19,
           "distinct_review_dispositions": {
-            "agree": 12,
+            "agree": 13,
             "disagree": 1,
             "needs_evidence": 5
           },
@@ -279,10 +281,10 @@
           "checked_without_finding_review_ids": []
         },
         "A-06": {
-          "completed_review_denominator": 18,
-          "checked_review_denominator": 18,
+          "completed_review_denominator": 19,
+          "checked_review_denominator": 19,
           "distinct_review_dispositions": {
-            "agree": 13,
+            "agree": 14,
             "disagree": 4,
             "needs_evidence": 1
           },
@@ -290,10 +292,10 @@
           "checked_without_finding_review_ids": []
         },
         "D-01": {
-          "completed_review_denominator": 18,
-          "checked_review_denominator": 18,
+          "completed_review_denominator": 19,
+          "checked_review_denominator": 19,
           "distinct_review_dispositions": {
-            "agree": 16,
+            "agree": 17,
             "disagree": 0,
             "needs_evidence": 2
           },
@@ -301,10 +303,10 @@
           "checked_without_finding_review_ids": []
         },
         "D-02": {
-          "completed_review_denominator": 18,
-          "checked_review_denominator": 18,
+          "completed_review_denominator": 19,
+          "checked_review_denominator": 19,
           "distinct_review_dispositions": {
-            "agree": 12,
+            "agree": 13,
             "disagree": 3,
             "needs_evidence": 3
           },
@@ -312,10 +314,10 @@
           "checked_without_finding_review_ids": []
         },
         "D-03": {
-          "completed_review_denominator": 18,
-          "checked_review_denominator": 18,
+          "completed_review_denominator": 19,
+          "checked_review_denominator": 19,
           "distinct_review_dispositions": {
-            "agree": 18,
+            "agree": 19,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -323,10 +325,10 @@
           "checked_without_finding_review_ids": []
         },
         "D-04": {
-          "completed_review_denominator": 18,
-          "checked_review_denominator": 18,
+          "completed_review_denominator": 19,
+          "checked_review_denominator": 19,
           "distinct_review_dispositions": {
-            "agree": 18,
+            "agree": 19,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -334,10 +336,10 @@
           "checked_without_finding_review_ids": []
         },
         "D-05": {
-          "completed_review_denominator": 18,
-          "checked_review_denominator": 18,
+          "completed_review_denominator": 19,
+          "checked_review_denominator": 19,
           "distinct_review_dispositions": {
-            "agree": 18,
+            "agree": 19,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -345,10 +347,10 @@
           "checked_without_finding_review_ids": []
         },
         "D-06": {
-          "completed_review_denominator": 18,
-          "checked_review_denominator": 18,
+          "completed_review_denominator": 19,
+          "checked_review_denominator": 19,
           "distinct_review_dispositions": {
-            "agree": 18,
+            "agree": 19,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -356,10 +358,10 @@
           "checked_without_finding_review_ids": []
         },
         "E-01": {
-          "completed_review_denominator": 18,
-          "checked_review_denominator": 18,
+          "completed_review_denominator": 19,
+          "checked_review_denominator": 19,
           "distinct_review_dispositions": {
-            "agree": 13,
+            "agree": 14,
             "disagree": 1,
             "needs_evidence": 4
           },
@@ -367,32 +369,32 @@
           "checked_without_finding_review_ids": []
         },
         "E-02": {
-          "completed_review_denominator": 18,
-          "checked_review_denominator": 18,
+          "completed_review_denominator": 19,
+          "checked_review_denominator": 19,
           "distinct_review_dispositions": {
             "agree": 17,
             "disagree": 0,
-            "needs_evidence": 1
+            "needs_evidence": 2
           },
           "multiple_finding_review_ids": [],
           "checked_without_finding_review_ids": []
         },
         "E-03": {
-          "completed_review_denominator": 18,
-          "checked_review_denominator": 18,
+          "completed_review_denominator": 19,
+          "checked_review_denominator": 19,
           "distinct_review_dispositions": {
             "agree": 18,
-            "disagree": 0,
+            "disagree": 1,
             "needs_evidence": 0
           },
           "multiple_finding_review_ids": [],
           "checked_without_finding_review_ids": []
         },
         "M-01": {
-          "completed_review_denominator": 18,
-          "checked_review_denominator": 18,
+          "completed_review_denominator": 19,
+          "checked_review_denominator": 19,
           "distinct_review_dispositions": {
-            "agree": 18,
+            "agree": 19,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -400,10 +402,10 @@
           "checked_without_finding_review_ids": []
         },
         "M-02": {
-          "completed_review_denominator": 18,
-          "checked_review_denominator": 18,
+          "completed_review_denominator": 19,
+          "checked_review_denominator": 19,
           "distinct_review_dispositions": {
-            "agree": 18,
+            "agree": 19,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -411,10 +413,10 @@
           "checked_without_finding_review_ids": []
         },
         "M-03": {
-          "completed_review_denominator": 18,
-          "checked_review_denominator": 18,
+          "completed_review_denominator": 19,
+          "checked_review_denominator": 19,
           "distinct_review_dispositions": {
-            "agree": 18,
+            "agree": 19,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -422,10 +424,10 @@
           "checked_without_finding_review_ids": []
         },
         "M-04": {
-          "completed_review_denominator": 18,
-          "checked_review_denominator": 18,
+          "completed_review_denominator": 19,
+          "checked_review_denominator": 19,
           "distinct_review_dispositions": {
-            "agree": 18,
+            "agree": 19,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -433,21 +435,21 @@
           "checked_without_finding_review_ids": []
         },
         "M-05": {
-          "completed_review_denominator": 18,
-          "checked_review_denominator": 18,
+          "completed_review_denominator": 19,
+          "checked_review_denominator": 19,
           "distinct_review_dispositions": {
             "agree": 7,
-            "disagree": 11,
+            "disagree": 12,
             "needs_evidence": 0
           },
           "multiple_finding_review_ids": [],
           "checked_without_finding_review_ids": []
         },
         "M-06": {
-          "completed_review_denominator": 18,
-          "checked_review_denominator": 18,
+          "completed_review_denominator": 19,
+          "checked_review_denominator": 19,
           "distinct_review_dispositions": {
-            "agree": 18,
+            "agree": 19,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -455,10 +457,10 @@
           "checked_without_finding_review_ids": []
         },
         "P-01": {
-          "completed_review_denominator": 18,
-          "checked_review_denominator": 18,
+          "completed_review_denominator": 19,
+          "checked_review_denominator": 19,
           "distinct_review_dispositions": {
-            "agree": 16,
+            "agree": 17,
             "disagree": 0,
             "needs_evidence": 2
           },
@@ -466,10 +468,10 @@
           "checked_without_finding_review_ids": []
         },
         "P-02": {
-          "completed_review_denominator": 18,
-          "checked_review_denominator": 18,
+          "completed_review_denominator": 19,
+          "checked_review_denominator": 19,
           "distinct_review_dispositions": {
-            "agree": 12,
+            "agree": 13,
             "disagree": 2,
             "needs_evidence": 4
           },
@@ -477,10 +479,10 @@
           "checked_without_finding_review_ids": []
         },
         "P-03": {
-          "completed_review_denominator": 18,
-          "checked_review_denominator": 18,
+          "completed_review_denominator": 19,
+          "checked_review_denominator": 19,
           "distinct_review_dispositions": {
-            "agree": 18,
+            "agree": 19,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -488,10 +490,10 @@
           "checked_without_finding_review_ids": []
         },
         "P-04": {
-          "completed_review_denominator": 18,
-          "checked_review_denominator": 18,
+          "completed_review_denominator": 19,
+          "checked_review_denominator": 19,
           "distinct_review_dispositions": {
-            "agree": 18,
+            "agree": 19,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -499,21 +501,21 @@
           "checked_without_finding_review_ids": []
         },
         "P-05": {
-          "completed_review_denominator": 18,
-          "checked_review_denominator": 18,
+          "completed_review_denominator": 19,
+          "checked_review_denominator": 19,
           "distinct_review_dispositions": {
             "agree": 8,
-            "disagree": 5,
+            "disagree": 6,
             "needs_evidence": 5
           },
           "multiple_finding_review_ids": [],
           "checked_without_finding_review_ids": []
         },
         "S-01": {
-          "completed_review_denominator": 18,
-          "checked_review_denominator": 18,
+          "completed_review_denominator": 19,
+          "checked_review_denominator": 19,
           "distinct_review_dispositions": {
-            "agree": 18,
+            "agree": 19,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -521,10 +523,10 @@
           "checked_without_finding_review_ids": []
         },
         "S-02": {
-          "completed_review_denominator": 18,
-          "checked_review_denominator": 18,
+          "completed_review_denominator": 19,
+          "checked_review_denominator": 19,
           "distinct_review_dispositions": {
-            "agree": 18,
+            "agree": 19,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -532,10 +534,10 @@
           "checked_without_finding_review_ids": []
         },
         "S-03": {
-          "completed_review_denominator": 18,
-          "checked_review_denominator": 18,
+          "completed_review_denominator": 19,
+          "checked_review_denominator": 19,
           "distinct_review_dispositions": {
-            "agree": 18,
+            "agree": 19,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -543,10 +545,10 @@
           "checked_without_finding_review_ids": []
         },
         "S-04": {
-          "completed_review_denominator": 18,
-          "checked_review_denominator": 18,
+          "completed_review_denominator": 19,
+          "checked_review_denominator": 19,
           "distinct_review_dispositions": {
-            "agree": 18,
+            "agree": 19,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -554,10 +556,10 @@
           "checked_without_finding_review_ids": []
         },
         "T-01": {
-          "completed_review_denominator": 18,
-          "checked_review_denominator": 18,
+          "completed_review_denominator": 19,
+          "checked_review_denominator": 19,
           "distinct_review_dispositions": {
-            "agree": 18,
+            "agree": 19,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -565,10 +567,10 @@
           "checked_without_finding_review_ids": []
         },
         "T-02": {
-          "completed_review_denominator": 18,
-          "checked_review_denominator": 18,
+          "completed_review_denominator": 19,
+          "checked_review_denominator": 19,
           "distinct_review_dispositions": {
-            "agree": 18,
+            "agree": 19,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -576,10 +578,10 @@
           "checked_without_finding_review_ids": []
         },
         "T-03": {
-          "completed_review_denominator": 18,
-          "checked_review_denominator": 18,
+          "completed_review_denominator": 19,
+          "checked_review_denominator": 19,
           "distinct_review_dispositions": {
-            "agree": 18,
+            "agree": 19,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -587,10 +589,10 @@
           "checked_without_finding_review_ids": []
         },
         "T-04": {
-          "completed_review_denominator": 18,
-          "checked_review_denominator": 18,
+          "completed_review_denominator": 19,
+          "checked_review_denominator": 19,
           "distinct_review_dispositions": {
-            "agree": 18,
+            "agree": 19,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -598,10 +600,10 @@
           "checked_without_finding_review_ids": []
         },
         "T-05": {
-          "completed_review_denominator": 18,
-          "checked_review_denominator": 18,
+          "completed_review_denominator": 19,
+          "checked_review_denominator": 19,
           "distinct_review_dispositions": {
-            "agree": 17,
+            "agree": 18,
             "disagree": 1,
             "needs_evidence": 0
           },
@@ -609,10 +611,10 @@
           "checked_without_finding_review_ids": []
         },
         "T-06": {
-          "completed_review_denominator": 18,
-          "checked_review_denominator": 18,
+          "completed_review_denominator": 19,
+          "checked_review_denominator": 19,
           "distinct_review_dispositions": {
-            "agree": 18,
+            "agree": 19,
             "disagree": 0,
             "needs_evidence": 0
           },
@@ -673,6 +675,11 @@
           "total": 36
         },
         {
+          "review_id": "study-rubric-07-review-1",
+          "checked": 36,
+          "total": 36
+        },
+        {
           "review_id": "study-rubric-03-review-2",
           "checked": 36,
           "total": 36
@@ -716,8 +723,8 @@
     },
     {
       "method_id": "con-stamped-impl",
-      "assessment_count": 6,
-      "complete": 6,
+      "assessment_count": 7,
+      "complete": 7,
       "failed": 0,
       "review_count": 18,
       "review_verdict_counts": {
@@ -725,114 +732,116 @@
       },
       "criteria": {
         "stamped-checklist:may/001": {
-          "met": 6
+          "met": 7
         },
         "stamped-checklist:may/002": {
-          "partial": 6
+          "partial": 7
         },
         "stamped-checklist:may/003": {
-          "partial": 5,
+          "partial": 6,
           "met": 1
         },
         "stamped-checklist:may/004": {
-          "met": 6
+          "met": 7
         },
         "stamped-checklist:may/005": {
-          "met": 2,
+          "met": 3,
           "partial": 4
         },
         "stamped-checklist:must/001": {
           "met": 3,
-          "partial": 3
+          "partial": 4
         },
         "stamped-checklist:must/002": {
-          "partial": 6
+          "partial": 7
         },
         "stamped-checklist:must/003": {
           "met": 3,
-          "partial": 3
+          "partial": 4
         },
         "stamped-checklist:must/004": {
-          "met": 6
+          "met": 7
         },
         "stamped-checklist:must/005": {
-          "met": 6
+          "met": 7
         },
         "stamped-checklist:must/006": {
-          "partial": 5,
+          "partial": 6,
           "met": 1
         },
         "stamped-checklist:must/007": {
           "partial": 1,
-          "met": 5
+          "met": 6
         },
         "stamped-checklist:must/008": {
           "partial": 2,
-          "met": 4
+          "met": 5
         },
         "stamped-checklist:must/009": {
-          "partial": 6
+          "partial": 7
         },
         "stamped-checklist:must/010": {
-          "partial": 6
+          "partial": 7
         },
         "stamped-checklist:must/011": {
-          "partial": 6
+          "partial": 7
         },
         "stamped-checklist:must/012": {
           "met": 3,
-          "partial": 3
+          "partial": 4
         },
         "stamped-checklist:must/013": {
-          "met": 6
+          "met": 7
         },
         "stamped-checklist:must/014": {
-          "met": 6
+          "met": 7
         },
         "stamped-checklist:must/015": {
-          "met": 6
+          "met": 6,
+          "partial": 1
         },
         "stamped-checklist:must/016": {
-          "partial": 1,
+          "partial": 2,
           "met": 1,
           "not-checked": 4
         },
         "stamped-checklist:must/017": {
-          "met": 5,
+          "met": 6,
           "partial": 1
         },
         "stamped-checklist:should/001": {
-          "met": 6
+          "met": 7
         },
         "stamped-checklist:should/002": {
-          "partial": 6
+          "partial": 7
         },
         "stamped-checklist:should/003": {
-          "met": 6
+          "met": 7
         },
         "stamped-checklist:should/004": {
-          "met": 6
+          "met": 7
         },
         "stamped-checklist:should/005": {
-          "partial": 5,
+          "partial": 6,
           "met": 1
         },
         "stamped-checklist:should/006": {
-          "partial": 6
+          "partial": 7
         },
         "stamped-checklist:should/007": {
-          "met": 6
+          "met": 7
         },
         "stamped-checklist:should/008": {
-          "met": 6
+          "met": 7
         },
         "stamped-checklist:should/009": {
           "not-applicable": 5,
-          "not-checked": 1
+          "not-checked": 2
         }
       },
       "replicates": [
         "study-con-stamped-impl-06",
+        "study-con-stamped-impl-07",
         "study-con-stamped-impl-01",
         "study-con-stamped-impl-02",
         "study-con-stamped-impl-03",
@@ -842,35 +851,35 @@
       "native_level_counts": {
         "must": {
           "met": {
-            "n": 6,
-            "mean": 9.166666666666666,
-            "sample_sd": 1.4719601443879744,
-            "minimum": 8,
+            "n": 7,
+            "mean": 8.857142857142858,
+            "sample_sd": 1.5735915849388864,
+            "minimum": 7,
             "maximum": 12
           },
           "partial": {
-            "n": 6,
-            "mean": 7.166666666666667,
-            "sample_sd": 1.7224014243685084,
+            "n": 7,
+            "mean": 7.571428571428571,
+            "sample_sd": 1.9023794624226837,
             "minimum": 4,
-            "maximum": 9
+            "maximum": 10
           },
           "unmet": {
-            "n": 6,
+            "n": 7,
             "mean": 0,
             "sample_sd": 0.0,
             "minimum": 0,
             "maximum": 0
           },
           "not-checked": {
-            "n": 6,
-            "mean": 0.6666666666666666,
-            "sample_sd": 0.5163977794943223,
+            "n": 7,
+            "mean": 0.5714285714285714,
+            "sample_sd": 0.5345224838248488,
             "minimum": 0,
             "maximum": 1
           },
           "not-applicable": {
-            "n": 6,
+            "n": 7,
             "mean": 0,
             "sample_sd": 0.0,
             "minimum": 0,
@@ -879,72 +888,72 @@
         },
         "should": {
           "met": {
-            "n": 6,
-            "mean": 5.166666666666667,
-            "sample_sd": 0.408248290463863,
+            "n": 7,
+            "mean": 5.142857142857143,
+            "sample_sd": 0.37796447300922725,
             "minimum": 5,
             "maximum": 6
           },
           "partial": {
-            "n": 6,
-            "mean": 2.8333333333333335,
-            "sample_sd": 0.408248290463863,
+            "n": 7,
+            "mean": 2.857142857142857,
+            "sample_sd": 0.37796447300922725,
             "minimum": 2,
             "maximum": 3
           },
           "unmet": {
-            "n": 6,
+            "n": 7,
             "mean": 0,
             "sample_sd": 0.0,
             "minimum": 0,
             "maximum": 0
           },
           "not-checked": {
-            "n": 6,
-            "mean": 0.16666666666666666,
-            "sample_sd": 0.408248290463863,
+            "n": 7,
+            "mean": 0.2857142857142857,
+            "sample_sd": 0.4879500364742666,
             "minimum": 0,
             "maximum": 1
           },
           "not-applicable": {
-            "n": 6,
-            "mean": 0.8333333333333334,
-            "sample_sd": 0.408248290463863,
+            "n": 7,
+            "mean": 0.7142857142857143,
+            "sample_sd": 0.4879500364742666,
             "minimum": 0,
             "maximum": 1
           }
         },
         "may": {
           "met": {
-            "n": 6,
-            "mean": 2.5,
-            "sample_sd": 0.8366600265340756,
+            "n": 7,
+            "mean": 2.5714285714285716,
+            "sample_sd": 0.7867957924694432,
             "minimum": 2,
             "maximum": 4
           },
           "partial": {
-            "n": 6,
-            "mean": 2.5,
-            "sample_sd": 0.8366600265340756,
+            "n": 7,
+            "mean": 2.4285714285714284,
+            "sample_sd": 0.7867957924694432,
             "minimum": 1,
             "maximum": 3
           },
           "unmet": {
-            "n": 6,
+            "n": 7,
             "mean": 0,
             "sample_sd": 0.0,
             "minimum": 0,
             "maximum": 0
           },
           "not-checked": {
-            "n": 6,
+            "n": 7,
             "mean": 0,
             "sample_sd": 0.0,
             "minimum": 0,
             "maximum": 0
           },
           "not-applicable": {
-            "n": 6,
+            "n": 7,
             "mean": 0,
             "sample_sd": 0.0,
             "minimum": 0,
@@ -1401,8 +1410,8 @@
     },
     {
       "method_id": "con-narps-guidance",
-      "assessment_count": 6,
-      "complete": 6,
+      "assessment_count": 7,
+      "complete": 7,
       "failed": 0,
       "review_count": 18,
       "review_verdict_counts": {
@@ -1411,109 +1420,109 @@
       },
       "criteria": {
         "stamped-checklist:may/001": {
-          "partial": 6
+          "partial": 7
         },
         "stamped-checklist:may/002": {
-          "partial": 6
+          "partial": 7
         },
         "stamped-checklist:may/003": {
-          "partial": 1,
+          "partial": 2,
           "met": 5
         },
         "stamped-checklist:may/004": {
-          "met": 6
+          "met": 7
         },
         "stamped-checklist:may/005": {
           "partial": 4,
-          "met": 2
+          "met": 3
         },
         "stamped-checklist:must/001": {
           "partial": 3,
-          "met": 3
+          "met": 4
         },
         "stamped-checklist:must/002": {
-          "partial": 6
+          "partial": 7
         },
         "stamped-checklist:must/003": {
-          "met": 6
+          "met": 7
         },
         "stamped-checklist:must/004": {
-          "met": 6
+          "met": 7
         },
         "stamped-checklist:must/005": {
-          "met": 6
+          "met": 7
         },
         "stamped-checklist:must/006": {
-          "partial": 6
+          "partial": 7
         },
         "stamped-checklist:must/007": {
-          "met": 6
+          "met": 7
         },
         "stamped-checklist:must/008": {
-          "met": 6
+          "met": 7
         },
         "stamped-checklist:must/009": {
-          "partial": 6
+          "partial": 7
         },
         "stamped-checklist:must/010": {
           "met": 4,
-          "partial": 2
+          "partial": 3
         },
         "stamped-checklist:must/011": {
-          "partial": 6
+          "partial": 7
         },
         "stamped-checklist:must/012": {
           "partial": 2,
-          "met": 4
+          "met": 5
         },
         "stamped-checklist:must/013": {
-          "met": 6
+          "met": 7
         },
         "stamped-checklist:must/014": {
-          "met": 5,
+          "met": 6,
           "partial": 1
         },
         "stamped-checklist:must/015": {
           "partial": 3,
-          "met": 3
+          "met": 4
         },
         "stamped-checklist:must/016": {
-          "not-checked": 6
+          "not-checked": 7
         },
         "stamped-checklist:must/017": {
-          "met": 5,
+          "met": 6,
           "partial": 1
         },
         "stamped-checklist:should/001": {
-          "met": 6
+          "met": 7
         },
         "stamped-checklist:should/002": {
           "not-checked": 5,
-          "partial": 1
+          "partial": 2
         },
         "stamped-checklist:should/003": {
-          "met": 6
+          "met": 7
         },
         "stamped-checklist:should/004": {
-          "met": 6
+          "met": 7
         },
         "stamped-checklist:should/005": {
           "partial": 2,
-          "met": 4
+          "met": 5
         },
         "stamped-checklist:should/006": {
-          "not-checked": 5,
+          "not-checked": 6,
           "partial": 1
         },
         "stamped-checklist:should/007": {
-          "met": 6
+          "met": 7
         },
         "stamped-checklist:should/008": {
-          "met": 5,
+          "met": 6,
           "partial": 1
         },
         "stamped-checklist:should/009": {
-          "not-applicable": 5,
+          "not-applicable": 6,
           "not-checked": 1
         }
       },
@@ -1523,40 +1532,41 @@
         "study-con-narps-guidance-03",
         "study-con-narps-guidance-02",
         "study-con-narps-guidance-01",
+        "study-con-narps-guidance-07",
         "study-con-narps-guidance-06"
       ],
       "native_level_counts": {
         "must": {
           "met": {
-            "n": 6,
-            "mean": 10,
-            "sample_sd": 1.7888543819998317,
+            "n": 7,
+            "mean": 10.142857142857142,
+            "sample_sd": 1.6761634196950514,
             "minimum": 7,
             "maximum": 12
           },
           "partial": {
-            "n": 6,
-            "mean": 6,
-            "sample_sd": 1.7888543819998317,
+            "n": 7,
+            "mean": 5.857142857142857,
+            "sample_sd": 1.6761634196950514,
             "minimum": 4,
             "maximum": 9
           },
           "unmet": {
-            "n": 6,
+            "n": 7,
             "mean": 0,
             "sample_sd": 0.0,
             "minimum": 0,
             "maximum": 0
           },
           "not-checked": {
-            "n": 6,
+            "n": 7,
             "mean": 1,
             "sample_sd": 0.0,
             "minimum": 1,
             "maximum": 1
           },
           "not-applicable": {
-            "n": 6,
+            "n": 7,
             "mean": 0,
             "sample_sd": 0.0,
             "minimum": 0,
@@ -1565,72 +1575,72 @@
         },
         "should": {
           "met": {
-            "n": 6,
-            "mean": 5.5,
-            "sample_sd": 0.5477225575051661,
+            "n": 7,
+            "mean": 5.571428571428571,
+            "sample_sd": 0.5345224838248488,
             "minimum": 5,
             "maximum": 6
           },
           "partial": {
-            "n": 6,
-            "mean": 0.8333333333333334,
-            "sample_sd": 0.752772652709081,
+            "n": 7,
+            "mean": 0.8571428571428571,
+            "sample_sd": 0.6900655593423543,
             "minimum": 0,
             "maximum": 2
           },
           "unmet": {
-            "n": 6,
+            "n": 7,
             "mean": 0,
             "sample_sd": 0.0,
             "minimum": 0,
             "maximum": 0
           },
           "not-checked": {
-            "n": 6,
-            "mean": 1.8333333333333333,
-            "sample_sd": 0.983192080250175,
+            "n": 7,
+            "mean": 1.7142857142857142,
+            "sample_sd": 0.9511897312113419,
             "minimum": 0,
             "maximum": 3
           },
           "not-applicable": {
-            "n": 6,
-            "mean": 0.8333333333333334,
-            "sample_sd": 0.408248290463863,
+            "n": 7,
+            "mean": 0.8571428571428571,
+            "sample_sd": 0.37796447300922725,
             "minimum": 0,
             "maximum": 1
           }
         },
         "may": {
           "met": {
-            "n": 6,
-            "mean": 2.1666666666666665,
-            "sample_sd": 0.752772652709081,
+            "n": 7,
+            "mean": 2.142857142857143,
+            "sample_sd": 0.6900655593423543,
             "minimum": 1,
             "maximum": 3
           },
           "partial": {
-            "n": 6,
-            "mean": 2.8333333333333335,
-            "sample_sd": 0.752772652709081,
+            "n": 7,
+            "mean": 2.857142857142857,
+            "sample_sd": 0.6900655593423543,
             "minimum": 2,
             "maximum": 4
           },
           "unmet": {
-            "n": 6,
+            "n": 7,
             "mean": 0,
             "sample_sd": 0.0,
             "minimum": 0,
             "maximum": 0
           },
           "not-checked": {
-            "n": 6,
+            "n": 7,
             "mean": 0,
             "sample_sd": 0.0,
             "minimum": 0,
             "maximum": 0
           },
           "not-applicable": {
-            "n": 6,
+            "n": 7,
             "mean": 0,
             "sample_sd": 0.0,
             "minimum": 0,

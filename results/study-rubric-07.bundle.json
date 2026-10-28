@@ -1,0 +1,1158 @@
+{
+  "format_version": "1.0.0",
+  "rubric_version": "0.1.0",
+  "rubric_sha256": "05d96a057d8cfe79927f587f6994cf386e12bca83d55b3e7deee8e37ab7bcbb4",
+  "research_object": {
+    "title": "REMoDNaV: Robust Eye Movement Detection for Natural Viewing",
+    "locator": "https://github.com/psychoinformatics-de/paper-remodnav",
+    "revision": "34388d3ca78fbd483e022e4e2851be390b7eebf2",
+    "scope": "Numerical results, figures and manuscript, including explicitly linked computational components."
+  },
+  "assessments": [
+    {
+      "id": "study-rubric-07",
+      "reviewer": {
+        "id": "study-rubric-07-assessor",
+        "name": "Independent assessor"
+      },
+      "created_at": "2026-10-28T02:48:24.605846+00:00",
+      "updated_at": "2026-10-28T02:49:11.429158+00:00",
+      "review_of": null,
+      "weights": {
+        "S": 1,
+        "T": 1,
+        "A": 1,
+        "M": 1,
+        "P": 1,
+        "E": 1,
+        "D": 1
+      },
+      "responses": {
+        "S-01": {
+          "score": 3,
+          "rationale": "The README identifies data, analysis, figures and manuscript; explicit gitmodules and container configuration connect all components used by the scoped commands. The raw dataset\u2019s private original-source submodule is not consumed by these analyses.",
+          "evidence": [
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/README.md",
+              "description": "Updated acquisition, replay, manuscript commands, host versions and download sizes.",
+              "discovery_path": "Root repository \u2192 README.md",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.gitmodules",
+              "description": "Declared raw data, event-label dataset and software submodules; exact gitlinks inspected in frozen inventory.",
+              "discovery_path": "Root repository \u2192 .gitmodules",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.datalad/config",
+              "description": "Container image reference, temporary HOME, cleanup and configurable Python adapter invocation.",
+              "discovery_path": "Root repository \u2192 .datalad/config",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/code/mk_figuresnstats.py",
+              "description": "Result and figure functions, explicit paths and classifier parameters; flags -s -f -r -m; REMODNAV_RESULTS output.",
+              "discovery_path": "Root repository \u2192 code/mk_figuresnstats.py",
+              "access_status": "accessible"
+            }
+          ],
+          "observation": "observed",
+          "confidence": "high",
+          "evidence_rating": "sufficient"
+        },
+        "S-02": {
+          "score": 3,
+          "rationale": "Raw gaze data and event TSVs are explicitly referenced through pinned subdatasets; Andersson MAT data are reached through the software test-data submodule. Analysis and manuscript source are included. Absent cached payload bytes do not erase these explicit references.",
+          "evidence": [
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.gitmodules",
+              "description": "Declared raw data, event-label dataset and software submodules; exact gitlinks inspected in frozen inventory.",
+              "discovery_path": "Root repository \u2192 .gitmodules",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/code/mk_figuresnstats.py",
+              "description": "Result and figure functions, explicit paths and classifier parameters; flags -s -f -r -m; REMODNAV_RESULTS output.",
+              "discovery_path": "Root repository \u2192 code/mk_figuresnstats.py",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/main.tex",
+              "description": "Manuscript consumes results_def.tex and figure PDFs; operation and data/code availability sections.",
+              "discovery_path": "Root repository \u2192 main.tex",
+              "access_status": "accessible"
+            }
+          ],
+          "observation": "observed",
+          "confidence": "high",
+          "evidence_rating": "sufficient"
+        },
+        "S-03": {
+          "score": 3,
+          "rationale": "Dockerfile and stored image specify the environment; Docker-Makefile flags, source parameters/defaults and container configuration specify the calculations and runtime invocation.",
+          "evidence": [
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/container/Dockerfile",
+              "description": "Debian bookworm-slim build recipe with apt packages and selected pinned Python packages.",
+              "discovery_path": "Root repository \u2192 container/Dockerfile",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.datalad/config",
+              "description": "Container image reference, temporary HOME, cleanup and configurable Python adapter invocation.",
+              "discovery_path": "Root repository \u2192 .datalad/config",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/Docker-Makefile",
+              "description": "Executable editable software installation, results generation, cleaning and manuscript delegation.",
+              "discovery_path": "Root repository \u2192 Docker-Makefile",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/code/mk_figuresnstats.py",
+              "description": "Result and figure functions, explicit paths and classifier parameters; flags -s -f -r -m; REMODNAV_RESULTS output.",
+              "discovery_path": "Root repository \u2192 code/mk_figuresnstats.py",
+              "access_status": "accessible"
+            }
+          ],
+          "observation": "observed",
+          "confidence": "high",
+          "evidence_rating": "sufficient"
+        },
+        "S-04": {
+          "score": 2,
+          "rationale": "CC-BY, MIT, PDDL and GPL declarations are reachable and attributable to their repositories, but the separate event-label dataset has no located declaration; bundled container asset terms are not mapped.",
+          "evidence": [
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/COPYING",
+              "description": "CC Attribution 4.0 International root declaration.",
+              "discovery_path": "Root repository \u2192 COPYING",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/remodnav/blob/d28911838f91f33af0db57332f55ccc442d24f66/LICENSE",
+              "description": "Explicit MIT scope for REMoDNaV code and documentation.",
+              "discovery_path": "Root .gitmodules \u2192 remodnav \u2192 LICENSE",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/studyforrest-data-phase2/blob/a6623bff95ae3676ef0ecad262b5c44ded7cb4a1/LICENSE",
+              "description": "Open Data Commons PDDL text for source data.",
+              "discovery_path": "Root .gitmodules \u2192 data/raw_eyegaze \u2192 LICENSE",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/richardandersson/EyeMovementDetectorEvaluation/blob/0e6f82708e10b48039763aa1078696e802260674/LICENSE",
+              "description": "GNU GPL version 3 declaration.",
+              "discovery_path": "Root .gitmodules \u2192 remodnav \u2192 .gitmodules \u2192 tests/data/anderson_etal \u2192 LICENSE",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/studyforrest-data-eyemovementlabels/blob/92279db3850ee4282d97001a3f650fc55cb64b4e/README",
+              "description": "Module README describes older Condor procedure; frozen file inventory contains no license declaration.",
+              "discovery_path": "Root .gitmodules \u2192 data/studyforrest-data-eyemovementlabels \u2192 README",
+              "access_status": "accessible"
+            }
+          ],
+          "observation": "observed",
+          "confidence": "high",
+          "evidence_rating": "sufficient"
+        },
+        "T-01": {
+          "score": 3,
+          "rationale": "Root Git content, submodule commit selections, data annex keys and container configuration/layer digests identify the intended content. Unpinned recipe reconstruction is a separate issue from the identity of the saved image.",
+          "evidence": [
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.gitmodules",
+              "description": "Declared raw data, event-label dataset and software submodules; exact gitlinks inspected in frozen inventory.",
+              "discovery_path": "Root repository \u2192 .gitmodules",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/container/image/manifest.json",
+              "description": "Stored container config and layer SHA256 names; annex pointers identify payload bytes, not acquired in this cohort.",
+              "discovery_path": "Root repository \u2192 container/image/manifest.json",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/commit/57d2565ab70b9d7b41c28aaa253ccc7096900f8d",
+              "description": "Historical DataLad run JSON records command, declared inputs, image extra_input, img/results_def.tex outputs, working directory and exit 0. This was not executed by this assessor.",
+              "discovery_path": "Root README.md \u2192 results-containerized tag \u2192 target commit and recorded history",
+              "access_status": "accessible"
+            }
+          ],
+          "observation": "observed",
+          "confidence": "high",
+          "evidence_rating": "sufficient"
+        },
+        "T-02": {
+          "score": 3,
+          "rationale": "The root Git tree combines code, configuration, gitlinks and annex content keys; nested dataset selections and the image are resolved through compatible Git/git-annex tracking.",
+          "evidence": [
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.gitmodules",
+              "description": "Declared raw data, event-label dataset and software submodules; exact gitlinks inspected in frozen inventory.",
+              "discovery_path": "Root repository \u2192 .gitmodules",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/container/image/manifest.json",
+              "description": "Stored container config and layer SHA256 names; annex pointers identify payload bytes, not acquired in this cohort.",
+              "discovery_path": "Root repository \u2192 container/image/manifest.json",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.datalad/config",
+              "description": "Container image reference, temporary HOME, cleanup and configurable Python adapter invocation.",
+              "discovery_path": "Root repository \u2192 .datalad/config",
+              "access_status": "accessible"
+            }
+          ],
+          "observation": "observed",
+          "confidence": "high",
+          "evidence_rating": "sufficient"
+        },
+        "T-03": {
+          "score": 3,
+          "rationale": "Frozen reachable histories for root, raw data, labels, both software selections and both Andersson selections record named actors, dates and change subjects. This covers present component classes, including image and result updates.",
+          "evidence": [
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/commits/34388d3ca78fbd483e022e4e2851be390b7eebf2",
+              "description": "Inspected supplied revision-bounded root and explicitly linked module histories; entries include authors, dates and change descriptions.",
+              "discovery_path": "Root \u2192 .gitmodules recursively \u2192 each pinned component history",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/commit/3dd49e368d5cfe9ed8ae861d21475ca3fe6b5b9c",
+              "description": "Historical container build record links Dockerfile input and image output, exit 0; not an assessor build.",
+              "discovery_path": "Root container/Dockerfile and image \u2192 version history",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/commit/57d2565ab70b9d7b41c28aaa253ccc7096900f8d",
+              "description": "Historical DataLad run JSON records command, declared inputs, image extra_input, img/results_def.tex outputs, working directory and exit 0. This was not executed by this assessor.",
+              "discovery_path": "Root README.md \u2192 results-containerized tag \u2192 target commit and recorded history",
+              "access_status": "accessible"
+            }
+          ],
+          "observation": "observed",
+          "confidence": "high",
+          "evidence_rating": "sufficient"
+        },
+        "T-04": {
+          "score": 2,
+          "rationale": "The numerical/SVG rerun has captured command, inputs, outputs and image; container build/conversion also have records. Manuscript compilation is supplied as a command but no captured manuscript run record was located, and imported event-generation history is not equivalently complete.",
+          "evidence": [
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/commit/57d2565ab70b9d7b41c28aaa253ccc7096900f8d",
+              "description": "Historical DataLad run JSON records command, declared inputs, image extra_input, img/results_def.tex outputs, working directory and exit 0. This was not executed by this assessor.",
+              "discovery_path": "Root README.md \u2192 results-containerized tag \u2192 target commit and recorded history",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/commit/3dd49e368d5cfe9ed8ae861d21475ca3fe6b5b9c",
+              "description": "Historical container build record links Dockerfile input and image output, exit 0; not an assessor build.",
+              "discovery_path": "Root container/Dockerfile and image \u2192 version history",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/README.md",
+              "description": "Updated acquisition, replay, manuscript commands, host versions and download sizes.",
+              "discovery_path": "Root repository \u2192 README.md",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/studyforrest-data-eyemovementlabels/blob/92279db3850ee4282d97001a3f650fc55cb64b4e/code/compute_all.sh",
+              "description": "Executable generation of event TSVs with explicit input/output paths, subjects, sampling and conversion factors.",
+              "discovery_path": "Root .gitmodules \u2192 data/studyforrest-data-eyemovementlabels \u2192 code/compute_all.sh",
+              "access_status": "accessible"
+            }
+          ],
+          "observation": "observed",
+          "confidence": "high",
+          "evidence_rating": "sufficient"
+        },
+        "T-05": {
+          "score": 2,
+          "rationale": "Recorded root commits resolve exact code, data and image states for the containerized numerical run. The manuscript command has no supplied equivalent captured execution, and event-generation context is not fully linked to a captured environment.",
+          "evidence": [
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/commit/57d2565ab70b9d7b41c28aaa253ccc7096900f8d",
+              "description": "Historical DataLad run JSON records command, declared inputs, image extra_input, img/results_def.tex outputs, working directory and exit 0. This was not executed by this assessor.",
+              "discovery_path": "Root README.md \u2192 results-containerized tag \u2192 target commit and recorded history",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.gitmodules",
+              "description": "Declared raw data, event-label dataset and software submodules; exact gitlinks inspected in frozen inventory.",
+              "discovery_path": "Root repository \u2192 .gitmodules",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/container/image/manifest.json",
+              "description": "Stored container config and layer SHA256 names; annex pointers identify payload bytes, not acquired in this cohort.",
+              "discovery_path": "Root repository \u2192 container/image/manifest.json",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/README.md",
+              "description": "Updated acquisition, replay, manuscript commands, host versions and download sizes.",
+              "discovery_path": "Root repository \u2192 README.md",
+              "access_status": "accessible"
+            }
+          ],
+          "observation": "observed",
+          "confidence": "high",
+          "evidence_rating": "sufficient"
+        },
+        "T-06": {
+          "score": 0,
+          "rationale": "A signed result tag exists, but the supplied material gives no usable route to verify the claimed signing identity. An embedded signature alone does not satisfy the complete binary anchor.",
+          "evidence": [
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/tree/57d2565ab70b9d7b41c28aaa253ccc7096900f8d",
+              "description": "Local read-only Git cat-file of results-containerized tag showed an embedded PGP signature and target commit. No signer-key verification route was located in supplied root documentation; signature validity not verified.",
+              "discovery_path": "Root README \u2192 results-containerized \u2192 frozen tag object",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/README.md",
+              "description": "Updated acquisition, replay, manuscript commands, host versions and download sizes.",
+              "discovery_path": "Root repository \u2192 README.md",
+              "access_status": "accessible"
+            }
+          ],
+          "observation": "observed",
+          "confidence": "moderate",
+          "evidence_rating": "sufficient"
+        },
+        "A-01": {
+          "score": 3,
+          "rationale": "Updated clone/rerun instructions delegate declared inputs and image acquisition to DataLad; raw-data module supplies git-annex preparation and retrieval instructions. Sizes and tool access prerequisites are stated.",
+          "evidence": [
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/README.md",
+              "description": "Updated acquisition, replay, manuscript commands, host versions and download sizes.",
+              "discovery_path": "Root repository \u2192 README.md",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/studyforrest-data-phase2/blob/a6623bff95ae3676ef0ecad262b5c44ded7cb4a1/README.rst",
+              "description": "Public unrestricted data access, git-annex retrieval instructions, OpenFMRI alternate and Zenodo badge.",
+              "discovery_path": "Root .gitmodules \u2192 data/raw_eyegaze \u2192 README.rst",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/commit/57d2565ab70b9d7b41c28aaa253ccc7096900f8d",
+              "description": "Historical DataLad run JSON records command, declared inputs, image extra_input, img/results_def.tex outputs, working directory and exit 0. This was not executed by this assessor.",
+              "discovery_path": "Root README.md \u2192 results-containerized tag \u2192 target commit and recorded history",
+              "access_status": "accessible"
+            }
+          ],
+          "observation": "observed",
+          "confidence": "high",
+          "evidence_rating": "sufficient"
+        },
+        "A-02": {
+          "score": 3,
+          "rationale": "The README names and links installation instructions for DataLad, Containers and Docker, documents supported host platforms/versions, then supplies clone and execution sequence. The image removes the need to invent scientific package setup.",
+          "evidence": [
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/README.md",
+              "description": "Updated acquisition, replay, manuscript commands, host versions and download sizes.",
+              "discovery_path": "Root repository \u2192 README.md",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.datalad/config",
+              "description": "Container image reference, temporary HOME, cleanup and configurable Python adapter invocation.",
+              "discovery_path": "Root repository \u2192 .datalad/config",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/container/Dockerfile",
+              "description": "Debian bookworm-slim build recipe with apt packages and selected pinned Python packages.",
+              "discovery_path": "Root repository \u2192 container/Dockerfile",
+              "access_status": "accessible"
+            }
+          ],
+          "observation": "observed",
+          "confidence": "moderate",
+          "evidence_rating": "sufficient"
+        },
+        "A-03": {
+          "score": 3,
+          "rationale": "README maps numerical/SVG reproduction to the tagged rerun and manuscript compilation to containers-run main.pdf. The recorded command, Makefiles and TeX dependencies specify ordering and output destinations.",
+          "evidence": [
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/README.md",
+              "description": "Updated acquisition, replay, manuscript commands, host versions and download sizes.",
+              "discovery_path": "Root repository \u2192 README.md",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/commit/57d2565ab70b9d7b41c28aaa253ccc7096900f8d",
+              "description": "Historical DataLad run JSON records command, declared inputs, image extra_input, img/results_def.tex outputs, working directory and exit 0. This was not executed by this assessor.",
+              "discovery_path": "Root README.md \u2192 results-containerized tag \u2192 target commit and recorded history",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/Docker-Makefile",
+              "description": "Executable editable software installation, results generation, cleaning and manuscript delegation.",
+              "discovery_path": "Root repository \u2192 Docker-Makefile",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/img/Makefile",
+              "description": "SVG to PDF rules and generated-figure cleanup.",
+              "discovery_path": "Root repository \u2192 img/Makefile",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/main.tex",
+              "description": "Manuscript consumes results_def.tex and figure PDFs; operation and data/code availability sections.",
+              "discovery_path": "Root repository \u2192 main.tex",
+              "access_status": "accessible"
+            }
+          ],
+          "observation": "observed",
+          "confidence": "high",
+          "evidence_rating": "sufficient"
+        },
+        "A-04": {
+          "score": 3,
+          "rationale": "DataLad clone, declared rerun inputs/extra input and script datalad_get calls form an executable acquisition/assembly route for the scoped data, code and saved image. This is inspection of the route, not demonstrated acquisition.",
+          "evidence": [
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/README.md",
+              "description": "Updated acquisition, replay, manuscript commands, host versions and download sizes.",
+              "discovery_path": "Root repository \u2192 README.md",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/commit/57d2565ab70b9d7b41c28aaa253ccc7096900f8d",
+              "description": "Historical DataLad run JSON records command, declared inputs, image extra_input, img/results_def.tex outputs, working directory and exit 0. This was not executed by this assessor.",
+              "discovery_path": "Root README.md \u2192 results-containerized tag \u2192 target commit and recorded history",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/code/mk_figuresnstats.py",
+              "description": "Result and figure functions, explicit paths and classifier parameters; flags -s -f -r -m; REMODNAV_RESULTS output.",
+              "discovery_path": "Root repository \u2192 code/mk_figuresnstats.py",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.gitmodules",
+              "description": "Declared raw data, event-label dataset and software submodules; exact gitlinks inspected in frozen inventory.",
+              "discovery_path": "Root repository \u2192 .gitmodules",
+              "access_status": "accessible"
+            }
+          ],
+          "observation": "observed",
+          "confidence": "moderate",
+          "evidence_rating": "sufficient"
+        },
+        "A-05": {
+          "score": 3,
+          "rationale": "The numerical and figure functions are selected by executable flags; Makefiles render SVGs and compile TeX using generated statistics. No translation of a prose statistical procedure is needed for these scoped outputs.",
+          "evidence": [
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/code/mk_figuresnstats.py",
+              "description": "Result and figure functions, explicit paths and classifier parameters; flags -s -f -r -m; REMODNAV_RESULTS output.",
+              "discovery_path": "Root repository \u2192 code/mk_figuresnstats.py",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/Docker-Makefile",
+              "description": "Executable editable software installation, results generation, cleaning and manuscript delegation.",
+              "discovery_path": "Root repository \u2192 Docker-Makefile",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/img/Makefile",
+              "description": "SVG to PDF rules and generated-figure cleanup.",
+              "discovery_path": "Root repository \u2192 img/Makefile",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/main.tex",
+              "description": "Manuscript consumes results_def.tex and figure PDFs; operation and data/code availability sections.",
+              "discovery_path": "Root repository \u2192 main.tex",
+              "access_status": "accessible"
+            }
+          ],
+          "observation": "observed",
+          "confidence": "high",
+          "evidence_rating": "sufficient"
+        },
+        "A-06": {
+          "score": 2,
+          "rationale": "A supplied DataLad rerun resolves the recorded numerical/SVG state; no equivalent captured/replayable manuscript computation was located. containers-run can produce the manuscript but does not itself establish replay of a prior manuscript run.",
+          "evidence": [
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/commit/57d2565ab70b9d7b41c28aaa253ccc7096900f8d",
+              "description": "Historical DataLad run JSON records command, declared inputs, image extra_input, img/results_def.tex outputs, working directory and exit 0. This was not executed by this assessor.",
+              "discovery_path": "Root README.md \u2192 results-containerized tag \u2192 target commit and recorded history",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/README.md",
+              "description": "Updated acquisition, replay, manuscript commands, host versions and download sizes.",
+              "discovery_path": "Root repository \u2192 README.md",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/main.tex",
+              "description": "Manuscript consumes results_def.tex and figure PDFs; operation and data/code availability sections.",
+              "discovery_path": "Root repository \u2192 main.tex",
+              "access_status": "accessible"
+            }
+          ],
+          "observation": "observed",
+          "confidence": "high",
+          "evidence_rating": "sufficient"
+        },
+        "M-01": {
+          "score": 3,
+          "rationale": "Raw data, derived labels, classifier module, root analysis, image, graphics and manuscript occupy identifiable paths/subdatasets with distinct roles.",
+          "evidence": [
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.gitmodules",
+              "description": "Declared raw data, event-label dataset and software submodules; exact gitlinks inspected in frozen inventory.",
+              "discovery_path": "Root repository \u2192 .gitmodules",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.datalad/config",
+              "description": "Container image reference, temporary HOME, cleanup and configurable Python adapter invocation.",
+              "discovery_path": "Root repository \u2192 .datalad/config",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/Docker-Makefile",
+              "description": "Executable editable software installation, results generation, cleaning and manuscript delegation.",
+              "discovery_path": "Root repository \u2192 Docker-Makefile",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/main.tex",
+              "description": "Manuscript consumes results_def.tex and figure PDFs; operation and data/code availability sections.",
+              "discovery_path": "Root repository \u2192 main.tex",
+              "access_status": "accessible"
+            }
+          ],
+          "observation": "observed",
+          "confidence": "high",
+          "evidence_rating": "sufficient"
+        },
+        "M-02": {
+          "score": 1,
+          "rationale": "Submodule boundaries permit state selection, but consumers reach through internal software test utilities and its test-data directory, and assume detailed fixed dataset paths. These internal dependencies are visible in code rather than a documented replacement interface.",
+          "evidence": [
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/code/mk_figuresnstats.py",
+              "description": "Result and figure functions, explicit paths and classifier parameters; flags -s -f -r -m; REMODNAV_RESULTS output.",
+              "discovery_path": "Root repository \u2192 code/mk_figuresnstats.py",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.gitmodules",
+              "description": "Declared raw data, event-label dataset and software submodules; exact gitlinks inspected in frozen inventory.",
+              "discovery_path": "Root repository \u2192 .gitmodules",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/studyforrest-data-eyemovementlabels/blob/92279db3850ee4282d97001a3f650fc55cb64b4e/code/compute_all.sh",
+              "description": "Executable generation of event TSVs with explicit input/output paths, subjects, sampling and conversion factors.",
+              "discovery_path": "Root .gitmodules \u2192 data/studyforrest-data-eyemovementlabels \u2192 code/compute_all.sh",
+              "access_status": "accessible"
+            }
+          ],
+          "observation": "observed",
+          "confidence": "moderate",
+          "evidence_rating": "sufficient"
+        },
+        "M-03": {
+          "score": 2,
+          "rationale": "Software MIT and raw-data PDDL are independently attributable; root CC and comparison-data GPL are available. The separate labels module and container\u2019s bundled assets lack a complete independent license mapping.",
+          "evidence": [
+            {
+              "locator": "https://github.com/psychoinformatics-de/remodnav/blob/d28911838f91f33af0db57332f55ccc442d24f66/LICENSE",
+              "description": "Explicit MIT scope for REMoDNaV code and documentation.",
+              "discovery_path": "Root .gitmodules \u2192 remodnav \u2192 LICENSE",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/studyforrest-data-phase2/blob/a6623bff95ae3676ef0ecad262b5c44ded7cb4a1/LICENSE",
+              "description": "Open Data Commons PDDL text for source data.",
+              "discovery_path": "Root .gitmodules \u2192 data/raw_eyegaze \u2192 LICENSE",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/COPYING",
+              "description": "CC Attribution 4.0 International root declaration.",
+              "discovery_path": "Root repository \u2192 COPYING",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/richardandersson/EyeMovementDetectorEvaluation/blob/0e6f82708e10b48039763aa1078696e802260674/LICENSE",
+              "description": "GNU GPL version 3 declaration.",
+              "discovery_path": "Root .gitmodules \u2192 remodnav \u2192 .gitmodules \u2192 tests/data/anderson_etal \u2192 LICENSE",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/studyforrest-data-eyemovementlabels/blob/92279db3850ee4282d97001a3f650fc55cb64b4e/README",
+              "description": "Module README describes older Condor procedure; frozen file inventory contains no license declaration.",
+              "discovery_path": "Root .gitmodules \u2192 data/studyforrest-data-eyemovementlabels \u2192 README",
+              "access_status": "accessible"
+            }
+          ],
+          "observation": "observed",
+          "confidence": "high",
+          "evidence_rating": "sufficient"
+        },
+        "M-04": {
+          "score": 1,
+          "rationale": "Several component licenses are independently declared, but inspected root and module documentation does not address their combination or container redistribution boundaries. License permissiveness is not evidence of recorded compatibility handling.",
+          "evidence": [
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/COPYING",
+              "description": "CC Attribution 4.0 International root declaration.",
+              "discovery_path": "Root repository \u2192 COPYING",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/remodnav/blob/d28911838f91f33af0db57332f55ccc442d24f66/LICENSE",
+              "description": "Explicit MIT scope for REMoDNaV code and documentation.",
+              "discovery_path": "Root .gitmodules \u2192 remodnav \u2192 LICENSE",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/studyforrest-data-phase2/blob/a6623bff95ae3676ef0ecad262b5c44ded7cb4a1/LICENSE",
+              "description": "Open Data Commons PDDL text for source data.",
+              "discovery_path": "Root .gitmodules \u2192 data/raw_eyegaze \u2192 LICENSE",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/richardandersson/EyeMovementDetectorEvaluation/blob/0e6f82708e10b48039763aa1078696e802260674/LICENSE",
+              "description": "GNU GPL version 3 declaration.",
+              "discovery_path": "Root .gitmodules \u2192 remodnav \u2192 .gitmodules \u2192 tests/data/anderson_etal \u2192 LICENSE",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/studyforrest-data-eyemovementlabels/blob/92279db3850ee4282d97001a3f650fc55cb64b4e/README",
+              "description": "Module README describes older Condor procedure; frozen file inventory contains no license declaration.",
+              "discovery_path": "Root .gitmodules \u2192 data/studyforrest-data-eyemovementlabels \u2192 README",
+              "access_status": "accessible"
+            }
+          ],
+          "observation": "observed",
+          "confidence": "moderate",
+          "evidence_rating": "sufficient"
+        },
+        "M-05": {
+          "score": null,
+          "rationale": "Raw gaze data explicitly state unrestricted access, and other source repositories have public locators. Uniform access conditions for all event-label and bundled comparison/container assets are not established by the inspected declarations; neither a mixed restriction nor a demonstrably uniform boundary can responsibly be selected.",
+          "evidence": [
+            {
+              "locator": "https://github.com/psychoinformatics-de/studyforrest-data-phase2/blob/a6623bff95ae3676ef0ecad262b5c44ded7cb4a1/README.rst",
+              "description": "Public unrestricted data access, git-annex retrieval instructions, OpenFMRI alternate and Zenodo badge.",
+              "discovery_path": "Root .gitmodules \u2192 data/raw_eyegaze \u2192 README.rst",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/studyforrest-data-eyemovementlabels/blob/92279db3850ee4282d97001a3f650fc55cb64b4e/README",
+              "description": "Module README describes older Condor procedure; frozen file inventory contains no license declaration.",
+              "discovery_path": "Root .gitmodules \u2192 data/studyforrest-data-eyemovementlabels \u2192 README",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/richardandersson/EyeMovementDetectorEvaluation/blob/0e6f82708e10b48039763aa1078696e802260674/LICENSE",
+              "description": "GNU GPL version 3 declaration.",
+              "discovery_path": "Root .gitmodules \u2192 remodnav \u2192 .gitmodules \u2192 tests/data/anderson_etal \u2192 LICENSE",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/container/image/manifest.json",
+              "description": "Stored container config and layer SHA256 names; annex pointers identify payload bytes, not acquired in this cohort.",
+              "discovery_path": "Root repository \u2192 container/image/manifest.json",
+              "access_status": "accessible"
+            }
+          ],
+          "observation": "not_assessed",
+          "confidence": "low",
+          "evidence_rating": "insufficient",
+          "feedback": "License uncertainty and access conditions differ. Public repository locations alone leave the uniform-access alternative difficult to establish under a frozen inspection boundary."
+        },
+        "M-06": {
+          "score": 3,
+          "rationale": "Gitlinks specify module choices, nested gitmodules specify test-data composition, source paths identify consumers, and container config/Makefiles connect environment and output production. Together these form an explicit assembly.",
+          "evidence": [
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.gitmodules",
+              "description": "Declared raw data, event-label dataset and software submodules; exact gitlinks inspected in frozen inventory.",
+              "discovery_path": "Root repository \u2192 .gitmodules",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/code/mk_figuresnstats.py",
+              "description": "Result and figure functions, explicit paths and classifier parameters; flags -s -f -r -m; REMODNAV_RESULTS output.",
+              "discovery_path": "Root repository \u2192 code/mk_figuresnstats.py",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.datalad/config",
+              "description": "Container image reference, temporary HOME, cleanup and configurable Python adapter invocation.",
+              "discovery_path": "Root repository \u2192 .datalad/config",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/Docker-Makefile",
+              "description": "Executable editable software installation, results generation, cleaning and manuscript delegation.",
+              "discovery_path": "Root repository \u2192 Docker-Makefile",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/main.tex",
+              "description": "Manuscript consumes results_def.tex and figure PDFs; operation and data/code availability sections.",
+              "discovery_path": "Root repository \u2192 main.tex",
+              "access_status": "accessible"
+            }
+          ],
+          "observation": "observed",
+          "confidence": "high",
+          "evidence_rating": "sufficient"
+        },
+        "P-01": {
+          "score": 2,
+          "rationale": "Tools, tested Debian/macOS/Windows hosts, Docker-version compatibility and download sizes are documented. Adapter requires Docker manageable by the current non-root user, explicitly marked by its own FIXME as needing documentation; required Docker-host access configuration is not fully stated by the object.",
+          "evidence": [
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/README.md",
+              "description": "Updated acquisition, replay, manuscript commands, host versions and download sizes.",
+              "discovery_path": "Root repository \u2192 README.md",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/datalad/datalad-container/blob/1.2.3/datalad_container/adapters/docker.py",
+              "description": "Inspected supplied adapter: image selected by configuration hash, docker run uses --rm, current-directory /tmp mount, working directory and user mapping.",
+              "discovery_path": "Root README DataLad Containers v1.2.3 \u2192 .datalad/config adapter \u2192 docker.py",
+              "access_status": "accessible"
+            }
+          ],
+          "observation": "observed",
+          "confidence": "moderate",
+          "evidence_rating": "sufficient"
+        },
+        "P-02": {
+          "score": 3,
+          "rationale": "The current pipeline uses relative paths and an adapter-controlled working-directory mount/user mapping; Python substitution can be overridden outside analysis logic. Legacy Condor absolute paths are not used by the current numerical/manuscript procedure.",
+          "evidence": [
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.datalad/config",
+              "description": "Container image reference, temporary HOME, cleanup and configurable Python adapter invocation.",
+              "discovery_path": "Root repository \u2192 .datalad/config",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/datalad/datalad-container/blob/1.2.3/datalad_container/adapters/docker.py",
+              "description": "Inspected supplied adapter: image selected by configuration hash, docker run uses --rm, current-directory /tmp mount, working directory and user mapping.",
+              "discovery_path": "Root README DataLad Containers v1.2.3 \u2192 .datalad/config adapter \u2192 docker.py",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/Docker-Makefile",
+              "description": "Executable editable software installation, results generation, cleaning and manuscript delegation.",
+              "discovery_path": "Root repository \u2192 Docker-Makefile",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/code/mk_figuresnstats.py",
+              "description": "Result and figure functions, explicit paths and classifier parameters; flags -s -f -r -m; REMODNAV_RESULTS output.",
+              "discovery_path": "Root repository \u2192 code/mk_figuresnstats.py",
+              "access_status": "accessible"
+            }
+          ],
+          "observation": "observed",
+          "confidence": "moderate",
+          "evidence_rating": "sufficient"
+        },
+        "P-03": {
+          "score": 3,
+          "rationale": "Docker recipe covers inspected scientific imports, installation toolchain and manuscript rendering packages; host DataLad/Containers/Docker are separately named. DataLad inside analysis is optional because declared data are acquired outside before the container runs.",
+          "evidence": [
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/container/Dockerfile",
+              "description": "Debian bookworm-slim build recipe with apt packages and selected pinned Python packages.",
+              "discovery_path": "Root repository \u2192 container/Dockerfile",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/README.md",
+              "description": "Updated acquisition, replay, manuscript commands, host versions and download sizes.",
+              "discovery_path": "Root repository \u2192 README.md",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/code/mk_figuresnstats.py",
+              "description": "Result and figure functions, explicit paths and classifier parameters; flags -s -f -r -m; REMODNAV_RESULTS output.",
+              "discovery_path": "Root repository \u2192 code/mk_figuresnstats.py",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/commit/57d2565ab70b9d7b41c28aaa253ccc7096900f8d",
+              "description": "Historical DataLad run JSON records command, declared inputs, image extra_input, img/results_def.tex outputs, working directory and exit 0. This was not executed by this assessor.",
+              "discovery_path": "Root README.md \u2192 results-containerized tag \u2192 target commit and recorded history",
+              "access_status": "accessible"
+            }
+          ],
+          "observation": "observed",
+          "confidence": "moderate",
+          "evidence_rating": "sufficient"
+        },
+        "P-04": {
+          "score": 1,
+          "rationale": "Dockerfile, stored image metadata, runtime container configuration and Makefiles are in the pinned root versioned tree; linked classifier setup is likewise tracked.",
+          "evidence": [
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/container/Dockerfile",
+              "description": "Debian bookworm-slim build recipe with apt packages and selected pinned Python packages.",
+              "discovery_path": "Root repository \u2192 container/Dockerfile",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/container/image/manifest.json",
+              "description": "Stored container config and layer SHA256 names; annex pointers identify payload bytes, not acquired in this cohort.",
+              "discovery_path": "Root repository \u2192 container/image/manifest.json",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.datalad/config",
+              "description": "Container image reference, temporary HOME, cleanup and configurable Python adapter invocation.",
+              "discovery_path": "Root repository \u2192 .datalad/config",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/Docker-Makefile",
+              "description": "Executable editable software installation, results generation, cleaning and manuscript delegation.",
+              "discovery_path": "Root repository \u2192 Docker-Makefile",
+              "access_status": "accessible"
+            }
+          ],
+          "observation": "observed",
+          "confidence": "high",
+          "evidence_rating": "sufficient"
+        },
+        "P-05": {
+          "score": 3,
+          "rationale": "Dockerfile, stored image and adapter configuration are machine-readable and instantiate the environment on the documented compatible hosts with explicit Python and Docker handling. This rates the supplied specification, not a newly tested build.",
+          "evidence": [
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/container/Dockerfile",
+              "description": "Debian bookworm-slim build recipe with apt packages and selected pinned Python packages.",
+              "discovery_path": "Root repository \u2192 container/Dockerfile",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/container/image/manifest.json",
+              "description": "Stored container config and layer SHA256 names; annex pointers identify payload bytes, not acquired in this cohort.",
+              "discovery_path": "Root repository \u2192 container/image/manifest.json",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.datalad/config",
+              "description": "Container image reference, temporary HOME, cleanup and configurable Python adapter invocation.",
+              "discovery_path": "Root repository \u2192 .datalad/config",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/datalad/datalad-container/blob/1.2.3/datalad_container/adapters/docker.py",
+              "description": "Inspected supplied adapter: image selected by configuration hash, docker run uses --rm, current-directory /tmp mount, working directory and user mapping.",
+              "discovery_path": "Root README DataLad Containers v1.2.3 \u2192 .datalad/config adapter \u2192 docker.py",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/README.md",
+              "description": "Updated acquisition, replay, manuscript commands, host versions and download sizes.",
+              "discovery_path": "Root repository \u2192 README.md",
+              "access_status": "accessible"
+            }
+          ],
+          "observation": "observed",
+          "confidence": "moderate",
+          "evidence_rating": "sufficient"
+        },
+        "E-01": {
+          "score": 3,
+          "rationale": "Each adapter invocation runs a new container from the saved image selected by hash. The command creates a temporary HOME rather than relying on the invoking user\u2019s accumulated scientific environment.",
+          "evidence": [
+            {
+              "locator": "https://github.com/datalad/datalad-container/blob/1.2.3/datalad_container/adapters/docker.py",
+              "description": "Inspected supplied adapter: image selected by configuration hash, docker run uses --rm, current-directory /tmp mount, working directory and user mapping.",
+              "discovery_path": "Root README DataLad Containers v1.2.3 \u2192 .datalad/config adapter \u2192 docker.py",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.datalad/config",
+              "description": "Container image reference, temporary HOME, cleanup and configurable Python adapter invocation.",
+              "discovery_path": "Root repository \u2192 .datalad/config",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/commit/57d2565ab70b9d7b41c28aaa253ccc7096900f8d",
+              "description": "Historical DataLad run JSON records command, declared inputs, image extra_input, img/results_def.tex outputs, working directory and exit 0. This was not executed by this assessor.",
+              "discovery_path": "Root README.md \u2192 results-containerized tag \u2192 target commit and recorded history",
+              "access_status": "accessible"
+            }
+          ],
+          "observation": "observed",
+          "confidence": "high",
+          "evidence_rating": "sufficient"
+        },
+        "E-02": {
+          "score": 3,
+          "rationale": "The working dataset is mounted at /tmp, keeping results and Git provenance outside mutable container storage. Adapter --rm removes the container and successful execution deletes the temporary HOME; saved immutable image retention is permitted.",
+          "evidence": [
+            {
+              "locator": "https://github.com/datalad/datalad-container/blob/1.2.3/datalad_container/adapters/docker.py",
+              "description": "Inspected supplied adapter: image selected by configuration hash, docker run uses --rm, current-directory /tmp mount, working directory and user mapping.",
+              "discovery_path": "Root README DataLad Containers v1.2.3 \u2192 .datalad/config adapter \u2192 docker.py",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.datalad/config",
+              "description": "Container image reference, temporary HOME, cleanup and configurable Python adapter invocation.",
+              "discovery_path": "Root repository \u2192 .datalad/config",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/commit/57d2565ab70b9d7b41c28aaa253ccc7096900f8d",
+              "description": "Historical DataLad run JSON records command, declared inputs, image extra_input, img/results_def.tex outputs, working directory and exit 0. This was not executed by this assessor.",
+              "discovery_path": "Root README.md \u2192 results-containerized tag \u2192 target commit and recorded history",
+              "access_status": "accessible"
+            }
+          ],
+          "observation": "observed",
+          "confidence": "high",
+          "evidence_rating": "sufficient"
+        },
+        "E-03": {
+          "score": 3,
+          "rationale": "The numerical replay selects the recorded dataset state, explicitly declares inputs and cleans previous results, rendered figures and temporary caches before computation in a fresh container. Manuscript compilation consumes tracked statistics and SVGs as declared prior results; these are legitimate retained inputs rather than undeclared mutable state.",
+          "evidence": [
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/commit/57d2565ab70b9d7b41c28aaa253ccc7096900f8d",
+              "description": "Historical DataLad run JSON records command, declared inputs, image extra_input, img/results_def.tex outputs, working directory and exit 0. This was not executed by this assessor.",
+              "discovery_path": "Root README.md \u2192 results-containerized tag \u2192 target commit and recorded history",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/Docker-Makefile",
+              "description": "Executable editable software installation, results generation, cleaning and manuscript delegation.",
+              "discovery_path": "Root repository \u2192 Docker-Makefile",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.datalad/config",
+              "description": "Container image reference, temporary HOME, cleanup and configurable Python adapter invocation.",
+              "discovery_path": "Root repository \u2192 .datalad/config",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/README.md",
+              "description": "Updated acquisition, replay, manuscript commands, host versions and download sizes.",
+              "discovery_path": "Root repository \u2192 README.md",
+              "access_status": "accessible"
+            }
+          ],
+          "observation": "observed",
+          "confidence": "moderate",
+          "evidence_rating": "sufficient"
+        },
+        "D-01": {
+          "score": null,
+          "rationale": "Explicit Git/DataLad routes and annex web metadata identify recipient routes for intended data/image states. Payloads are deliberately absent and network retrieval is forbidden, so current obtainability of every intended version is unknown. There is no observed retrieval failure to justify anchor 2, nor observed missing route for anchor 1.",
+          "evidence": [
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/README.md",
+              "description": "Updated acquisition, replay, manuscript commands, host versions and download sizes.",
+              "discovery_path": "Root repository \u2192 README.md",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/studyforrest-data-phase2/blob/a6623bff95ae3676ef0ecad262b5c44ded7cb4a1/README.rst",
+              "description": "Public unrestricted data access, git-annex retrieval instructions, OpenFMRI alternate and Zenodo badge.",
+              "discovery_path": "Root .gitmodules \u2192 data/raw_eyegaze \u2192 README.rst",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/container/image/manifest.json",
+              "description": "Stored container config and layer SHA256 names; annex pointers identify payload bytes, not acquired in this cohort.",
+              "discovery_path": "Root repository \u2192 container/image/manifest.json",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/0cc48aa1605a41f1c512561a6427a93a65ebebfe/7f8/a2f/MD5E-s77814784--21d915740e64e08ccf966947c51eae95.log.web",
+              "description": "Frozen git-annex branch availability metadata supplies a content-specific datapub.fz-juelich.de Docker blob URL; no request was made.",
+              "discovery_path": "Root container annex pointers \u2192 repository git-annex web availability metadata",
+              "access_status": "accessible"
+            }
+          ],
+          "observation": "not_assessed",
+          "confidence": "low",
+          "evidence_rating": "insufficient"
+        },
+        "D-02": {
+          "score": 1,
+          "rationale": "Git revisions and saved image hashes preserve identities, while raw data advertise an alternate repository/archive. No complete immutable preservation or independent recovery route is supplied for every label, comparison-data and image payload; available image URLs depend on a single service.",
+          "evidence": [
+            {
+              "locator": "https://github.com/psychoinformatics-de/studyforrest-data-phase2/blob/a6623bff95ae3676ef0ecad262b5c44ded7cb4a1/README.rst",
+              "description": "Public unrestricted data access, git-annex retrieval instructions, OpenFMRI alternate and Zenodo badge.",
+              "discovery_path": "Root .gitmodules \u2192 data/raw_eyegaze \u2192 README.rst",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/container/image/manifest.json",
+              "description": "Stored container config and layer SHA256 names; annex pointers identify payload bytes, not acquired in this cohort.",
+              "discovery_path": "Root repository \u2192 container/image/manifest.json",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/studyforrest-data-eyemovementlabels/blob/92279db3850ee4282d97001a3f650fc55cb64b4e/README",
+              "description": "Module README describes older Condor procedure; frozen file inventory contains no license declaration.",
+              "discovery_path": "Root .gitmodules \u2192 data/studyforrest-data-eyemovementlabels \u2192 README",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/README.md",
+              "description": "Updated acquisition, replay, manuscript commands, host versions and download sizes.",
+              "discovery_path": "Root repository \u2192 README.md",
+              "access_status": "accessible"
+            }
+          ],
+          "observation": "observed",
+          "confidence": "moderate",
+          "evidence_rating": "sufficient"
+        },
+        "D-03": {
+          "score": 1,
+          "rationale": "A usable Docker build recipe exists but debian:bookworm-slim and apt packages float. Only selected Python requirements are pinned, with no complete transitive or system lock. The saved image does not freeze rebuilding its recipe.",
+          "evidence": [
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/container/Dockerfile",
+              "description": "Debian bookworm-slim build recipe with apt packages and selected pinned Python packages.",
+              "discovery_path": "Root repository \u2192 container/Dockerfile",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/commit/3dd49e368d5cfe9ed8ae861d21475ca3fe6b5b9c",
+              "description": "Historical container build record links Dockerfile input and image output, exit 0; not an assessor build.",
+              "discovery_path": "Root container/Dockerfile and image \u2192 version history",
+              "access_status": "accessible"
+            }
+          ],
+          "observation": "observed",
+          "confidence": "high",
+          "evidence_rating": "sufficient"
+        },
+        "D-04": {
+          "score": 2,
+          "rationale": "CC-BY 4.0, MIT, PDDL and GPLv3 have recognizable unambiguous governing texts, but event-label terms and container asset mapping remain uncovered.",
+          "evidence": [
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/COPYING",
+              "description": "CC Attribution 4.0 International root declaration.",
+              "discovery_path": "Root repository \u2192 COPYING",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/remodnav/blob/d28911838f91f33af0db57332f55ccc442d24f66/LICENSE",
+              "description": "Explicit MIT scope for REMoDNaV code and documentation.",
+              "discovery_path": "Root .gitmodules \u2192 remodnav \u2192 LICENSE",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/studyforrest-data-phase2/blob/a6623bff95ae3676ef0ecad262b5c44ded7cb4a1/LICENSE",
+              "description": "Open Data Commons PDDL text for source data.",
+              "discovery_path": "Root .gitmodules \u2192 data/raw_eyegaze \u2192 LICENSE",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/richardandersson/EyeMovementDetectorEvaluation/blob/0e6f82708e10b48039763aa1078696e802260674/LICENSE",
+              "description": "GNU GPL version 3 declaration.",
+              "discovery_path": "Root .gitmodules \u2192 remodnav \u2192 .gitmodules \u2192 tests/data/anderson_etal \u2192 LICENSE",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/studyforrest-data-eyemovementlabels/blob/92279db3850ee4282d97001a3f650fc55cb64b4e/README",
+              "description": "Module README describes older Condor procedure; frozen file inventory contains no license declaration.",
+              "discovery_path": "Root .gitmodules \u2192 data/studyforrest-data-eyemovementlabels \u2192 README",
+              "access_status": "accessible"
+            }
+          ],
+          "observation": "observed",
+          "confidence": "high",
+          "evidence_rating": "sufficient"
+        },
+        "D-05": {
+          "score": 3,
+          "rationale": "The root snapshot fixes code/configuration/results, data gitlinks, nested comparison-data selection and annex image payload identities together. The image\u2019s cosmetic latest tag does not replace its recorded config and layer hashes.",
+          "evidence": [
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.gitmodules",
+              "description": "Declared raw data, event-label dataset and software submodules; exact gitlinks inspected in frozen inventory.",
+              "discovery_path": "Root repository \u2192 .gitmodules",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/container/image/manifest.json",
+              "description": "Stored container config and layer SHA256 names; annex pointers identify payload bytes, not acquired in this cohort.",
+              "discovery_path": "Root repository \u2192 container/image/manifest.json",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/commit/57d2565ab70b9d7b41c28aaa253ccc7096900f8d",
+              "description": "Historical DataLad run JSON records command, declared inputs, image extra_input, img/results_def.tex outputs, working directory and exit 0. This was not executed by this assessor.",
+              "discovery_path": "Root README.md \u2192 results-containerized tag \u2192 target commit and recorded history",
+              "access_status": "accessible"
+            }
+          ],
+          "observation": "observed",
+          "confidence": "high",
+          "evidence_rating": "sufficient"
+        },
+        "D-06": {
+          "score": 0,
+          "rationale": "The signed results tag and unsigned historical build record do not supply a verifiable producer/build-source attestation for the distributed container; no artifact signature/identity-verification route was located.",
+          "evidence": [
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/tree/57d2565ab70b9d7b41c28aaa253ccc7096900f8d",
+              "description": "Local read-only Git cat-file of results-containerized tag showed an embedded PGP signature and target commit. No signer-key verification route was located in supplied root documentation; signature validity not verified.",
+              "discovery_path": "Root README \u2192 results-containerized \u2192 frozen tag object",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/commit/3dd49e368d5cfe9ed8ae861d21475ca3fe6b5b9c",
+              "description": "Historical container build record links Dockerfile input and image output, exit 0; not an assessor build.",
+              "discovery_path": "Root container/Dockerfile and image \u2192 version history",
+              "access_status": "accessible"
+            },
+            {
+              "locator": "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/container/image/manifest.json",
+              "description": "Stored container config and layer SHA256 names; annex pointers identify payload bytes, not acquired in this cohort.",
+              "discovery_path": "Root repository \u2192 container/image/manifest.json",
+              "access_status": "accessible"
+            }
+          ],
+          "observation": "observed",
+          "confidence": "moderate",
+          "evidence_rating": "sufficient"
+        }
+      },
+      "comment": "Independent inspection-only assessment using the assigned rubric and frozen evidence manifest e3c6253bced7d959cd59873c3d49d166bf5793906bcdf65e49e265076d215499 (cohort remodnav-e3c6253bced7). Source/text metadata and historical execution records inspected; no scientific workflow, container build, payload acquisition or network calls. Binary/annex payloads absent by design, not retrieval failures. Historical exit 0 records are author records, not independent reproduction. Root src/lab-eyetracking original-source submodule is not a consumed analysis input. Current pipeline assessed while noting README retains older instructions. Two criteria remain unanswered; report completion is distinct from native criterion completion."
+    }
+  ]
+}
