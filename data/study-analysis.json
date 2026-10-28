@@ -1,11 +1,11 @@
 {
   "study_id": "remodnav-method-comparison-01",
-  "updated_at": "2026-10-28T00:57:10.170645+00:00",
+  "updated_at": "2026-10-28T01:07:29.653755+00:00",
   "assessment_status_counts": {
     "complete": 9
   },
   "review_status_counts": {
-    "complete": 18
+    "complete": 22
   },
   "planned_assessments": 30,
   "planned_reviews": 90,
@@ -15,9 +15,9 @@
       "assessment_count": 3,
       "complete": 3,
       "failed": 0,
-      "review_count": 6,
+      "review_count": 8,
       "review_verdict_counts": {
-        "needs_revision": 6
+        "needs_revision": 8
       },
       "criteria": {
         "A-01": {
@@ -211,9 +211,9 @@
         "interpretation": "Matching review verdicts do not establish factual correctness or human agreement."
       },
       "review_dispositions": {
-        "agree": 185,
-        "needs_evidence": 18,
-        "disagree": 13
+        "agree": 246,
+        "needs_evidence": 25,
+        "disagree": 17
       },
       "review_coverage": [
         {
@@ -237,6 +237,16 @@
           "total": 36
         },
         {
+          "review_id": "study-rubric-03-review-1",
+          "checked": 36,
+          "total": 36
+        },
+        {
+          "review_id": "study-rubric-03-review-2",
+          "checked": 36,
+          "total": 36
+        },
+        {
           "review_id": "study-rubric-02-review-1",
           "checked": 36,
           "total": 36
@@ -253,9 +263,9 @@
       "assessment_count": 3,
       "complete": 3,
       "failed": 0,
-      "review_count": 6,
+      "review_count": 7,
       "review_verdict_counts": {
-        "needs_revision": 6
+        "needs_revision": 7
       },
       "criteria": {
         "stamped-checklist:may/001": {
@@ -482,11 +492,16 @@
         "interpretation": "Matching review verdicts do not establish factual correctness or human agreement."
       },
       "review_dispositions": {
-        "agree": 161,
-        "disagree": 20,
-        "needs_evidence": 5
+        "agree": 185,
+        "disagree": 25,
+        "needs_evidence": 7
       },
       "review_coverage": [
+        {
+          "review_id": "study-con-stamped-impl-03-review-1",
+          "checked": 31,
+          "total": 31
+        },
         {
           "review_id": "study-con-stamped-impl-02-review-2",
           "checked": 31,
@@ -524,9 +539,9 @@
       "assessment_count": 3,
       "complete": 3,
       "failed": 0,
-      "review_count": 6,
+      "review_count": 7,
       "review_verdict_counts": {
-        "needs_revision": 5,
+        "needs_revision": 6,
         "supported": 1
       },
       "criteria": {
@@ -755,9 +770,9 @@
         "interpretation": "Matching review verdicts do not establish factual correctness or human agreement."
       },
       "review_dispositions": {
-        "agree": 165,
-        "disagree": 16,
-        "needs_evidence": 5
+        "agree": 193,
+        "disagree": 17,
+        "needs_evidence": 7
       },
       "review_coverage": [
         {
@@ -777,6 +792,11 @@
         },
         {
           "review_id": "study-con-narps-guidance-01-review-2",
+          "checked": 31,
+          "total": 31
+        },
+        {
+          "review_id": "study-con-narps-guidance-03-review-1",
           "checked": 31,
           "total": 31
         },

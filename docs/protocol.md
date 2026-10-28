@@ -77,3 +77,15 @@ Cross-method comparisons should inspect evidence grounding, agreement patterns, 
 
 Broader objects are prefetched and cataloged for later cohorts.
 Do not fold new objects or changed source snapshots into this pilot without a new cohort ID.
+
+## Execution logistics clarification
+
+After nine finalized assessments and twenty finalized reviews, an integrity check found no additional Git object packs or loose objects in the prepared workdirs; the frozen evidence repositories’ packs predated study execution.
+The [audit record](../data/git-object-integrity-audit.json) preserves the pack fingerprints and scope of that check.
+This was not a network-traffic audit.
+
+The cached repositories retain partial-clone metadata, so Git could otherwise attempt an implicit lazy fetch when asked for an absent object.
+Workers were instructed to set `GIT_NO_LAZY_FETCH=1` for subsequent Git reads, reinforcing the existing no-network policy.
+Active reviewers received only this logistics instruction; future prompt digests record it.
+Earlier prompt bytes remain preserved.
+No scientific source, native judgment, method, or evidence manifest was changed, and the audit detected no additional Git evidence acquisition.
