@@ -2,6 +2,7 @@
 
 This pilot tests how consistently three frozen assessment methods describe one research object under the same inspection boundary.
 It does not establish which method measures scientific quality best.
+All 30 assessments and 90 independent-context reviews are complete, with no failed attempts and three reviews per assessment.
 See the [descriptive results](study-results.md) for counts and distributions and the [source comparison](method-comparison.md) for instrument differences.
 
 ## Variation across ten assessments per method
@@ -17,6 +18,19 @@ The variation column counts criteria with any differing native response, includi
 Different questions, anchors, and principle versions prevent treating these columns as a ranking of methods.
 Nine rubric runs leave at least one criterion unanswered, so their totals are provisional; all unanswered values remain in the denominator.
 The [analysis JSON](../data/study-analysis.json) retains every criterion distribution and dimension statistic.
+
+## What the reviews found
+
+| Method | Criterion agreements | Disagreements | Needs evidence | Overall reviews requesting revision |
+| --- | ---: | ---: | ---: | ---: |
+| Manuscript rubric | 956 | 64 | 60 | 30/30 |
+| CON implementation | 781 | 108 | 41 | 30/30 |
+| CON research guidance | 830 | 71 | 29 | 29/30 |
+
+Every review reports checking the complete native criterion set: 36 for the rubric and 31 for each checklist method.
+These counts describe review judgments, not adjudicated errors, and the different criterion sets prevent a raw-count accuracy comparison.
+The single remaining research-guidance review returned supported; its two peer reviews requested revision.
+The high frequency of revision verdicts coexists with agreement on most individual criteria, so the verdict alone is a poor summary of how much of an assessment reviewers accepted.
 
 ## What each approach contributes
 

@@ -2,7 +2,7 @@
 
 A public ledger for repeated research-object assessments and independent reviews.
 The initial study compares three assessment methods on the pinned REMoDNaV research object.
-Ten independent assessments per method and three reviews per assessment are planned.
+The completed pilot contains ten independent assessments per method and three reviews per assessment: 30 assessments and 90 reviews.
 Only recorded completed work contributes to completion counts; the exploratory rubric example is excluded from repeatability estimates.
 
 This site is configured for [leej3.github.io/stamped-assessments](https://leej3.github.io/stamped-assessments/).
@@ -39,6 +39,7 @@ The workflow publishes existing records; it does not run assessments or reviews.
 - `docs/method-comparison.md` and `docs/corpus.md` describe the instruments and candidate research objects.
 - [Pilot findings](docs/pilot-findings.md) interprets the observed variation and links proposed rubric refinements to review records.
 - [Descriptive results](docs/study-results.md) reports the recorded study counts and native summaries.
+- [Completion audit](data/completion-audit.json) records full coverage, input-integrity checks, and output hashes.
 
 The dashboard exposes original responses, evidence, limitations, and review findings through expandable records.
 Native JSON, Markdown, and text outputs can be downloaded without translating their scales.
