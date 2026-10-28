@@ -1,0 +1,57 @@
+{
+  "id": "study-con-narps-guidance-09",
+  "study_id": "remodnav-method-comparison-01",
+  "object_id": "paper-remodnav",
+  "object_revision": "34388d3ca78fbd483e022e4e2851be390b7eebf2",
+  "method_id": "con-narps-guidance",
+  "method_revision": "326606610af6c261876c92032ca1f89f6d3ad1f1",
+  "model_requested": "gpt-6.1-sol",
+  "model_observed": null,
+  "reasoning_effort": "medium",
+  "replicate": 9,
+  "status": "complete",
+  "independent": true,
+  "evidence_cohort": "remodnav-e3c6253bced7",
+  "created_at": "2026-10-27T23:55:10.724439+00:00",
+  "native_output": "results/study-con-narps-guidance-09.responses.json",
+  "summary": {
+    "checklist_counts": {
+      "must": {
+        "met": 10,
+        "partial": 5,
+        "unmet": 0,
+        "not-checked": 2,
+        "not-applicable": 0
+      },
+      "should": {
+        "met": 6,
+        "partial": 2,
+        "unmet": 0,
+        "not-checked": 0,
+        "not-applicable": 1
+      },
+      "may": {
+        "met": 2,
+        "partial": 3,
+        "unmet": 0,
+        "not-checked": 0,
+        "not-applicable": 0
+      }
+    },
+    "completion": {
+      "answered": 31,
+      "total": 31
+    }
+  },
+  "limitations": [
+    "Inspection cohort; no scientific workflow execution or independent payload retrieval by this assessor.",
+    "Actual model version not independently exposed; requested model and reasoning are recorded."
+  ],
+  "report": "results/study-con-narps-guidance-09.md",
+  "probe_artifact": {
+    "path": "results/study-con-narps-guidance-09.probes.json",
+    "original_sha256": "7d26cbbc09f127dc2c290c79d34c0c5a7c5fcc7eda459234bda0b9ef2fc7da7f",
+    "public_sha256": "98e9bebec1a62d8ce27ddbc27465574625c0f4b78cf1443bc7f752078f7986d5",
+    "redaction": "Only the local logistical checkout prefix was replaced. The original raw probe output is retained unchanged in the ignored study cache."
+  }
+}

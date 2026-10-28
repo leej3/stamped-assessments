@@ -1,0 +1,937 @@
+{
+  "publication_derivative": true,
+  "redaction": {
+    "description": "Only the local logistical checkout prefix was replaced. The original raw probe output is retained unchanged in the ignored study cache.",
+    "original_sha256": "7d26cbbc09f127dc2c290c79d34c0c5a7c5fcc7eda459234bda0b9ef2fc7da7f",
+    "replacement": "[isolated frozen-source checkout]"
+  },
+  "probe_output": {
+    "object": {
+      "path": "[isolated frozen-source checkout]",
+      "commit": "34388d3ca78fbd483e022e4e2851be390b7eebf2",
+      "is_datalad": true
+    },
+    "checklist_version": "0.3.1",
+    "probes": [
+      {
+        "probe": "ci-present",
+        "status": "not-checked",
+        "items": [
+          "stamped-checklist:should/002",
+          "stamped-checklist:should/006"
+        ],
+        "reason": "No recognized CI configuration; inspect equivalent repeated-testing records.",
+        "evidence": [
+          {
+            "uri": "probe:ci-present",
+            "description": "no tracked .github/workflows/, .gitlab-ci.yml, .circleci/, .forgejo/workflows/, .gitea/workflows/ in 66 tracked paths",
+            "sha256": null
+          }
+        ],
+        "details": {
+          "configs": []
+        },
+        "item_status": {
+          "stamped-checklist:should/002": "not-checked",
+          "stamped-checklist:should/006": "not-checked"
+        },
+        "item_reason": {
+          "stamped-checklist:should/002": "No recognized CI configuration; inspect equivalent repeated-testing records.",
+          "stamped-checklist:should/006": "No recognized CI configuration; inspect equivalent environment-reconstitution records."
+        }
+      },
+      {
+        "probe": "clone-weight",
+        "status": "met",
+        "items": [],
+        "reason": "No text blob in git exceeds 10 MiB.",
+        "evidence": [
+          {
+            "uri": "git ls-tree -r -l HEAD",
+            "description": "largest text blob under 10485760 bytes",
+            "sha256": null
+          }
+        ],
+        "details": {},
+        "item_status": {},
+        "item_reason": {}
+      },
+      {
+        "probe": "derived-have-records",
+        "status": "partial",
+        "items": [
+          "stamped-checklist:must/006"
+        ],
+        "reason": "24 of 30 derived file(s) have no re-executable record, e.g. img/butterworth_filter.svg; last touched by an ordinary commit.",
+        "evidence": [
+          {
+            "uri": "img/butterworth_filter.svg",
+            "description": "no run record or workflow rule produces this file",
+            "sha256": null
+          },
+          {
+            "uri": "img/chunking.svg",
+            "description": "no run record or workflow rule produces this file",
+            "sha256": null
+          },
+          {
+            "uri": "img/flowchart.svg",
+            "description": "no run record or workflow rule produces this file",
+            "sha256": null
+          },
+          {
+            "uri": "img/flowchart_2.svg",
+            "description": "no run record or workflow rule produces this file",
+            "sha256": null
+          },
+          {
+            "uri": "img/hist_PSO_lab.svg",
+            "description": "no run record or workflow rule produces this file",
+            "sha256": null
+          },
+          {
+            "uri": "img/hist_PSO_mri.svg",
+            "description": "no run record or workflow rule produces this file",
+            "sha256": null
+          },
+          {
+            "uri": "img/hist_fixation_lab.svg",
+            "description": "no run record or workflow rule produces this file",
+            "sha256": null
+          },
+          {
+            "uri": "img/hist_fixation_mri.svg",
+            "description": "no run record or workflow rule produces this file",
+            "sha256": null
+          },
+          {
+            "uri": "img/hist_pursuit_lab.svg",
+            "description": "no run record or workflow rule produces this file",
+            "sha256": null
+          },
+          {
+            "uri": "img/hist_pursuit_mri.svg",
+            "description": "no run record or workflow rule produces this file",
+            "sha256": null
+          }
+        ],
+        "details": {
+          "candidates": 30,
+          "covered": 6,
+          "uncovered": [
+            "img/butterworth_filter.svg",
+            "img/chunking.svg",
+            "img/flowchart.svg",
+            "img/flowchart_2.svg",
+            "img/hist_PSO_lab.svg",
+            "img/hist_PSO_mri.svg",
+            "img/hist_fixation_lab.svg",
+            "img/hist_fixation_mri.svg",
+            "img/hist_pursuit_lab.svg",
+            "img/hist_pursuit_mri.svg",
+            "img/hist_saccade_mri.svg",
+            "img/mainseq_lab.svg",
+            "img/mainseq_mri.svg",
+            "img/mainseq_sub_lab.svg",
+            "img/mainseq_sub_mri.svg",
+            "img/preproc.svg",
+            "img/preproc_new.svg",
+            "img/pseudocode.svg",
+            "img/rawtrace_lab.svg",
+            "img/rawtrace_mri.svg",
+            "img/remodnav_algorithm.svg",
+            "img/vel_est_1.svg",
+            "img/vel_est_2.svg",
+            "img/velhist.svg"
+          ],
+          "run_records": 6,
+          "workflow_sources": [
+            "Makefile",
+            "img/Makefile"
+          ]
+        },
+        "item_status": {
+          "stamped-checklist:must/006": "partial"
+        },
+        "item_reason": {
+          "stamped-checklist:must/006": "24 of 30 derived file(s) have no re-executable record, e.g. img/butterworth_filter.svg; last touched by an ordinary commit."
+        }
+      },
+      {
+        "probe": "entry-point",
+        "status": "partial",
+        "items": [
+          "stamped-checklist:must/007",
+          "stamped-checklist:must/008"
+        ],
+        "reason": "must/007 partial: README.md tells the reader to run `make changes`, which Makefile does not define (targets: all, clean, main.pdf, results_def.tex, virtualenv). must/008 met: Starting point present: code/mk_figuresnstats.py.",
+        "evidence": [
+          {
+            "uri": "README.md",
+            "description": "documents `make changes`; no such target",
+            "sha256": null
+          },
+          {
+            "uri": "README.md",
+            "description": "instructions",
+            "sha256": null
+          },
+          {
+            "uri": "Makefile",
+            "description": "instructions",
+            "sha256": null
+          },
+          {
+            "uri": "code/mk_figuresnstats.py",
+            "description": "entry point named in the instructions and present",
+            "sha256": null
+          },
+          {
+            "uri": "Makefile",
+            "description": "make targets: all, clean, main.pdf, results_def.tex, virtualenv",
+            "sha256": null
+          }
+        ],
+        "details": {
+          "readmes": [
+            "README.md"
+          ],
+          "makefiles": [
+            "Makefile"
+          ],
+          "named": [
+            "code/mk_figuresnstats.py"
+          ],
+          "targets": [
+            "all",
+            "clean",
+            "main.pdf",
+            "results_def.tex",
+            "virtualenv"
+          ],
+          "workflow": [],
+          "has_section": true,
+          "documented_targets": [
+            "changes",
+            "clean"
+          ],
+          "missing_targets": [
+            "changes"
+          ]
+        },
+        "item_status": {
+          "stamped-checklist:must/007": "partial",
+          "stamped-checklist:must/008": "met"
+        },
+        "item_reason": {
+          "stamped-checklist:must/007": "README.md tells the reader to run `make changes`, which Makefile does not define (targets: all, clean, main.pdf, results_def.tex, virtualenv).",
+          "stamped-checklist:must/008": "Starting point present: code/mk_figuresnstats.py."
+        }
+      },
+      {
+        "probe": "env-spec-tracked",
+        "status": "partial",
+        "items": [
+          "stamped-checklist:must/010",
+          "stamped-checklist:must/013",
+          "stamped-checklist:must/016"
+        ],
+        "reason": "must/010 not-checked: Specification found: .datalad/config, container/Dockerfile. Dependency completeness is not checked: compare imports and invoked tools with declarations, including local/vendored code. Version pins are separate. must/013 met. mu…",
+        "evidence": [
+          {
+            "uri": ".datalad/config",
+            "description": "pinned environment specification",
+            "sha256": null
+          },
+          {
+            "uri": "container/Dockerfile",
+            "description": "spec environment specification",
+            "sha256": null
+          },
+          {
+            "uri": "data/studyforrest-data-eyemovementlabels",
+            "description": "linked module, not installed: cannot be read",
+            "sha256": null
+          },
+          {
+            "uri": "remodnav",
+            "description": "linked module, not installed: cannot be read",
+            "sha256": null
+          },
+          {
+            "uri": "data/raw_eyegaze",
+            "description": "linked module, not installed: cannot be read",
+            "sha256": null
+          }
+        ],
+        "details": {
+          "specs": {
+            "container/Dockerfile": "spec",
+            ".datalad/config": "pinned"
+          },
+          "uninstalled_modules": [
+            "data/studyforrest-data-eyemovementlabels",
+            "remodnav",
+            "data/raw_eyegaze"
+          ],
+          "preconditions": [],
+          "remote": "https://github.com/psychoinformatics-de/paper-remodnav",
+          "publication": null
+        },
+        "item_status": {
+          "stamped-checklist:must/010": "not-checked",
+          "stamped-checklist:must/013": "met",
+          "stamped-checklist:must/016": "partial"
+        },
+        "item_reason": {
+          "stamped-checklist:must/010": "Specification found: .datalad/config, container/Dockerfile. Dependency completeness is not checked: compare imports and invoked tools with declarations, including local/vendored code. Version pins are separate.",
+          "stamped-checklist:must/013": "Tracked: .datalad/config, container/Dockerfile.",
+          "stamped-checklist:must/016": "Remote recorded (https://github.com/psychoinformatics-de/paper-remodnav); reachability was not established. A remote check alone cannot verify publication: independently retrieve the assessed revision and required specification payloads."
+        }
+      },
+      {
+        "probe": "inputs-untouched",
+        "status": "not-checked",
+        "items": [],
+        "reason": "3 of 3 module(s) are not installed here, so their state cannot be read: data/studyforrest-data-eyemovementlabels, remodnav, data/raw_eyegaze",
+        "evidence": [
+          {
+            "uri": "git submodule status",
+            "description": "data/studyforrest-data-eyemovementlabels not initialized",
+            "sha256": null
+          },
+          {
+            "uri": "git submodule status",
+            "description": "remodnav not initialized",
+            "sha256": null
+          },
+          {
+            "uri": "git submodule status",
+            "description": "data/raw_eyegaze not initialized",
+            "sha256": null
+          }
+        ],
+        "details": {
+          "uninitialized": [
+            "data/studyforrest-data-eyemovementlabels",
+            "remodnav",
+            "data/raw_eyegaze"
+          ]
+        },
+        "item_status": {},
+        "item_reason": {}
+      },
+      {
+        "probe": "large-in-annex",
+        "status": "met",
+        "items": [
+          "stamped-checklist:must/005"
+        ],
+        "reason": "git-annex carries the binary content (6 pointer(s) tracked) and no binary blob over 10 MiB is in git.",
+        "evidence": [
+          {
+            "uri": "git ls-tree -r -l HEAD",
+            "description": "no binary blob over 10485760 bytes",
+            "sha256": null
+          },
+          {
+            "uri": ".datalad/config",
+            "description": "git-annex in use for large content",
+            "sha256": null
+          }
+        ],
+        "details": {
+          "mechanism": "git-annex",
+          "annex_pointers": 6,
+          "large_binary": []
+        },
+        "item_status": {
+          "stamped-checklist:must/005": "met"
+        },
+        "item_reason": {
+          "stamped-checklist:must/005": "git-annex carries the binary content (6 pointer(s) tracked) and no binary blob over 10 MiB is in git."
+        }
+      },
+      {
+        "probe": "license-declared",
+        "status": "met",
+        "items": [],
+        "reason": "Licence declared in COPYING.",
+        "evidence": [
+          {
+            "uri": "COPYING",
+            "description": "licence declaration",
+            "sha256": null
+          }
+        ],
+        "details": {},
+        "item_status": {},
+        "item_reason": {}
+      },
+      {
+        "probe": "modules-separated",
+        "status": "met",
+        "items": [
+          "stamped-checklist:should/003"
+        ],
+        "reason": "3 kinds of component live in distinct places: inputs in data, data/raw_eyegaze; code in Makefile, code; environment in container/Dockerfile",
+        "evidence": [
+          {
+            "uri": "data",
+            "description": "inputs module",
+            "sha256": null
+          },
+          {
+            "uri": "data/raw_eyegaze",
+            "description": "inputs module",
+            "sha256": null
+          },
+          {
+            "uri": "Makefile",
+            "description": "code module",
+            "sha256": null
+          },
+          {
+            "uri": "code",
+            "description": "code module",
+            "sha256": null
+          },
+          {
+            "uri": "container/Dockerfile",
+            "description": "environment module",
+            "sha256": null
+          }
+        ],
+        "details": {
+          "found": {
+            "inputs": [
+              "data",
+              "data/raw_eyegaze",
+              "data/studyforrest-data-eyemovementlabels"
+            ],
+            "code": [
+              "Makefile",
+              "code"
+            ],
+            "derived": [],
+            "environment": [
+              "container/Dockerfile"
+            ]
+          }
+        },
+        "item_status": {
+          "stamped-checklist:should/003": "met"
+        },
+        "item_reason": {
+          "stamped-checklist:should/003": "3 kinds of component live in distinct places: inputs in data, data/raw_eyegaze; code in Makefile, code; environment in container/Dockerfile"
+        }
+      },
+      {
+        "probe": "no-abs-paths",
+        "status": "unmet",
+        "items": [
+          "stamped-checklist:must/009"
+        ],
+        "reason": "1 host-specific absolute path(s) in 1 script(s) or config(s), e.g. container/Dockerfile line 23: rm -rf /root/.local /root/.cache /var/lib/apt/lists/deb.debian.org* ; \\",
+        "evidence": [
+          {
+            "uri": "container/Dockerfile#L23",
+            "description": "host path: rm -rf /root/.local /root/.cache /var/lib/apt/lists/deb.debian.org* ; \\",
+            "sha256": null
+          }
+        ],
+        "details": {
+          "hits": [
+            {
+              "path": ".datalad/config",
+              "line": 10,
+              "kind": "tmp",
+              "where": "code",
+              "text": "cmdexec = \"{{python}} -m datalad_container.adapters.docker run {img} sh -c \\\"mkdir /tmp/dockertmp; HOME=/tmp/dockertmp …"
+            },
+            {
+              "path": "README.md",
+              "line": 47,
+              "kind": "home",
+              "where": "docs",
+              "text": "C:\\Users\\mih>datalad clone https://github.com/psychoinformatics-de/paper-remodnav.git"
+            },
+            {
+              "path": "README.md",
+              "line": 54,
+              "kind": "home",
+              "where": "docs",
+              "text": "C:\\Users\\mih>cd paper-remodnav"
+            },
+            {
+              "path": "README.md",
+              "line": 55,
+              "kind": "home",
+              "where": "docs",
+              "text": "C:\\Users\\mih\\paper-remodnav>datalad rerun results-containerized"
+            },
+            {
+              "path": "README.md",
+              "line": 72,
+              "kind": "home",
+              "where": "docs",
+              "text": "C:\\Users\\mih\\paper-remodnav>datalad containers-run -n docker-make main.pdf"
+            },
+            {
+              "path": "container/Dockerfile",
+              "line": 23,
+              "kind": "host",
+              "where": "code",
+              "text": "rm -rf /root/.local /root/.cache /var/lib/apt/lists/deb.debian.org* ; \\"
+            }
+          ],
+          "blocking_files": [
+            "container/Dockerfile"
+          ]
+        },
+        "item_status": {
+          "stamped-checklist:must/009": "unmet"
+        },
+        "item_reason": {
+          "stamped-checklist:must/009": "1 host-specific absolute path(s) in 1 script(s) or config(s), e.g. container/Dockerfile line 23: rm -rf /root/.local /root/.cache /var/lib/apt/lists/deb.debian.org* ; \\"
+        }
+      },
+      {
+        "probe": "platform-assumptions",
+        "status": "not-checked",
+        "items": [
+          "stamped-checklist:must/011",
+          "stamped-checklist:must/012"
+        ],
+        "reason": "15 platform-specific command(s), each in a file naming the platform it expects (e.g. container/Dockerfile: Debian/Ubuntu). Commands only; other host assumptions need a reading.",
+        "evidence": [
+          {
+            "uri": "container/Dockerfile#L3",
+            "description": "Debian/Ubuntu: RUN DEBIAN_FRONTEND=noninteractive apt-get update -qq -y --allow-releaseinfo-change && \\",
+            "sha256": null
+          },
+          {
+            "uri": "container/Dockerfile#L5",
+            "description": "Debian/Ubuntu: apt-get install -q --no-install-recommends -y make && \\",
+            "sha256": null
+          },
+          {
+            "uri": "container/Dockerfile#L7",
+            "description": "Debian/Ubuntu: apt-get install -q --no-install-recommends -y build-essential python3-dev && \\",
+            "sha256": null
+          },
+          {
+            "uri": "container/Dockerfile#L9",
+            "description": "Debian/Ubuntu: apt-get install -q --no-install-recommends -y python3-virtualenv python3-wheel python3-scipy python3-sklearn python3-st…",
+            "sha256": null
+          },
+          {
+            "uri": "container/Dockerfile#L21",
+            "description": "Debian/Ubuntu: apt-get install -q --no-install-recommends -y inkscape latexmk texlive-latex-extra && \\",
+            "sha256": null
+          },
+          {
+            "uri": "container/Dockerfile#L24",
+            "description": "Debian/Ubuntu: apt-get purge -y build-essential ; \\",
+            "sha256": null
+          },
+          {
+            "uri": "container/Dockerfile#L25",
+            "description": "Debian/Ubuntu: apt-get autoremove -y ; \\",
+            "sha256": null
+          },
+          {
+            "uri": "container/Dockerfile#L26",
+            "description": "Debian/Ubuntu: apt-get clean",
+            "sha256": null
+          },
+          {
+            "uri": "references.bib#L151",
+            "description": "GNU coreutils (absent on macOS): @inproceedings{Holmqvist2012,",
+            "sha256": null
+          },
+          {
+            "uri": "references.bib#L303",
+            "description": "GNU coreutils (absent on macOS): @inproceedings{munn2008fixation,",
+            "sha256": null
+          }
+        ],
+        "details": {
+          "hits": [
+            {
+              "path": "container/Dockerfile",
+              "line": 3,
+              "needle": "apt-get",
+              "platform": "Debian/Ubuntu",
+              "documented_in_file": true,
+              "where": "code",
+              "text": "RUN DEBIAN_FRONTEND=noninteractive apt-get update -qq -y --allow-releaseinfo-change && \\"
+            },
+            {
+              "path": "container/Dockerfile",
+              "line": 5,
+              "needle": "apt-get",
+              "platform": "Debian/Ubuntu",
+              "documented_in_file": true,
+              "where": "code",
+              "text": "apt-get install -q --no-install-recommends -y make && \\"
+            },
+            {
+              "path": "container/Dockerfile",
+              "line": 7,
+              "needle": "apt-get",
+              "platform": "Debian/Ubuntu",
+              "documented_in_file": true,
+              "where": "code",
+              "text": "apt-get install -q --no-install-recommends -y build-essential python3-dev && \\"
+            },
+            {
+              "path": "container/Dockerfile",
+              "line": 9,
+              "needle": "apt-get",
+              "platform": "Debian/Ubuntu",
+              "documented_in_file": true,
+              "where": "code",
+              "text": "apt-get install -q --no-install-recommends -y python3-virtualenv python3-wheel python3-scipy python3-sklearn python3-st…"
+            },
+            {
+              "path": "container/Dockerfile",
+              "line": 21,
+              "needle": "apt-get",
+              "platform": "Debian/Ubuntu",
+              "documented_in_file": true,
+              "where": "code",
+              "text": "apt-get install -q --no-install-recommends -y inkscape latexmk texlive-latex-extra && \\"
+            },
+            {
+              "path": "container/Dockerfile",
+              "line": 24,
+              "needle": "apt-get",
+              "platform": "Debian/Ubuntu",
+              "documented_in_file": true,
+              "where": "code",
+              "text": "apt-get purge -y build-essential ; \\"
+            },
+            {
+              "path": "container/Dockerfile",
+              "line": 25,
+              "needle": "apt-get",
+              "platform": "Debian/Ubuntu",
+              "documented_in_file": true,
+              "where": "code",
+              "text": "apt-get autoremove -y ; \\"
+            },
+            {
+              "path": "container/Dockerfile",
+              "line": 26,
+              "needle": "apt-get",
+              "platform": "Debian/Ubuntu",
+              "documented_in_file": true,
+              "where": "code",
+              "text": "apt-get clean"
+            },
+            {
+              "path": "references.bib",
+              "line": 151,
+              "needle": "nproc",
+              "platform": "GNU coreutils (absent on macOS)",
+              "documented_in_file": true,
+              "where": "docs",
+              "text": "@inproceedings{Holmqvist2012,"
+            },
+            {
+              "path": "references.bib",
+              "line": 303,
+              "needle": "nproc",
+              "platform": "GNU coreutils (absent on macOS)",
+              "documented_in_file": true,
+              "where": "docs",
+              "text": "@inproceedings{munn2008fixation,"
+            },
+            {
+              "path": "references.bib",
+              "line": 444,
+              "needle": "nproc",
+              "platform": "GNU coreutils (absent on macOS)",
+              "documented_in_file": true,
+              "where": "docs",
+              "text": "abstract=\"Deep learning approaches have achieved breakthrough performance in various domains. However, the segmentation…"
+            },
+            {
+              "path": "references.bib",
+              "line": 492,
+              "needle": "nproc",
+              "platform": "GNU coreutils (absent on macOS)",
+              "documented_in_file": true,
+              "where": "docs",
+              "text": "@inproceedings{holmqvist2012eye,"
+            },
+            {
+              "path": "references.bib",
+              "line": 525,
+              "needle": "nproc",
+              "platform": "GNU coreutils (absent on macOS)",
+              "documented_in_file": true,
+              "where": "docs",
+              "text": "@inproceedings{Mathe2012,"
+            },
+            {
+              "path": "references.bib",
+              "line": 672,
+              "needle": "nproc",
+              "platform": "GNU coreutils (absent on macOS)",
+              "documented_in_file": true,
+              "where": "docs",
+              "text": "@inproceedings{mckinney2010data,"
+            },
+            {
+              "path": "references.bib",
+              "line": 683,
+              "needle": "nproc",
+              "platform": "GNU coreutils (absent on macOS)",
+              "documented_in_file": true,
+              "where": "docs",
+              "text": "@inproceedings{seabold2010statsmodels,"
+            }
+          ]
+        },
+        "item_status": {
+          "stamped-checklist:must/011": "not-checked",
+          "stamped-checklist:must/012": "not-checked"
+        },
+        "item_reason": {
+          "stamped-checklist:must/011": "15 platform-specific command(s), each in a file naming the platform it expects (e.g. container/Dockerfile: Debian/Ubuntu). Commands only; other host assumptions need a reading.",
+          "stamped-checklist:must/012": "15 platform-specific command(s), each in a file naming the platform it expects (e.g. container/Dockerfile: Debian/Ubuntu). Commands only; other host assumptions need a reading."
+        }
+      },
+      {
+        "probe": "run-env-linked",
+        "status": "unmet",
+        "items": [
+          "stamped-checklist:must/006",
+          "stamped-checklist:must/015"
+        ],
+        "reason": "must/006 partial: 3 of 6 run record(s) name no container or lockfile (3 name a container, 0 a lockfile, 0 only a capture), e.g. 5cc1be8: make paper-data must/015 unmet: 4 environment reference(s) use the floating ':latest' tag, e.g. container/image/…",
+        "evidence": [
+          {
+            "uri": "container/image/index.json#L1",
+            "description": "{\"schemaVersion\":2,\"mediaType\":\"application/vnd.oci.image.index.v1+json\",\"manifests\":[{\"mediaType\":\"application/vnd.oci…",
+            "sha256": null
+          },
+          {
+            "uri": "container/image/manifest.json#L1",
+            "description": "[{\"Config\":\"blobs/sha256/f881bd4db45ac9775f5a5377485a7c939fea4685d7482eed4809cb83fc3b51a3\",\"RepoTags\":[\"remodnav:latest…",
+            "sha256": null
+          },
+          {
+            "uri": "commit:c531a59",
+            "description": "sh -c \"{python} -m datalad_container.adapters.docker run {inputs} sh -c \\\"exit 0\\\" && {python} -m datalad_container.adap",
+            "sha256": null
+          },
+          {
+            "uri": "commit:3dd49e3",
+            "description": "sh -c 'rm -rf container/image; docker build -t remodnav:latest container && python -m datalad_container.adapters.docker",
+            "sha256": null
+          },
+          {
+            "uri": "commit:c531a59",
+            "description": "container: sh -c \"{python} -m datalad_container.adapters.docker run {inputs} sh -c \\\"exit 0\\\" && {python} -m datalad_container.adapters.docker save remodnav:latest contain",
+            "sha256": null
+          },
+          {
+            "uri": "commit:57d2565",
+            "description": "container: {python} -m datalad_container.adapters.docker run container/image sh -c \"mkdir /tmp/dockertmp; HOME=/tmp/dockertmp make -f Docker-Makefile clean results_def.tex",
+            "sha256": null
+          },
+          {
+            "uri": "commit:3dd49e3",
+            "description": "container: sh -c 'rm -rf container/image; docker build -t remodnav:latest container && python -m datalad_container.adapters.docker save remodnav:latest container/image &&",
+            "sha256": null
+          },
+          {
+            "uri": "commit:5cc1be8",
+            "description": "no environment named: make paper-data",
+            "sha256": null
+          },
+          {
+            "uri": "commit:1dcac1b",
+            "description": "no environment named: code/anderson.py -r True",
+            "sha256": null
+          },
+          {
+            "uri": "commit:3eb991c",
+            "description": "no environment named: code/anderson.py -f True",
+            "sha256": null
+          }
+        ],
+        "details": {
+          "records": 6,
+          "with_env": 3,
+          "without_env": [
+            {
+              "commit": "5cc1be879fe369ca1c91913db651bf0245aa609f",
+              "cmd": "make paper-data",
+              "mechanism": null
+            },
+            {
+              "commit": "1dcac1b5f3e794077f5017fff410909331a72965",
+              "cmd": "code/anderson.py -r True",
+              "mechanism": null
+            },
+            {
+              "commit": "3eb991c6bd5f0bedc6c761068e0914128130586b",
+              "cmd": "code/anderson.py -f True",
+              "mechanism": null
+            }
+          ],
+          "by_mechanism": {
+            "container": 3,
+            "lockfile": 0,
+            "capture": 0
+          },
+          "unpinned": [
+            [
+              "container/image/index.json#L1",
+              "{\"schemaVersion\":2,\"mediaType\":\"application/vnd.oci.image.index.v1+json\",\"manifests\":[{\"mediaType\":\"application/vnd.oci…"
+            ],
+            [
+              "container/image/manifest.json#L1",
+              "[{\"Config\":\"blobs/sha256/f881bd4db45ac9775f5a5377485a7c939fea4685d7482eed4809cb83fc3b51a3\",\"RepoTags\":[\"remodnav:latest…"
+            ],
+            [
+              "commit:c531a59",
+              "sh -c \"{python} -m datalad_container.adapters.docker run {inputs} sh -c \\\"exit 0\\\" && {python} -m datalad_container.adap"
+            ],
+            [
+              "commit:3dd49e3",
+              "sh -c 'rm -rf container/image; docker build -t remodnav:latest container && python -m datalad_container.adapters.docker"
+            ]
+          ]
+        },
+        "item_status": {
+          "stamped-checklist:must/006": "partial",
+          "stamped-checklist:must/015": "unmet"
+        },
+        "item_reason": {
+          "stamped-checklist:must/006": "3 of 6 run record(s) name no container or lockfile (3 name a container, 0 a lockfile, 0 only a capture), e.g. 5cc1be8: make paper-data",
+          "stamped-checklist:must/015": "4 environment reference(s) use the floating ':latest' tag, e.g. container/image/index.json#L1 — a rerun cannot land in the same environment."
+        }
+      },
+      {
+        "probe": "subdatasets-resolvable",
+        "status": "met",
+        "items": [
+          "stamped-checklist:must/002",
+          "stamped-checklist:may/001"
+        ],
+        "reason": "All 3 linked module(s) carry urls that resolve from elsewhere: data/studyforrest-data-eyemovementlabels, remodnav, data/raw_eyegaze",
+        "evidence": [
+          {
+            "uri": ".gitmodules",
+            "description": "data/studyforrest-data-eyemovementlabels: https://github.com/psychoinformatics-de/studyforrest-data-eyemovementlabels.git",
+            "sha256": null
+          },
+          {
+            "uri": ".gitmodules",
+            "description": "remodnav: https://github.com/psychoinformatics-de/remodnav.git",
+            "sha256": null
+          },
+          {
+            "uri": ".gitmodules",
+            "description": "data/raw_eyegaze: https://github.com/psychoinformatics-de/studyforrest-data-phase2.git",
+            "sha256": null
+          }
+        ],
+        "details": {
+          "resolvable": [
+            {
+              "path": "data/studyforrest-data-eyemovementlabels",
+              "url": "https://github.com/psychoinformatics-de/studyforrest-data-eyemovementlabels.git"
+            },
+            {
+              "path": "remodnav",
+              "url": "https://github.com/psychoinformatics-de/remodnav.git"
+            },
+            {
+              "path": "data/raw_eyegaze",
+              "url": "https://github.com/psychoinformatics-de/studyforrest-data-phase2.git"
+            }
+          ],
+          "unresolvable": [],
+          "unreachable": [],
+          "pinned_to_local_commits": []
+        },
+        "item_status": {
+          "stamped-checklist:must/002": "met",
+          "stamped-checklist:may/001": "met"
+        },
+        "item_reason": {
+          "stamped-checklist:must/002": "All 3 linked module(s) carry urls that resolve from elsewhere: data/studyforrest-data-eyemovementlabels, remodnav, data/raw_eyegaze",
+          "stamped-checklist:may/001": "3 external component(s) are linked as modules: data/studyforrest-data-eyemovementlabels, remodnav, data/raw_eyegaze"
+        }
+      },
+      {
+        "probe": "tree-clean",
+        "status": "unmet",
+        "items": [
+          "stamped-checklist:must/004"
+        ],
+        "reason": "35 path(s) are not committed, so the repository is not the whole state: D container/image/oci-layout, D container/image/repositories, D img/butterworth_filter.svg, D img/chunking.svg, D img/confusion_MN_AL.svg",
+        "evidence": [
+          {
+            "uri": "git status --porcelain",
+            "description": "D container/image/oci-layout, D container/image/repositories, D img/butterworth_filter.svg, D img/chunking.svg, D img/confusion_MN_AL.svg",
+            "sha256": null
+          }
+        ],
+        "details": {
+          "dirty": [
+            " D container/image/oci-layout",
+            " D container/image/repositories",
+            " D img/butterworth_filter.svg",
+            " D img/chunking.svg",
+            " D img/confusion_MN_AL.svg",
+            " D img/confusion_MN_RA.svg",
+            " D img/confusion_RA_AL.svg",
+            " D img/flowchart.svg",
+            " D img/flowchart_2.svg",
+            " D img/hist_PSO_lab.svg",
+            " D img/hist_PSO_mri.svg",
+            " D img/hist_fixation_lab.svg",
+            " D img/hist_fixation_mri.svg",
+            " D img/hist_pursuit_lab.svg",
+            " D img/hist_pursuit_mri.svg",
+            " D img/hist_saccade_lab.svg",
+            " D img/hist_saccade_mri.svg",
+            " D img/mainseq_lab.svg",
+            " D img/mainseq_mri.svg",
+            " D img/mainseq_sub_lab.svg",
+            " D img/mainseq_sub_mri.svg",
+            " D img/preproc.svg",
+            " D img/preproc_new.svg",
+            " D img/pseudocode.svg",
+            " D img/rawtrace_lab.svg",
+            " D img/rawtrace_mri.svg",
+            " D img/remodnav_algorithm.svg",
+            " D img/remodnav_lab.svg",
+            " D img/remodnav_mri.svg",
+            " D img/vel_est_1.svg",
+            " D img/vel_est_2.svg",
+            " D img/velhist.svg",
+            " D spbasic.bst",
+            " D svglov3.clo",
+            " D svjour3.cls"
+          ],
+          "submodules_modified": [],
+          "tracked_text": 12
+        },
+        "item_status": {
+          "stamped-checklist:must/004": "unmet"
+        },
+        "item_reason": {
+          "stamped-checklist:must/004": "35 path(s) are not committed, so the repository is not the whole state: D container/image/oci-layout, D container/image/repositories, D img/butterworth_filter.svg, D img/chunking.svg, D img/confusion_MN_AL.svg"
+        }
+      }
+    ]
+  }
+}

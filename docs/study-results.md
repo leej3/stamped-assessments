@@ -1,7 +1,7 @@
 # REMoDNaV assessment-method pilot: descriptive results
 
-Updated 2026-10-28T03:39:28.476229+00:00.
-24/30 assessments and 72/90 reviews are complete.
+Updated 2026-10-28T03:48:06.614143+00:00.
+27/30 assessments and 74/90 reviews are complete.
 Failed attempts remain in the ledger.
 
 This is one research object at one fixed source revision, planned for ten independent assessments per method with fresh contexts.
@@ -16,16 +16,16 @@ These findings have not been adjudicated by human experts.
 
 | Method | Completed assessments | Failed assessments | Reviews | Review verdicts |
 | --- | ---: | ---: | ---: | --- |
-| rubric | 8 | 0 | 24 | needs_revision: 24 |
-| con-stamped-impl | 8 | 0 | 24 | needs_revision: 24 |
-| con-narps-guidance | 8 | 0 | 24 | needs_revision: 23, supported: 1 |
+| rubric | 9 | 0 | 25 | needs_revision: 25 |
+| con-stamped-impl | 9 | 0 | 25 | needs_revision: 25 |
+| con-narps-guidance | 9 | 0 | 24 | needs_revision: 23, supported: 1 |
 
 ## Native results
 
 ### rubric
 
-Native overall scores: n=8, mean 74.60, range 70.71–78.81.
-Sample standard deviation: 3.05.
+Native overall scores: n=9, mean 74.72, range 70.71–78.81.
+Sample standard deviation: 2.87.
 Unanswered criteria contribute zero to these provisional native totals and remain visible in completion counts.
 Evidence ratings and confidence do not alter scores. 8 assessments have all three reviews; 8 of those sets share an overall review verdict.
 This is descriptive agreement, not accuracy.
