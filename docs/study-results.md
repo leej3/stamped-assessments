@@ -1,7 +1,7 @@
 # REMoDNaV assessment-method pilot: descriptive results
 
-Updated 2026-10-28T00:17:56.486220+00:00.
-3/30 assessments and 6/90 reviews are complete.
+Updated 2026-10-28T00:24:44.471638+00:00.
+3/30 assessments and 9/90 reviews are complete.
 Failed attempts remain in the ledger.
 
 This is one research object at one fixed source revision, assessed ten times per method with fresh contexts.
@@ -17,8 +17,8 @@ These findings have not been adjudicated by human experts.
 | Method | Completed assessments | Failed assessments | Reviews | Review verdicts |
 | --- | ---: | ---: | ---: | --- |
 | rubric | 1 | 0 | 3 | needs_revision: 3 |
-| con-stamped-impl | 1 | 0 | 2 | needs_revision: 2 |
-| con-narps-guidance | 1 | 0 | 1 | needs_revision: 1 |
+| con-stamped-impl | 1 | 0 | 3 | needs_revision: 3 |
+| con-narps-guidance | 1 | 0 | 3 | needs_revision: 2, supported: 1 |
 
 ## Native results
 
@@ -34,14 +34,14 @@ This is descriptive agreement, not accuracy.
 
 Native results are categorical checklist verdicts.
 No overall numeric score is created.
-Per-item verdict distributions and separate MUST/SHOULD/MAY counts are retained in the analysis JSON and dashboard. 0 assessments have all three reviews; 0 of those sets share an overall review verdict.
+Per-item verdict distributions and separate MUST/SHOULD/MAY counts are retained in the analysis JSON and dashboard. 1 assessments have all three reviews; 1 of those sets share an overall review verdict.
 This is descriptive agreement, not accuracy.
 
 ### con-narps-guidance
 
 Native results are categorical checklist verdicts.
 No overall numeric score is created.
-Per-item verdict distributions and separate MUST/SHOULD/MAY counts are retained in the analysis JSON and dashboard. 0 assessments have all three reviews; 0 of those sets share an overall review verdict.
+Per-item verdict distributions and separate MUST/SHOULD/MAY counts are retained in the analysis JSON and dashboard. 1 assessments have all three reviews; 0 of those sets share an overall review verdict.
 This is descriptive agreement, not accuracy.
 
 ## Interpretation limits
