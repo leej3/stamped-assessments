@@ -1,11 +1,11 @@
 {
   "study_id": "remodnav-method-comparison-01",
-  "updated_at": "2026-10-28T00:13:02.013730+00:00",
+  "updated_at": "2026-10-28T00:17:56.486220+00:00",
   "assessment_status_counts": {
     "complete": 3
   },
   "review_status_counts": {
-    "complete": 4
+    "complete": 6
   },
   "planned_assessments": 30,
   "planned_reviews": 90,
@@ -15,9 +15,9 @@
       "assessment_count": 1,
       "complete": 1,
       "failed": 0,
-      "review_count": 2,
+      "review_count": 3,
       "review_verdict_counts": {
-        "needs_revision": 2
+        "needs_revision": 3
       },
       "criteria": {
         "A-01": {
@@ -198,18 +198,23 @@
         "maximum": 34
       },
       "three_review_sets": {
-        "complete_sets": 0,
-        "matching_overall_verdict_sets": 0,
+        "complete_sets": 1,
+        "matching_overall_verdict_sets": 1,
         "interpretation": "Matching review verdicts do not establish factual correctness or human agreement."
       },
       "review_dispositions": {
-        "agree": 63,
-        "needs_evidence": 4,
-        "disagree": 5
+        "agree": 93,
+        "needs_evidence": 8,
+        "disagree": 7
       },
       "review_coverage": [
         {
           "review_id": "study-rubric-01-review-2",
+          "checked": 36,
+          "total": 36
+        },
+        {
+          "review_id": "study-rubric-01-review-3",
           "checked": 36,
           "total": 36
         },
@@ -225,9 +230,9 @@
       "assessment_count": 1,
       "complete": 1,
       "failed": 0,
-      "review_count": 1,
+      "review_count": 2,
       "review_verdict_counts": {
-        "needs_revision": 1
+        "needs_revision": 2
       },
       "criteria": {
         "stamped-checklist:may/001": {
@@ -446,11 +451,16 @@
         "interpretation": "Matching review verdicts do not establish factual correctness or human agreement."
       },
       "review_dispositions": {
-        "agree": 26,
-        "disagree": 4,
+        "agree": 52,
+        "disagree": 9,
         "needs_evidence": 1
       },
       "review_coverage": [
+        {
+          "review_id": "study-con-stamped-impl-01-review-2",
+          "checked": 31,
+          "total": 31
+        },
         {
           "review_id": "study-con-stamped-impl-01-review-1",
           "checked": 31,

@@ -1,0 +1,469 @@
+{
+  "id": "study-rubric-01-review-3",
+  "assessment_id": "study-rubric-01",
+  "reviewer_id": "study-rubric-01-review-3-reviewer",
+  "model_requested": "gpt-6-astra",
+  "model_observed": null,
+  "reasoning_effort": "high",
+  "status": "complete",
+  "created_at": "2026-10-28T00:17:37.616901+00:00",
+  "verdict": "needs_revision",
+  "findings": [
+    {
+      "criterion_id": "S-01",
+      "disposition": "agree",
+      "evidence": [
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/README.md",
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.gitmodules",
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/code/mk_figuresnstats.py"
+      ],
+      "explanation": "The root README establishes the computational object and its commands; root submodule declarations and analysis paths identify the data and classifier connections. The uninvoked quality_stats routine is still included within the object, so its execution gap does not invalidate boundary discoverability. Score 3 is supported."
+    },
+    {
+      "criterion_id": "S-02",
+      "disposition": "agree",
+      "evidence": [
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/code/mk_figuresnstats.py",
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.gitmodules",
+        "https://github.com/psychoinformatics-de/remodnav/blob/d28911838f91f33af0db57332f55ccc442d24f66/.gitmodules",
+        "data/remodnav-evidence.json#sha256=e3c6253bced7d959cd59873c3d49d166bf5793906bcdf65e49e265076d215499"
+      ],
+      "explanation": "Following root -> remodnav -> tests/data/anderson_etal locates the annotated input, while root data modules locate recordings and event tables. Source routines also include the velocity-quality calculation. The frozen inventory identifies omitted payloads rather than missing source references; score 3 does not claim a successful download."
+    },
+    {
+      "criterion_id": "S-03",
+      "disposition": "agree",
+      "evidence": [
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/container/Dockerfile",
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.datalad/config",
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/code/mk_figuresnstats.py",
+        "https://github.com/psychoinformatics-de/remodnav/blob/d28911838f91f33af0db57332f55ccc442d24f66/setup.py"
+      ],
+      "explanation": "The root recipe declares numerical and rendering dependencies, container registration supplies the invocation, and script parameters/defaults expose calculation settings. Moving apt dependencies concern build resolution, not presence of environment declarations. Score 3 is supported."
+    },
+    {
+      "criterion_id": "S-04",
+      "disposition": "agree",
+      "evidence": [
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/COPYING",
+        "https://github.com/psychoinformatics-de/remodnav/blob/d28911838f91f33af0db57332f55ccc442d24f66/LICENSE",
+        "https://github.com/psychoinformatics-de/studyforrest-data-phase2/blob/a6623bff95ae3676ef0ecad262b5c44ded7cb4a1/LICENSE",
+        "https://github.com/richardandersson/EyeMovementDetectorEvaluation/blob/0e6f82708e10b48039763aa1078696e802260674/LICENSE",
+        "https://github.com/psychoinformatics-de/studyforrest-data-eyemovementlabels/blob/92279db3850ee4282d97001a3f650fc55cb64b4e/README",
+        "data/remodnav-evidence.json#sha256=e3c6253bced7d959cd59873c3d49d166bf5793906bcdf65e49e265076d215499"
+      ],
+      "explanation": "Separate reachable declarations cover the paper, classifier, raw dataset and evaluation repository. The event-label root inventory lacks a governing declaration, so a blanket inference from the paper license would be unwarranted. Score 2 is supported without needing to infer licenses inside the unavailable image."
+    },
+    {
+      "criterion_id": "T-01",
+      "disposition": "agree",
+      "evidence": [
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.gitmodules",
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/container/image/manifest.json",
+        "data/remodnav-evidence.json#sha256=e3c6253bced7d959cd59873c3d49d166bf5793906bcdf65e49e265076d215499"
+      ],
+      "explanation": "Read-only tree inspection confirms exact root gitlinks for all three immediate modules; the frozen inventories also contain Git object IDs and annex keys for payloads. Image config/layer digests fix the supplied artifact despite its latest label. Score 3 is defensible for the distributed computation ingredients, with host orchestration precision treated separately."
+    },
+    {
+      "criterion_id": "T-02",
+      "disposition": "agree",
+      "evidence": [
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.gitmodules",
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/container/image/manifest.json",
+        "data/remodnav-evidence.json#sha256=e3c6253bced7d959cd59873c3d49d166bf5793906bcdf65e49e265076d215499"
+      ],
+      "explanation": "The root tree, recursive gitlinks and annex pointers form a connected content-addressed state description across code, data, manuscript and image. External payload hosting does not break that identity graph. Score 3 is supported."
+    },
+    {
+      "criterion_id": "T-03",
+      "disposition": "agree",
+      "evidence": [
+        "https://github.com/psychoinformatics-de/paper-remodnav/commit/34388d3ca78fbd483e022e4e2851be390b7eebf2",
+        "https://github.com/psychoinformatics-de/paper-remodnav/commit/57d2565ab70b9d7b41c28aaa253ccc7096900f8d",
+        "https://github.com/psychoinformatics-de/paper-remodnav/commit/3dd49e368d5cfe9ed8ae861d21475ca3fe6b5b9c",
+        "https://github.com/psychoinformatics-de/studyforrest-data-eyemovementlabels/commit/bdcde2ff31889501dbcbe2ca4bcfe15ce9d246a6",
+        "https://github.com/richardandersson/EyeMovementDetectorEvaluation/commit/b950b59fecfd1bb17f47b143589d94547cb6f9ac"
+      ],
+      "explanation": "Frozen histories inspected through the linked repositories contain actors, dates and change descriptions for data processing, annotation corrections, code, environments and manuscript updates. Score 3 is supported for repository-level modification history; it does not authenticate those identities or establish original acquisition provenance."
+    },
+    {
+      "criterion_id": "T-04",
+      "disposition": "agree",
+      "evidence": [
+        "https://github.com/psychoinformatics-de/paper-remodnav/commit/57d2565ab70b9d7b41c28aaa253ccc7096900f8d",
+        "https://github.com/psychoinformatics-de/paper-remodnav/commit/3dd49e368d5cfe9ed8ae861d21475ca3fe6b5b9c",
+        "https://github.com/psychoinformatics-de/paper-remodnav/commit/c531a59c082d45a435be9bd5474efb850d9039a3",
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/code/mk_figuresnstats.py#L463",
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/main.tex#L1161"
+      ],
+      "explanation": "The captured records contain concrete commands, inputs, outputs and exit codes, including the later OCI conversion. No manuscript compilation run was located. Additionally, the current result command does not invoke quality_stats, so the manuscript velocity histogram is not newly computed by that recorded invocation. Score 2 remains appropriate.",
+      "suggested_correction": "Add the uninvoked velocity-histogram/data-loss computation to the provenance coverage gaps; do not describe the historical result record as covering all SVG computation."
+    },
+    {
+      "criterion_id": "T-05",
+      "disposition": "agree",
+      "evidence": [
+        "https://github.com/psychoinformatics-de/paper-remodnav/commit/57d2565ab70b9d7b41c28aaa253ccc7096900f8d",
+        "https://github.com/psychoinformatics-de/paper-remodnav/commit/3dd49e368d5cfe9ed8ae861d21475ca3fe6b5b9c",
+        "https://github.com/psychoinformatics-de/paper-remodnav/commit/c531a59c082d45a435be9bd5474efb850d9039a3",
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/README.md"
+      ],
+      "explanation": "The result commit fixes input gitlinks and image state, but build execution resolves Debian/apt inputs dynamically and the host orchestration versions are not captured precisely. This supports partial version-linked provenance. The 2025 OCI manifest should not by itself be presented as the environment identity of the 2023 run.",
+      "suggested_correction": "Retain 2 and cite the historical run tree for its image identity; use the 2025 conversion record to explain the relationship to the current image."
+    },
+    {
+      "criterion_id": "T-06",
+      "disposition": "agree",
+      "evidence": [
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/README.md",
+        ".cache/objects/paper-remodnav/evidence/psychoinformatics-de--paper-remodnav--34388d3ca78f/repository.git#tag-object=a303b5455458c79133a79864a590cbcdbad67a34"
+      ],
+      "explanation": "Read-only inspection confirms a PGP-signed annotated tag targeting the result commit. The inspected material supplies no key-to-claimed-identity verification procedure, so the complete binary positive anchor is not established. Zero is justified as not demonstrated, rather than a claim that the signature is invalid.",
+      "suggested_correction": "Replace the mutable tag-ref citation with the inspected tag object ID or another frozen locator."
+    },
+    {
+      "criterion_id": "A-01",
+      "disposition": "agree",
+      "evidence": [
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/README.md",
+        "https://github.com/psychoinformatics-de/paper-remodnav/commit/57d2565ab70b9d7b41c28aaa253ccc7096900f8d",
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.gitmodules"
+      ],
+      "explanation": "The README gives acquisition prerequisites and clone/rerun commands, and the captured input patterns identify the external data and image to obtain. The unused raw-source lab path is not required for consuming the fixed recordings. Score 3 is supported for acquisition instructions, without treating the README assertion that everything is recomputed as verified."
+    },
+    {
+      "criterion_id": "A-02",
+      "disposition": "needs_evidence",
+      "evidence": [
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/README.md",
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.datalad/config",
+        ".cache/objects/paper-remodnav/evidence/external/datalad-container-1.2.3-docker.py#sha256=44cb66ceffafe89128cdf9ec5446d035ba7b5ee39dfbf9f8754408ebfef093e5"
+      ],
+      "explanation": "The recipe and installation references establish much of setup, but the assessment itself finds an essential Docker management permission prerequisite undocumented under P-01. The inspected adapter explicitly calls out that assumption. A claim that no essential initialization decisions remain under A-02 needs reconciliation with that finding.",
+      "suggested_correction": "Either identify a supplied setup reference that establishes the required Docker access configuration, or use the partial setup anchor 2. The external installation pages were not available for inspection in this frozen review."
+    },
+    {
+      "criterion_id": "A-03",
+      "disposition": "disagree",
+      "evidence": [
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/code/mk_figuresnstats.py#L463",
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/code/mk_figuresnstats.py#L1282",
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/main.tex#L1145",
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/main.tex#L1161",
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/README.md"
+      ],
+      "explanation": "The all-results mapping is overstated. quality_stats computes the velocity histogram and data-loss averages, but its docstring says to add it to the command invocations, and the actual main dispatch never calls it. The manuscript contains the corresponding data-loss percentages and velhist figure. The documented rerun therefore does not supply the asserted unambiguous complete execution sequence.",
+      "suggested_correction": "Use at most 2 until a complete invocation/output-integration route for quality_stats is established. Distinguish rendering the retained velhist.svg from recomputing its values."
+    },
+    {
+      "criterion_id": "A-04",
+      "disposition": "agree",
+      "evidence": [
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/README.md",
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.gitmodules",
+        "https://github.com/psychoinformatics-de/paper-remodnav/commit/57d2565ab70b9d7b41c28aaa253ccc7096900f8d",
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.datalad/config"
+      ],
+      "explanation": "The clone/rerun interface, declared input patterns and container registration provide executable acquisition/composition for the root pipeline. The identified quality calculation uses the same raw-data patterns, so its missing dispatch is primarily an execution-coverage issue, not proof of a new undeclared acquisition step. Score 3 is supported as specification evidence only."
+    },
+    {
+      "criterion_id": "A-05",
+      "disposition": "needs_evidence",
+      "evidence": [
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/code/mk_figuresnstats.py#L463",
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/code/mk_figuresnstats.py#L1282",
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/Docker-Makefile",
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/img/Makefile",
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/main.tex#L1161"
+      ],
+      "explanation": "The velocity histogram is computed scientific output, not an authored static diagram, and its generating quality_stats function is not invoked by -s -f -r -m. Its executable body is present, which distinguishes this from wholly absent code, but the rationale does not address the manual addition needed to compose the full result-producing procedure. The asserted complete coverage is not established by the cited dispatch alone.",
+      "suggested_correction": "Explicitly account for quality_stats. Explain whether the native highest anchor accepts a separately callable but unintegrated routine; otherwise use 2 for the incomplete composed procedure. Do not classify velhist.svg as a noncomputational static diagram."
+    },
+    {
+      "criterion_id": "A-06",
+      "disposition": "agree",
+      "evidence": [
+        "https://github.com/psychoinformatics-de/paper-remodnav/commit/57d2565ab70b9d7b41c28aaa253ccc7096900f8d",
+        "https://github.com/psychoinformatics-de/paper-remodnav/commit/3dd49e368d5cfe9ed8ae861d21475ca3fe6b5b9c",
+        "https://github.com/psychoinformatics-de/paper-remodnav/commit/c531a59c082d45a435be9bd5474efb850d9039a3",
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/README.md",
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.datalad/config"
+      ],
+      "explanation": "A genuine captured command and rerun entrypoint exist. Historical build input resolution and unspecified orchestration context prevent a general exact replay claim, supporting 2. Missing manuscript provenance alone is not sufficient to lower this particular criterion, whose highest anchor concerns computations represented in provenance.",
+      "suggested_correction": "Keep the partial rating grounded in unresolved recorded execution context; distinguish it from T-04 coverage of unrecorded steps and A-03 coverage of all manuscript results."
+    },
+    {
+      "criterion_id": "M-01",
+      "disposition": "agree",
+      "evidence": [
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.gitmodules",
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/code/mk_figuresnstats.py",
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/container/Dockerfile",
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/main.tex"
+      ],
+      "explanation": "Root and linked trees separate recordings, event labels, classifier, analysis, image and manuscript roles. Directory/file boundaries qualify under this criterion even where consumer interfaces are tightly coupled. Score 3 is supported."
+    },
+    {
+      "criterion_id": "M-02",
+      "disposition": "agree",
+      "evidence": [
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/code/mk_figuresnstats.py#L40",
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/code/mk_figuresnstats.py#L51",
+        "https://github.com/psychoinformatics-de/remodnav/blob/d28911838f91f33af0db57332f55ccc442d24f66/.gitmodules"
+      ],
+      "explanation": "The root imports remodnav.tests.utils and constructs a path deep inside its test-data directory. Independent gitlinks do not eliminate this internal-layout dependence. The limited anchor 1 accurately captures the observed boundary coupling."
+    },
+    {
+      "criterion_id": "M-03",
+      "disposition": "agree",
+      "evidence": [
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/COPYING",
+        "https://github.com/psychoinformatics-de/remodnav/blob/d28911838f91f33af0db57332f55ccc442d24f66/LICENSE",
+        "https://github.com/psychoinformatics-de/studyforrest-data-phase2/blob/a6623bff95ae3676ef0ecad262b5c44ded7cb4a1/LICENSE",
+        "https://github.com/richardandersson/EyeMovementDetectorEvaluation/blob/0e6f82708e10b48039763aa1078696e802260674/LICENSE",
+        "https://github.com/psychoinformatics-de/studyforrest-data-eyemovementlabels/blob/92279db3850ee4282d97001a3f650fc55cb64b4e/README",
+        "data/remodnav-evidence.json#sha256=e3c6253bced7d959cd59873c3d49d166bf5793906bcdf65e49e265076d215499"
+      ],
+      "explanation": "Several modules have their own explicit terms, while the event-label dataset has no identifiable license mapping in its inspected inventory. Partial module attribution, score 2, is supported independently of whether the other licenses are compatible."
+    },
+    {
+      "criterion_id": "M-04",
+      "disposition": "agree",
+      "evidence": [
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/COPYING",
+        "https://github.com/psychoinformatics-de/remodnav/blob/d28911838f91f33af0db57332f55ccc442d24f66/LICENSE",
+        "https://github.com/psychoinformatics-de/studyforrest-data-phase2/blob/a6623bff95ae3676ef0ecad262b5c44ded7cb4a1/LICENSE",
+        "https://github.com/richardandersson/EyeMovementDetectorEvaluation/blob/0e6f82708e10b48039763aa1078696e802260674/LICENSE",
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/README.md"
+      ],
+      "explanation": "The reachable object presents multiple license texts but no composition-specific compatibility treatment. The native limited anchor explicitly covers listed licenses with no addressed combination, so 1 is preferable to interpreting this as a legal incompatibility finding."
+    },
+    {
+      "criterion_id": "M-05",
+      "disposition": "disagree",
+      "evidence": [
+        "https://github.com/psychoinformatics-de/studyforrest-data-phase2/blob/a6623bff95ae3676ef0ecad262b5c44ded7cb4a1/README.rst",
+        "https://github.com/psychoinformatics-de/studyforrest-data-eyemovementlabels/blob/92279db3850ee4282d97001a3f650fc55cb64b4e/README",
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.gitmodules",
+        ".cache/methods/rubric/rubric.json#git-revision=e8d94d00d904058b8f87c8331cbe32e225a9490f;sha256=05d96a057d8cfe79927f587f6994cf386e12bca83d55b3e7deee8e37ab7bcbb4"
+      ],
+      "explanation": "The assessment rationale says access conditions cannot be established for all relevant components. That is an explicit zero-anchor case in M-05: access conditions cannot be determined. Null is reserved for uncertainty that cannot responsibly select any anchor; here the native anchor already covers the stated observation. Structural separation does not establish uniform access, but uncertainty does not justify excluding this completed judgment.",
+      "suggested_correction": "Assign 0 with an appropriately bounded observation such as not_findable, retaining the uncertainty and applicability feedback. This changes completion from 34 to 35 answered criteria without changing the fixed-denominator provisional total for this item."
+    },
+    {
+      "criterion_id": "M-06",
+      "disposition": "agree",
+      "evidence": [
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.gitmodules",
+        "https://github.com/psychoinformatics-de/remodnav/blob/d28911838f91f33af0db57332f55ccc442d24f66/.gitmodules",
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.datalad/config",
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/code/mk_figuresnstats.py"
+      ],
+      "explanation": "The composition of data, classifier and image is explicit in recursive registrations and consumer paths. The uncalled quality routine is within the same analysis module and does not introduce an unknown module selection. Score 3 is supported for assembly, as distinct from complete execution instructions."
+    },
+    {
+      "criterion_id": "P-01",
+      "disposition": "agree",
+      "evidence": [
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/README.md",
+        ".cache/objects/paper-remodnav/evidence/external/datalad-container-1.2.3-docker.py#sha256=44cb66ceffafe89128cdf9ec5446d035ba7b5ee39dfbf9f8754408ebfef093e5",
+        "https://github.com/psychoinformatics-de/studyforrest-data-phase2/blob/a6623bff95ae3676ef0ecad262b5c44ded7cb4a1/README.rst"
+      ],
+      "explanation": "Tool names, tested host platforms and approximate input/image download volumes are stated. The adapter assumes a Docker executable manageable by the user and flags this as needing documentation. On the frozen inspected material this is a concrete basis for the partial anchor 2, subject to what the externally linked installation instructions actually supply."
+    },
+    {
+      "criterion_id": "P-02",
+      "disposition": "agree",
+      "evidence": [
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.datalad/config",
+        ".cache/objects/paper-remodnav/evidence/external/datalad-container-1.2.3-docker.py#sha256=44cb66ceffafe89128cdf9ec5446d035ba7b5ee39dfbf9f8754408ebfef093e5",
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/code/mk_figuresnstats.py"
+      ],
+      "explanation": "The inspected pipeline uses dataset-relative inputs and container-internal /tmp, with Python substitution outside analysis logic. The adapter derives mount source and user identity from the current host rather than requiring personal absolute paths. Score 3 is supported for separation of host settings, although freshness of the mounted HOME is a different issue."
+    },
+    {
+      "criterion_id": "P-03",
+      "disposition": "agree",
+      "evidence": [
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/container/Dockerfile",
+        "https://github.com/psychoinformatics-de/remodnav/blob/d28911838f91f33af0db57332f55ccc442d24f66/setup.py",
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/README.md"
+      ],
+      "explanation": "The source imports and package declaration match the supplied numerical, plotting and rendering recipe, with host orchestration separately identified. Optional DataLad use inside the script has an explicit fallback, so its omission from the image is not by itself an undeclared mandatory dependency. Score 3 is supported for dependency coverage."
+    },
+    {
+      "criterion_id": "P-04",
+      "disposition": "agree",
+      "evidence": [
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/container/Dockerfile",
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.datalad/config",
+        "https://github.com/psychoinformatics-de/remodnav/blob/d28911838f91f33af0db57332f55ccc442d24f66/setup.py"
+      ],
+      "explanation": "The required container build and invocation definitions are tracked at the root revision, and package dependencies are tracked in the fixed classifier module. Binary score 1 is correctly used; there is no invented intermediate value."
+    },
+    {
+      "criterion_id": "P-05",
+      "disposition": "needs_evidence",
+      "evidence": [
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/container/Dockerfile",
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.datalad/config",
+        ".cache/objects/paper-remodnav/evidence/external/datalad-container-1.2.3-docker.py#sha256=44cb66ceffafe89128cdf9ec5446d035ba7b5ee39dfbf9f8754408ebfef093e5",
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/README.md"
+      ],
+      "explanation": "Machine-readable image loading and execution are well supported. However, P-01 identifies an essential unresolved host permission assumption, while P-05 awards the anchor requiring only explicit host configuration. The adapter comment corroborates that unresolved assumption; the two judgments need an explicit explanation.",
+      "suggested_correction": "Provide the actual documented host setup route resolving Docker access, or use anchor 2 consistently. Do not demand a test run solely to establish specification capability."
+    },
+    {
+      "criterion_id": "E-01",
+      "disposition": "needs_evidence",
+      "evidence": [
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.datalad/config",
+        ".cache/objects/paper-remodnav/evidence/external/datalad-container-1.2.3-docker.py#sha256=44cb66ceffafe89128cdf9ec5446d035ba7b5ee39dfbf9f8754408ebfef093e5",
+        "https://github.com/psychoinformatics-de/paper-remodnav/commit/57d2565ab70b9d7b41c28aaa253ccc7096900f8d"
+      ],
+      "explanation": "docker run creates a new container, but the claimed fresh temporary HOME is /tmp/dockertmp within the adapter’s mounted dataset directory. It has a fixed name, mkdir is followed by a semicolon, and cleanup occurs only after successful make. A failed earlier run can therefore leave HOME contents available to the next run. Fresh container identity alone does not establish a fresh entire execution environment.",
+      "suggested_correction": "Qualify the score-3 rationale and resolve the retained HOME path: demonstrate a guaranteed reset or classify the requirement to clear it manually. This is source-level reasoning, not an observed failed execution."
+    },
+    {
+      "criterion_id": "E-02",
+      "disposition": "agree",
+      "evidence": [
+        ".cache/objects/paper-remodnav/evidence/external/datalad-container-1.2.3-docker.py#sha256=44cb66ceffafe89128cdf9ec5446d035ba7b5ee39dfbf9f8754408ebfef093e5",
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.datalad/config",
+        "https://github.com/psychoinformatics-de/paper-remodnav/commit/57d2565ab70b9d7b41c28aaa253ccc7096900f8d"
+      ],
+      "explanation": "The adapter passes --rm and mounts the dataset for persistent outputs; captured run records live in Git outside the container. Required results/provenance can survive container disposal, supporting 3. The HOME remnant issue affects freshness and undeclared state, not whether disposal would lose the required outputs."
+    },
+    {
+      "criterion_id": "E-03",
+      "disposition": "agree",
+      "evidence": [
+        "https://github.com/psychoinformatics-de/paper-remodnav/commit/57d2565ab70b9d7b41c28aaa253ccc7096900f8d",
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/Docker-Makefile",
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/Makefile",
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/img/Makefile",
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.datalad/config",
+        ".cache/objects/paper-remodnav/evidence/external/datalad-container-1.2.3-docker.py#sha256=44cb66ceffafe89128cdf9ec5446d035ba7b5ee39dfbf9f8754408ebfef093e5"
+      ],
+      "explanation": "The result command cleans selected outputs and caches but retains a mutable mounted workspace, so 3 is unsupported. A manual pristine/reset step is needed for the partial anchor 2. The rationale should specifically disclose the fixed HOME directory and retained velhist.svg, because clean does not remove SVG source outputs and the default dispatcher does not regenerate that histogram.",
+      "suggested_correction": "Retain 2 with the clean-checkout assumption explicit; do not describe the cleanup as clearing all prior computation state."
+    },
+    {
+      "criterion_id": "D-01",
+      "disposition": "agree",
+      "evidence": [
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/README.md",
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.gitmodules",
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/container/image/manifest.json",
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/0cc48aa1605a41f1c512561a6427a93a65ebebfe/30f/7f0/MD5E-s1750877184--7999b6f62ecdddb6cdabe380bd4a106f.log.web",
+        "data/remodnav-evidence.json#sha256=e3c6253bced7d959cd59873c3d49d166bf5793906bcdf65e49e265076d215499"
+      ],
+      "explanation": "Version-specific Git and annex availability references are present, but payloads were intentionally omitted and retrieval is forbidden. That does not demonstrate either current obtainability or an unavailable version. Null is a responsible unresolved judgment here; unlike M-05, no native zero anchor equates unknown availability with a zero."
+    },
+    {
+      "criterion_id": "D-02",
+      "disposition": "agree",
+      "evidence": [
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/0cc48aa1605a41f1c512561a6427a93a65ebebfe/30f/7f0/MD5E-s1750877184--7999b6f62ecdddb6cdabe380bd4a106f.log.web",
+        "https://github.com/psychoinformatics-de/studyforrest-data-phase2/blob/a6623bff95ae3676ef0ecad262b5c44ded7cb4a1/README.rst",
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/container/image/manifest.json"
+      ],
+      "explanation": "The raw dataset advertises an alternative repository/archive route, but the supplied layer metadata names one hosting service and no preserved complete joint package with a recovery route is established. Version identities alone do not prove preservation. Score 1 is supported within the inspected material, without asserting that the host has actually failed."
+    },
+    {
+      "criterion_id": "D-03",
+      "disposition": "agree",
+      "evidence": [
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/container/Dockerfile",
+        "https://github.com/psychoinformatics-de/paper-remodnav/commit/3dd49e368d5cfe9ed8ae861d21475ca3fe6b5b9c"
+      ],
+      "explanation": "The Debian base tag and apt package resolutions float, notwithstanding four pinned Python packages. This is an explicit build recipe with unfixed required dependencies, matching 1. The supplied image digest cannot substitute for a fully fixed reconstruction recipe."
+    },
+    {
+      "criterion_id": "D-04",
+      "disposition": "agree",
+      "evidence": [
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/COPYING",
+        "https://github.com/psychoinformatics-de/remodnav/blob/d28911838f91f33af0db57332f55ccc442d24f66/LICENSE",
+        "https://github.com/psychoinformatics-de/studyforrest-data-phase2/blob/a6623bff95ae3676ef0ecad262b5c44ded7cb4a1/LICENSE",
+        "https://github.com/richardandersson/EyeMovementDetectorEvaluation/blob/0e6f82708e10b48039763aa1078696e802260674/LICENSE",
+        "https://github.com/psychoinformatics-de/studyforrest-data-eyemovementlabels/blob/92279db3850ee4282d97001a3f650fc55cb64b4e/README",
+        "data/remodnav-evidence.json#sha256=e3c6253bced7d959cd59873c3d49d166bf5793906bcdf65e49e265076d215499"
+      ],
+      "explanation": "The full named license texts provide resolvable governing identities for several modules. The event-label declaration remains missing and image-bundled terms are not inspectable here. Score 2 is supported; no inference that missing license evidence means prohibited access is needed."
+    },
+    {
+      "criterion_id": "D-05",
+      "disposition": "agree",
+      "evidence": [
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/.gitmodules",
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/container/image/manifest.json",
+        ".cache/objects/paper-remodnav/evidence/external/datalad-container-1.2.3-docker.py#sha256=44cb66ceffafe89128cdf9ec5446d035ba7b5ee39dfbf9f8754408ebfef093e5",
+        "https://github.com/psychoinformatics-de/paper-remodnav/commit/c531a59c082d45a435be9bd5474efb850d9039a3",
+        "data/remodnav-evidence.json#sha256=e3c6253bced7d959cd59873c3d49d166bf5793906bcdf65e49e265076d215499"
+      ],
+      "explanation": "The root tree fixes module gitlinks and image config/layer identities as a coherent selection. The adapter computes the stored configuration digest rather than selecting an arbitrary current latest image. Score 3 is supported for distributed state selection, separately from unknown payload availability and historical run context."
+    },
+    {
+      "criterion_id": "D-06",
+      "disposition": "agree",
+      "evidence": [
+        "https://github.com/psychoinformatics-de/paper-remodnav/commit/3dd49e368d5cfe9ed8ae861d21475ca3fe6b5b9c",
+        "https://github.com/psychoinformatics-de/paper-remodnav/blob/34388d3ca78fbd483e022e4e2851be390b7eebf2/container/image/manifest.json",
+        ".cache/objects/paper-remodnav/evidence/psychoinformatics-de--paper-remodnav--34388d3ca78f/repository.git#tag-object=a303b5455458c79133a79864a590cbcdbad67a34"
+      ],
+      "explanation": "The image has recorded build provenance and content hashes but no supplied verifiable artifact signature or producer/source attestation. The results tag signature is not such an artifact attestation. Binary zero is supported as not demonstrated, while unavailable payload bytes limit exhaustive inspection."
+    }
+  ],
+  "checked_criteria": [
+    "S-01",
+    "S-02",
+    "S-03",
+    "S-04",
+    "T-01",
+    "T-02",
+    "T-03",
+    "T-04",
+    "T-05",
+    "T-06",
+    "A-01",
+    "A-02",
+    "A-03",
+    "A-04",
+    "A-05",
+    "A-06",
+    "M-01",
+    "M-02",
+    "M-03",
+    "M-04",
+    "M-05",
+    "M-06",
+    "P-01",
+    "P-02",
+    "P-03",
+    "P-04",
+    "P-05",
+    "E-01",
+    "E-02",
+    "E-03",
+    "D-01",
+    "D-02",
+    "D-03",
+    "D-04",
+    "D-05",
+    "D-06"
+  ],
+  "limitations": [
+    "Independent inspection used only the assigned anonymized assessment, exact native instrument and frozen evidence manifest with verified SHA-256 e3c6253bced7d959cd59873c3d49d166bf5793906bcdf65e49e265076d215499. No peer reviews, prior assessments, examples or other methods were consulted.",
+    "No network access, payload acquisition, scientific execution or container build was performed. Read-only Git tree/tag inspection and the native validator were used; intentionally absent payloads are not observed retrieval failures.",
+    "Discovery followed root README/configuration/submodules into linked source and histories. The adapter was supplied through the README tool/version -> configured adapter discovery path. Its review locator includes the frozen content checksum because the public version-tag URL is not an immutable commit locator.",
+    "The native validator accepted the bundle and confirmed 34 of 36 criteria answered, equal dimension weights, binary normalization and fixed denominators. The bundle stores no conflicting numeric total. Validator success did not determine the substantive review findings. M-05 should become an explicit zero; D-01 remains unresolved.",
+    "External installation documentation, hosting-service verification UI, payload contents and present-day availability were not inspected. Setup/portability and failed-run HOME contamination findings are bounded source-level concerns, not observed runtime failures.",
+    "The detailed quality_stats omission establishes an execution-instruction gap. Whether a separately callable unintegrated function fully satisfies A-05 is an anchor interpretation requiring explicit justification; no numerical reproduction was attempted.",
+    "No actual model/runtime identity was established. Agreement is independent review agreement and does not imply human approval."
+  ],
+  "review_coverage": {
+    "checked": 36,
+    "total": 36
+  }
+}

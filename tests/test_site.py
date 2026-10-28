@@ -140,6 +140,20 @@ class SiteTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             build(self.root)
 
+    def test_initial_render_defers_record_bodies(self):
+        import shutil
+        import subprocess
+        if not shutil.which('node'):
+            self.skipTest('Node unavailable')
+        source = (ROOT/'site/app.js').read_text()
+        renderer = source[source.index('const e ='):source.index("root.addEventListener('toggle'")]
+        fixture = {'study':{},'methods':[],'objects':[],'reviews':[],'variability':[],
+                   'results':[result('r1'),result('r2'),result('r3')]}
+        script = "const root={innerHTML:''};\n" + renderer + '\ndata=' + json.dumps(fixture) + ";render();"
+        script += "if(root.innerHTML.includes('run-body'))throw Error('Eager body rendering');"
+        script += "if(!recordRow(data.results[0],true).includes('run-body'))throw Error('Missing expanded body');"
+        subprocess.run(['node','-e',script],check=True,capture_output=True,text=True)
+
     def test_site_renders_untrusted_text_through_escaping_and_safe_links(self):
         # Executable JS behavior is checked using Node when available, without a browser dependency.
         import shutil
