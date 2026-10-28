@@ -91,6 +91,9 @@ def finalize(rid):
   if proc.returncode:raise ValueError('Native validation failed: '+validation[:1200])
   if mid=='rubric':
    rubric=load(ROOT/'.cache/methods/rubric/rubric.json')
+   assert data['research_object']['revision']==REV,'Native object revision differs from frozen object'
+   assert 'github.com/psychoinformatics-de/paper-remodnav' in data['research_object']['locator'],'Native object locator differs'
+   assert data['rubric_version']=='0.1.0' and data['rubric_sha256']==method['required_resources'][2]['sha256'],'Native rubric pin differs'
    assert len(data['assessments'])==1,'Study requires exactly one native assessment'
    a=data['assessments'][0]
    assert set(a['responses'])=={c['id'] for c in rubric['criteria']},'Study requires all36 rubric response keys'
