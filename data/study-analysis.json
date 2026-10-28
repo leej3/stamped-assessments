@@ -1,11 +1,11 @@
 {
   "study_id": "remodnav-method-comparison-01",
-  "updated_at": "2026-10-28T01:07:29.653755+00:00",
+  "updated_at": "2026-10-28T01:18:58.408337+00:00",
   "assessment_status_counts": {
     "complete": 9
   },
   "review_status_counts": {
-    "complete": 22
+    "complete": 27
   },
   "planned_assessments": 30,
   "planned_reviews": 90,
@@ -15,9 +15,9 @@
       "assessment_count": 3,
       "complete": 3,
       "failed": 0,
-      "review_count": 8,
+      "review_count": 9,
       "review_verdict_counts": {
-        "needs_revision": 8
+        "needs_revision": 9
       },
       "criteria": {
         "A-01": {
@@ -206,15 +206,414 @@
         "maximum": 34
       },
       "three_review_sets": {
-        "complete_sets": 2,
-        "matching_overall_verdict_sets": 2,
+        "complete_sets": 3,
+        "matching_overall_verdict_sets": 3,
         "interpretation": "Matching review verdicts do not establish factual correctness or human agreement."
       },
       "review_dispositions": {
-        "agree": 246,
-        "needs_evidence": 25,
-        "disagree": 17
+        "agree": 278,
+        "needs_evidence": 26,
+        "disagree": 20
       },
+      "criterion_reviews": {
+        "A-01": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "A-02": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 4,
+            "disagree": 0,
+            "needs_evidence": 5
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "A-03": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 3,
+            "disagree": 3,
+            "needs_evidence": 3
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "A-04": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "A-05": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 6,
+            "disagree": 0,
+            "needs_evidence": 3
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "A-06": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "D-01": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "D-02": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 6,
+            "disagree": 2,
+            "needs_evidence": 1
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "D-03": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "D-04": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "D-05": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "D-06": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "E-01": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 5,
+            "disagree": 0,
+            "needs_evidence": 4
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "E-02": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 8,
+            "disagree": 0,
+            "needs_evidence": 1
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "E-03": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "M-01": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "M-02": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "M-03": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "M-04": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "M-05": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 1,
+            "disagree": 8,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "M-06": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "P-01": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 7,
+            "disagree": 0,
+            "needs_evidence": 2
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "P-02": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 3,
+            "disagree": 2,
+            "needs_evidence": 4
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "P-03": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "P-04": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "P-05": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 2,
+            "disagree": 4,
+            "needs_evidence": 3
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "S-01": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "S-02": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "S-03": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "S-04": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "T-01": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "T-02": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "T-03": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "T-04": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "T-05": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 8,
+            "disagree": 1,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "T-06": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        }
+      },
+      "criterion_review_counting": "Each review counted once per disposition for each criterion. A review with conflicting multiple findings can contribute to more than one disposition; flagged IDs preserve that distinction. Denominators are completed reviews and reviews reporting the criterion checked; not correctness or consensus.",
       "review_coverage": [
         {
           "review_id": "study-rubric-02-review-3",
@@ -255,6 +654,11 @@
           "review_id": "study-rubric-01-review-1",
           "checked": 36,
           "total": 36
+        },
+        {
+          "review_id": "study-rubric-03-review-3",
+          "checked": 36,
+          "total": 36
         }
       ]
     },
@@ -263,9 +667,9 @@
       "assessment_count": 3,
       "complete": 3,
       "failed": 0,
-      "review_count": 7,
+      "review_count": 9,
       "review_verdict_counts": {
-        "needs_revision": 7
+        "needs_revision": 9
       },
       "criteria": {
         "stamped-checklist:may/001": {
@@ -487,15 +891,359 @@
         }
       },
       "three_review_sets": {
-        "complete_sets": 2,
-        "matching_overall_verdict_sets": 2,
+        "complete_sets": 3,
+        "matching_overall_verdict_sets": 3,
         "interpretation": "Matching review verdicts do not establish factual correctness or human agreement."
       },
       "review_dispositions": {
-        "agree": 185,
-        "disagree": 25,
-        "needs_evidence": 7
+        "agree": 239,
+        "disagree": 32,
+        "needs_evidence": 8
       },
+      "criterion_reviews": {
+        "stamped-checklist:may/001": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:may/002": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:may/003": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 0,
+            "disagree": 3,
+            "needs_evidence": 6
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:may/004": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:may/005": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 8,
+            "disagree": 1,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:must/001": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:must/002": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:must/003": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:must/004": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:must/005": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:must/006": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:must/007": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 1,
+            "disagree": 8,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:must/008": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 4,
+            "disagree": 5,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:must/009": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:must/010": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:must/011": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:must/012": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 8,
+            "disagree": 1,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:must/013": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:must/014": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:must/015": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 1,
+            "disagree": 8,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:must/016": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:must/017": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 4,
+            "disagree": 5,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:should/001": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:should/002": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:should/003": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:should/004": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 6,
+            "disagree": 1,
+            "needs_evidence": 2
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:should/005": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:should/006": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:should/007": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:should/008": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:should/009": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        }
+      },
+      "criterion_review_counting": "Each review counted once per disposition for each criterion. A review with conflicting multiple findings can contribute to more than one disposition; flagged IDs preserve that distinction. Denominators are completed reviews and reviews reporting the criterion checked; not correctness or consensus.",
       "review_coverage": [
         {
           "review_id": "study-con-stamped-impl-03-review-1",
@@ -523,12 +1271,22 @@
           "total": 31
         },
         {
+          "review_id": "study-con-stamped-impl-03-review-3",
+          "checked": 31,
+          "total": 31
+        },
+        {
           "review_id": "study-con-stamped-impl-01-review-1",
           "checked": 31,
           "total": 31
         },
         {
           "review_id": "study-con-stamped-impl-02-review-1",
+          "checked": 31,
+          "total": 31
+        },
+        {
+          "review_id": "study-con-stamped-impl-03-review-2",
           "checked": 31,
           "total": 31
         }
@@ -539,9 +1297,9 @@
       "assessment_count": 3,
       "complete": 3,
       "failed": 0,
-      "review_count": 7,
+      "review_count": 9,
       "review_verdict_counts": {
-        "needs_revision": 6,
+        "needs_revision": 8,
         "supported": 1
       },
       "criteria": {
@@ -765,18 +1523,372 @@
         }
       },
       "three_review_sets": {
-        "complete_sets": 2,
-        "matching_overall_verdict_sets": 1,
+        "complete_sets": 3,
+        "matching_overall_verdict_sets": 2,
         "interpretation": "Matching review verdicts do not establish factual correctness or human agreement."
       },
       "review_dispositions": {
-        "agree": 193,
-        "disagree": 17,
-        "needs_evidence": 7
+        "agree": 249,
+        "disagree": 21,
+        "needs_evidence": 9
       },
+      "criterion_reviews": {
+        "stamped-checklist:may/001": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:may/002": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:may/003": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:may/004": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:may/005": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:must/001": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 8,
+            "disagree": 1,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:must/002": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:must/003": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:must/004": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:must/005": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:must/006": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:must/007": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 5,
+            "disagree": 4,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:must/008": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 6,
+            "disagree": 2,
+            "needs_evidence": 1
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:must/009": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:must/010": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 8,
+            "disagree": 0,
+            "needs_evidence": 1
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:must/011": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:must/012": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 7,
+            "disagree": 0,
+            "needs_evidence": 2
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:must/013": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:must/014": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 6,
+            "disagree": 1,
+            "needs_evidence": 2
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:must/015": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 6,
+            "disagree": 3,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:must/016": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:must/017": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 6,
+            "disagree": 3,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:should/001": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:should/002": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:should/003": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:should/004": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 8,
+            "disagree": 0,
+            "needs_evidence": 1
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:should/005": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 3,
+            "disagree": 6,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:should/006": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:should/007": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:should/008": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 6,
+            "disagree": 1,
+            "needs_evidence": 2
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        },
+        "stamped-checklist:should/009": {
+          "completed_review_denominator": 9,
+          "checked_review_denominator": 9,
+          "distinct_review_dispositions": {
+            "agree": 9,
+            "disagree": 0,
+            "needs_evidence": 0
+          },
+          "multiple_finding_review_ids": [],
+          "checked_without_finding_review_ids": []
+        }
+      },
+      "criterion_review_counting": "Each review counted once per disposition for each criterion. A review with conflicting multiple findings can contribute to more than one disposition; flagged IDs preserve that distinction. Denominators are completed reviews and reviews reporting the criterion checked; not correctness or consensus.",
       "review_coverage": [
         {
           "review_id": "study-con-narps-guidance-02-review-1",
+          "checked": 31,
+          "total": 31
+        },
+        {
+          "review_id": "study-con-narps-guidance-03-review-2",
+          "checked": 31,
+          "total": 31
+        },
+        {
+          "review_id": "study-con-narps-guidance-03-review-3",
           "checked": 31,
           "total": 31
         },

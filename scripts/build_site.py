@@ -158,6 +158,29 @@ def variability(records):
     return groups
 
 
+def attach_review_counts(groups, reviews):
+    for group in groups:
+        selected = [r for r in reviews if r.get('status') == 'complete' and r['assessment_id'] in group['assessment_ids']]
+        criteria = {}
+        for review in selected:
+            findings = {}
+            for finding in review.get('findings', []):
+                findings.setdefault(finding.get('criterion_id'), set()).add(finding.get('disposition'))
+            for criterion, dispositions in findings.items():
+                if not criterion:
+                    continue
+                entry = criteria.setdefault(criterion, {'reviews_with_finding': 0, 'agree': 0, 'disagree': 0, 'needs_evidence': 0, 'conflicting_review_ids': []})
+                entry['reviews_with_finding'] += 1
+                for disposition in dispositions:
+                    if disposition in ('agree', 'disagree', 'needs_evidence'):
+                        entry[disposition] += 1
+                if len(dispositions) > 1:
+                    entry['conflicting_review_ids'].append(review['id'])
+        group['review_criterion_counts'] = criteria
+        group['completed_reviews'] = len(selected)
+    return groups
+
+
 def build(root=ROOT, destination=None):
     root = Path(root).resolve()
     destination = Path(destination or root / 'dist').resolve()
@@ -213,7 +236,7 @@ def build(root=ROOT, destination=None):
     if any(r['assessment_id'] not in ids for r in reviews):
         raise ValueError('Review references an unknown assessment')
     payload = {'study': study, **catalogs, 'results': results, 'reviews': reviews,
-               'variability': variability(results), 'generated_at': datetime.now(timezone.utc).isoformat()}
+               'variability': attach_review_counts(variability(results), reviews), 'generated_at': datetime.now(timezone.utc).isoformat()}
     public_safe(payload)
     # Validate everything before removing a previous successful build.
     for asset in ASSETS:

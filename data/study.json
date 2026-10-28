@@ -24,11 +24,11 @@
   "created_at": "2026-10-27T23:48:56.858019+00:00",
   "evidence_cohort": "remodnav-e3c6253bced7",
   "evidence_sha256": "e3c6253bced7d959cd59873c3d49d166bf5793906bcdf65e49e265076d215499",
-  "updated_at": "2026-10-28T01:07:29.623000+00:00",
+  "updated_at": "2026-10-28T01:18:58.376861+00:00",
   "progress": {
     "assessments_complete": 9,
     "assessments_failed": 0,
-    "reviews_complete": 22,
+    "reviews_complete": 27,
     "reviews_failed": 0
   }
 }

@@ -5,7 +5,7 @@ import json
 from pathlib import Path
 import tempfile
 import unittest
-from scripts.build_site import build, group_key, linked_output, public_safe, variability
+from scripts.build_site import build, group_key, linked_output, public_safe, variability, attach_review_counts
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -93,6 +93,18 @@ class SiteTests(unittest.TestCase):
         a['native_data'] = {'responses':{'must/001':{'status':'met'}}}
         b['native_data'] = {'responses':{'must/001':{'status':'partial'}}}
         self.assertEqual(variability([a,b])[0]['criterion_distributions']['must/001']['counts'], {'met':1,'partial':1})
+
+    def test_review_counts_use_distinct_reviews_and_flag_conflicts(self):
+        groups=variability([result()])
+        review={'id':'review1','assessment_id':'r1','status':'complete','findings':[
+            {'criterion_id':'S-01','disposition':'agree'},
+            {'criterion_id':'S-01','disposition':'agree'},
+            {'criterion_id':'S-01','disposition':'disagree'}]}
+        entry=attach_review_counts(groups,[review])[0]['review_criterion_counts']['S-01']
+        self.assertEqual(entry['reviews_with_finding'],1)
+        self.assertEqual(entry['agree'],1)
+        self.assertEqual(entry['disagree'],1)
+        self.assertEqual(entry['conflicting_review_ids'],['review1'])
 
     def test_equal_totals_retain_different_dimension_profiles(self):
         a=result(summary={'overall_score':50,'scale_max':100,'dimension_scores':{'S':100,'T':0}})

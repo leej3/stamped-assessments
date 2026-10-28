@@ -1,7 +1,7 @@
 # REMoDNaV assessment-method pilot: descriptive results
 
-Updated 2026-10-28T01:07:29.653755+00:00.
-9/30 assessments and 22/90 reviews are complete.
+Updated 2026-10-28T01:18:58.408337+00:00.
+9/30 assessments and 27/90 reviews are complete.
 Failed attempts remain in the ledger.
 
 This is one research object at one fixed source revision, planned for ten independent assessments per method with fresh contexts.
@@ -16,9 +16,9 @@ These findings have not been adjudicated by human experts.
 
 | Method | Completed assessments | Failed assessments | Reviews | Review verdicts |
 | --- | ---: | ---: | ---: | --- |
-| rubric | 3 | 0 | 8 | needs_revision: 8 |
-| con-stamped-impl | 3 | 0 | 7 | needs_revision: 7 |
-| con-narps-guidance | 3 | 0 | 7 | needs_revision: 6, supported: 1 |
+| rubric | 3 | 0 | 9 | needs_revision: 9 |
+| con-stamped-impl | 3 | 0 | 9 | needs_revision: 9 |
+| con-narps-guidance | 3 | 0 | 9 | needs_revision: 8, supported: 1 |
 
 ## Native results
 
@@ -27,22 +27,29 @@ These findings have not been adjudicated by human experts.
 Native overall scores: n=3, mean 72.62, range 70.71–76.43.
 Sample standard deviation: 3.30.
 Unanswered criteria contribute zero to these provisional native totals and remain visible in completion counts.
-Evidence ratings and confidence do not alter scores. 2 assessments have all three reviews; 2 of those sets share an overall review verdict.
+Evidence ratings and confidence do not alter scores. 3 assessments have all three reviews; 3 of those sets share an overall review verdict.
 This is descriptive agreement, not accuracy.
 
 ### con-stamped-impl
 
 Native results are categorical checklist verdicts.
 No overall numeric score is created.
-Per-item verdict distributions and separate MUST/SHOULD/MAY counts are retained in the analysis JSON and dashboard. 2 assessments have all three reviews; 2 of those sets share an overall review verdict.
+Per-item verdict distributions and separate MUST/SHOULD/MAY counts are retained in the analysis JSON and dashboard. 3 assessments have all three reviews; 3 of those sets share an overall review verdict.
 This is descriptive agreement, not accuracy.
 
 ### con-narps-guidance
 
 Native results are categorical checklist verdicts.
 No overall numeric score is created.
-Per-item verdict distributions and separate MUST/SHOULD/MAY counts are retained in the analysis JSON and dashboard. 2 assessments have all three reviews; 1 of those sets share an overall review verdict.
+Per-item verdict distributions and separate MUST/SHOULD/MAY counts are retained in the analysis JSON and dashboard. 3 assessments have all three reviews; 2 of those sets share an overall review verdict.
 This is descriptive agreement, not accuracy.
+
+## Criterion review patterns
+
+Per-criterion distinct-review counts for agree, disagree and needs_evidence are in `criterion_reviews` in the analysis JSON.
+Each criterion records both completed-review and checked-review denominators.
+Multiple findings from one review count once per disposition; conflicting dispositions and checked criteria without findings are explicitly flagged.
+These counts identify recurring questions, not a consensus or correctness score.
 
 ## Interpretation limits
 

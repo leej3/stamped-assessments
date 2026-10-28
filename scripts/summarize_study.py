@@ -41,6 +41,20 @@ def summarize():
   complete_triples=[r for r in by_assessment.values() if len(r)==3]
   row['three_review_sets']={'complete_sets':len(complete_triples),'matching_overall_verdict_sets':sum(len({r['verdict'] for r in rs})==1 for rs in complete_triples),'interpretation':'Matching review verdicts do not establish factual correctness or human agreement.'}
   row['review_dispositions']=dict(Counter(f['disposition'] for r in rr if r['status']=='complete' for f in r.get('findings',[])))
+  criterion_reviews={}
+  completed_reviews=[r for r in rr if r['status']=='complete']
+  for cid in sorted(distributions):
+   checked=[r for r in completed_reviews if cid in r.get('checked_criteria',[])]
+   dispositions=Counter();duplicates=[];missing=[]
+   for r in checked:
+    findings=[f for f in r.get('findings',[]) if f.get('criterion_id')==cid]
+    if not findings:missing.append(r['id'])
+    if len(findings)>1:duplicates.append(r['id'])
+    # Count a review once per disposition, retaining conflicting dispositions visibly.
+    dispositions.update({f['disposition'] for f in findings})
+   criterion_reviews[cid]={'completed_review_denominator':len(completed_reviews),'checked_review_denominator':len(checked),'distinct_review_dispositions':{d:dispositions[d] for d in ('agree','disagree','needs_evidence')},'multiple_finding_review_ids':duplicates,'checked_without_finding_review_ids':missing}
+  row['criterion_reviews']=criterion_reviews
+  row['criterion_review_counting']='Each review counted once per disposition for each criterion. A review with conflicting multiple findings can contribute to more than one disposition; flagged IDs preserve that distinction. Denominators are completed reviews and reviews reporting the criterion checked; not correctness or consensus.'
   row['review_coverage']=[{'review_id':r['id'],**r.get('review_coverage',{'checked':len(r.get('checked_criteria',[])),'total':36 if mid=='rubric' else 31})} for r in rr]
   out['methods'].append(row)
  write(ROOT/'data/study-analysis.json',out)
@@ -60,7 +74,7 @@ def summarize():
    lines.append('Unanswered criteria contribute zero to these provisional native totals and remain visible in completion counts. Evidence ratings and confidence do not alter scores.')
   else:lines.append('Native results are categorical checklist verdicts. No overall numeric score is created. Per-item verdict distributions and separate MUST/SHOULD/MAY counts are retained in the analysis JSON and dashboard.')
   t=m['three_review_sets'];lines.append(f'{t["complete_sets"]} assessments have all three reviews; {t["matching_overall_verdict_sets"]} of those sets share an overall review verdict. This is descriptive agreement, not accuracy.');lines.append('')
- lines+=['## Interpretation limits','',
+ lines+=['## Criterion review patterns','', 'Per-criterion distinct-review counts for agree, disagree and needs_evidence are in `criterion_reviews` in the analysis JSON. Each criterion records both completed-review and checked-review denominators. Multiple findings from one review count once per disposition; conflicting dispositions and checked criteria without findings are explicitly flagged. These counts identify recurring questions, not a consensus or correctness score.','', '## Interpretation limits','',
  'Different methods ask different questions and apply different evidence thresholds. The rubric includes manuscript-derived licensing and other criteria absent from the pinned checklist; checklist methods preserve unknown and not-applicable categories rather than the rubric’s numeric fixed denominator. Their totals must not be pooled or ranked.','',
  'Three independent review contexts use the same requested model family and can share systematic errors. They do not represent three human experts or three independent assessor replications. Partial review coverage is explicitly retained. Agreement alone cannot validate the assessment.','',
  'No controlled random seed, causal method benefit, general scientific-quality ranking, or execution reproducibility is claimed. Wall time and compute cost were not consistently measured at the individual assessment-activity level and are not inferred from preparation timestamps.','',
