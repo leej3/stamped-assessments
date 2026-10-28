@@ -161,6 +161,27 @@ class SiteTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             build(self.root)
 
+    def test_prepared_assessment_prompt_is_preserved(self):
+        from scripts import study_control
+        import hashlib
+        previous_root, previous_verify = study_control.ROOT, study_control.verify
+        prompt=self.root/'.cache/study/prompts/study-test.md'
+        prompt.parent.mkdir(parents=True)
+        prompt.write_text('Frozen task instructions.\n')
+        receipt=self.root/'.cache/study/receipts/study-test.json'
+        receipt.parent.mkdir(parents=True)
+        receipt.write_text(json.dumps({'prompt_sha256':hashlib.sha256(prompt.read_bytes()).hexdigest()}))
+        try:
+            study_control.ROOT=self.root
+            study_control.verify=lambda:None
+            study_control.prepare('study-test','rubric',1)
+            self.assertEqual(prompt.read_text(),'Frozen task instructions.\n')
+            prompt.write_text('Changed instructions.')
+            with self.assertRaises(AssertionError):
+                study_control.prepare('study-test','rubric',1)
+        finally:
+            study_control.ROOT, study_control.verify=previous_root, previous_verify
+
     def test_inflight_review_does_not_count_as_finalized_progress(self):
         from scripts import study_control
         previous_root = study_control.ROOT
