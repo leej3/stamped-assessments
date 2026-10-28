@@ -19,6 +19,8 @@ def summarize():
  reviews=[]
  ids={a['id'] for a in assessments}
  for p in (ROOT/'reviews').glob('study-*.json'):
+  receipt=ROOT/'.cache/study/receipts'/p.name
+  if receipt.exists() and load(receipt).get('status') not in ('complete','failed'):continue
   rec=load(p)
   if rec.get('assessment_id') in ids:reviews.append(rec)
  out={'study_id':study['id'],'updated_at':datetime.now(timezone.utc).isoformat(),'assessment_status_counts':dict(Counter(a['status'] for a in assessments)),'review_status_counts':dict(Counter(r['status'] for r in reviews)),'planned_assessments':30,'planned_reviews':90,'methods':[],'interpretation':'Descriptive single-object pilot; requested models retained, actual underlying versions unverified. Review agreement is not a correctness reference. Native scales are not pooled.'}

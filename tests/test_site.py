@@ -161,6 +161,23 @@ class SiteTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             build(self.root)
 
+    def test_inflight_review_does_not_count_as_finalized_progress(self):
+        from scripts import study_control
+        previous_root = study_control.ROOT
+        receipts = self.root/'.cache/study/receipts'
+        receipts.mkdir(parents=True)
+        self.write('reviews/study-test-review-1.json', {'status':'complete'})
+        self.write('.cache/study/receipts/study-test-review-1.json', {'status':'prepared'})
+        try:
+            study_control.ROOT = self.root
+            study_control.progress()
+            self.assertEqual(json.loads((self.root/'data/study.json').read_text())['progress']['reviews_complete'],0)
+            self.write('.cache/study/receipts/study-test-review-1.json', {'status':'complete'})
+            study_control.progress()
+            self.assertEqual(json.loads((self.root/'data/study.json').read_text())['progress']['reviews_complete'],1)
+        finally:
+            study_control.ROOT = previous_root
+
     def test_initial_render_defers_record_bodies(self):
         import shutil
         import subprocess

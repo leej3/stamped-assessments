@@ -175,9 +175,12 @@ def finalize_review(revid):
  dump(path,rec)
  text=path.read_text();privacy_text=text.replace('/home/data/', 'SOURCE_PATH/').replace('/home/asimio/fg_eyegaze_preproc/', 'SOURCE_PATH/');assert '/Users/' not in privacy_text and '/home/' not in privacy_text,'Personal paths in public review'
  receipt=load(ROOT/'.cache/study/receipts'/f'{revid}.json');receipt.update(status=rec['status'],finished_at=now());dump(ROOT/'.cache/study/receipts'/f'{revid}.json',receipt);progress();print(json.dumps({'id':revid,'status':rec['status'],'verdict':rec['verdict'],'findings':len(rec.get('findings',[]))}))
+def finalized_record(path):
+ receipt=ROOT/'.cache/study/receipts'/path.name
+ return not receipt.exists() or load(receipt).get('status') in ('complete','failed')
 def progress():
- assessments=[load(p) for p in (ROOT/'results').glob('study-*.json') if not any(x in p.name for x in ['.bundle.','.responses.','.probes.'])]
- reviews=[load(p) for p in (ROOT/'reviews').glob('study-*.json')]
+ assessments=[load(p) for p in (ROOT/'results').glob('study-*.json') if not any(x in p.name for x in ['.bundle.','.responses.','.probes.']) and finalized_record(p)]
+ reviews=[load(p) for p in (ROOT/'reviews').glob('study-*.json') if finalized_record(p)]
  s=load(ROOT/'data/study.json');s.update(status='running',evidence_cohort=COHORT,evidence_sha256=EVIDENCE_SHA,updated_at=now(),progress={'assessments_complete':sum(x.get('status')=='complete' for x in assessments),'assessments_failed':sum(x.get('status')=='failed' for x in assessments),'reviews_complete':sum(x.get('status')=='complete' for x in reviews),'reviews_failed':sum(x.get('status')=='failed' for x in reviews)})
  dump(ROOT/'data/study.json',s)
 if __name__=='__main__':
